@@ -16,113 +16,114 @@
 @prefix : <#> .
 
 # Skosmos main configuration
-:config a skosmos:Configuration ;\t
- #skosmos:sparqlEndpoint <http://localhost:3030> ;
+:config a skosmos:Configuration ;
+	#skosmos:sparqlEndpoint <http://localhost:3030> ;
 	skosmos:sparqlDialect "Generic" ;
 	skosmos:sparqlCollationEnabled true ;
-	skosmos:sparqlTimeout 20 ;\t
-     skosmos:httpTimeout 5 ;
+	skosmos:sparqlTimeout 20 ;
+	skosmos:httpTimeout 5 ;
 	skosmos:serviceName "UN Linked Data" ;
 	skosmos:baseHref "https://metadata.un.org/skosmos/" ;
-	skosmos:languages (\t
-     [ rdfs:label "ar" ; rdf:value "ar_EG.utf8" ]\t
-     [ rdfs:label "zh" ; rdf:value "zh_CN.utf8" ]\t
-     [ rdfs:label "en" ; rdf:value "en_GB.utf8" ]\t
-     [ rdfs:label "fr" ; rdf:value "fr_FR.utf8" ]\t
-     [ rdfs:label "ru" ; rdf:value "ru_RU.utf8" ]\t
-     [ rdfs:label "es" ; rdf:value "es_ES.utf8" ]\t
-     ) ;
+	skosmos:languages (
+    	[ rdfs:label "ar" ; rdf:value "ar_EG.utf8" ]
+    	[ rdfs:label "zh" ; rdf:value "zh_CN.utf8" ]
+    	[ rdfs:label "en" ; rdf:value "en_GB.utf8" ]
+    	[ rdfs:label "fr" ; rdf:value "fr_FR.utf8" ]
+		[ rdfs:label "ru" ; rdf:value "ru_RU.utf8" ]
+		[ rdfs:label "es" ; rdf:value "es_ES.utf8" ]
+	) ;
 	skosmos:searchResultsSize 20 ;
 	skosmos:transitiveLimit 1000 ;
-	skosmos:logCaughtExceptions true ;\t
-     skosmos:logBrowserConsole true ;\t
-     skosmos:templateCache "/tmp/skosmos-template-cache" ;\t
-     skosmos:feedbackAddress "" ;\t
-     skosmos:feedbackSender "" ;\t
-     skosmos:feedbackEnvelopeSender "" ;\t
-     skosmos:uiLanguageDropdown false ;\t
-     skosmos:uiHoneypotEnabled true ;\t
-     skosmos:uiHoneypotTime 5 ;\t
-     skosmos:globalPlugins () .
+	skosmos:logCaughtExceptions true ;
+	skosmos:logBrowserConsole true ;
+	skosmos:templateCache "/tmp/skosmos-template-cache" ;
+	skosmos:feedbackAddress "" ;
+	skosmos:feedbackSender "" ;
+	skosmos:feedbackEnvelopeSender "" ;
+	skosmos:uiLanguageDropdown false ;
+	skosmos:uiHoneypotEnabled true ;
+	skosmos:uiHoneypotTime 5 ;
+	skosmos:globalPlugins () .
 
-:unbist a skosmos:Vocabulary, void:Dataset ;\t
- dc:title "UNBIS Thesaurus Remote" ;\t
- skosmos:shortName "UNBIST Remote" ;\t
- dc:subject :cat_general ;\t
- void:uriSpace "http://metadata.un.org/thesaurus/" ;\t
- skosmos:language "ar", "zh", "en", "fr", "ru", "es" ;\t
- skosmos:defaultLanguage "en" ;\t
- skosmos:fallbackLanguages "ar", "zh", "fr", "ru", "es" ;\t
- skosmos:explicitLanguageTags true ;\t
- skosmos:showTopConcepts true ;\t
- skosmos:fullAlphabeticalIndex true ;\t
- skosmos:groupClass eu:Domain ;\t
- skosmos:sortByNotation true ;\t
- skosmos:showNotation true ;\t
- skosmos:conceptSchemesInHierarchy true ;\t
- skosmos:mainConceptScheme <http://metadata.un.org/thesaurus/00> ;\t
- void:sparqlEndpoint <https://metadata.un.org/graphdb/repositories/UNBIST_core> ;\t
- skosmos:sparqlDialect "Generic" .
+:unbist a skosmos:Vocabulary, void:Dataset ;
+	dc:title "UNBIS Thesaurus Remote" ;
+	skosmos:shortName "UNBIST Remote" ;
+	dc:subject :cat_general ;
+	void:uriSpace "http://metadata.un.org/thesaurus/" ;
+	skosmos:language "ar", "zh", "en", "fr", "ru", "es" ;
+	skosmos:defaultLanguage "en" ;
+	skosmos:fallbackLanguages "ar", "zh", "fr", "ru", "es" ;
+	skosmos:explicitLanguageTags true ;
+	skosmos:showTopConcepts true ;
+	skosmos:fullAlphabeticalIndex true ;
+	skosmos:groupClass eu:Domain ;
+	skosmos:sortByNotation true ;
+	skosmos:showNotation true ;
+	skosmos:conceptSchemesInHierarchy true ;
+	skosmos:mainConceptScheme <http://metadata.un.org/thesaurus/00> ;
+	void:sparqlEndpoint <https://metadata.un.org/graphdb/repositories/UNBIST_core> ;
+	skosmos:sparqlDialect "Generic" .
 
-:sdg a skosmos:Vocabulary, void:Dataset ;\t
- dc:title "SDGs Ontology" ;\t
- skosmos:shortName "SDGO" ;\t
- dc:subject :cat_general ;\t
- void:uriSpace "http://metadata.un.org/sdg" ;\t
- skosmos:language "ar", "zh", "en", "fr", "ru", "es" ;\t
- skosmos:defaultLanguage "en" ;\t
- skosmos:fallbackLanguages "ar", "zh", "fr", "ru", "es" ;\t
- skosmos:explicitLanguageTags true ;\t
- skosmos:showTopConcepts true ;\t
- #skosmos:showAlphabeticalIndex false ;\t
- skosmos:showTopConcepts true ;\t
- skosmos:conceptSchemesInHierarchy true ;\t
- skosmos:defaultSidebarView "hierarchy" ;\t
- skosmos:sortByNotation true ;\t
- skosmos:showNotation true ;\t
- void:sparqlEndpoint <https://metadata.un.org/graphdb/repositories/SDG-test_core> .
+:sdg a skosmos:Vocabulary, void:Dataset ;
+	dc:title "SDGs Ontology" ;
+	skosmos:shortName "SDGO" ;
+	dc:subject :cat_general ;
+	void:uriSpace "http://metadata.un.org/sdg" ;
+	skosmos:language "ar", "zh", "en", "fr", "ru", "es" ;
+	skosmos:defaultLanguage "en" ;
+	skosmos:fallbackLanguages "ar", "zh", "fr", "ru", "es" ;
+	skosmos:explicitLanguageTags true ;
+	skosmos:showTopConcepts true ;
+	#skosmos:showAlphabeticalIndex false ;
+	skosmos:showTopConcepts true ;
+	skosmos:conceptSchemesInHierarchy true ;
+	skosmos:defaultSidebarView "hierarchy" ;
+	skosmos:sortByNotation true ;
+	skosmos:showNotation true ;
+	void:sparqlEndpoint <https://metadata.un.org/graphdb/repositories/SDG-test_core> .
 
-:unms a skosmos:Vocabulary, void:Dataset ;\t
- dc:title "UN Member States" ;\t
- skosmos:shortName "UNMS" ;\t
- dc:subject :cat_general ;\t
- void:uriSpace "http://metadata.un.org/UNMS/" ;\t
- skosmos:language "ar", "zh", "en", "fr", "ru", "es" ;\t
- skosmos:defaultLanguage "en" ;\t
- skosmos:fallbackLanguages "ar", "zh", "fr", "ru", "es" ;\t
- skosmos:explicitLanguageTags true ;\t
- skosmos:showTopConcepts true ;\t
- skosmos:propertyLabelOverride [ skosmos:property skos:prefLabel ; rdfs:label "Formal Name"@en ] ;\t
- skosmos:groupClass skos:ConceptScheme ;\t
- #skosmos:indexShowClass <http://metadata.un.org/UNMS/ontology#State> ;\t
- skosmos:fullAlphabeticalIndex true ;\t
- skosmos:conceptSchemesInHierarchy true ;\t
- skosmos:mainConceptScheme <http://metadata.un.org/UNMS/> ;\t
- void:sparqlEndpoint <https://metadata.un.org/graphdb/repositories/UNMS_core> .
+:unms a skosmos:Vocabulary, void:Dataset ;
+	dc:title "UN Member States" ;
+	skosmos:shortName "UNMS" ;
+	dc:subject :cat_general ;
+	void:uriSpace "http://metadata.un.org/UNMS/" ;
+	skosmos:language "ar", "zh", "en", "fr", "ru", "es" ;
+	skosmos:defaultLanguage "en" ;
+	skosmos:fallbackLanguages "ar", "zh", "fr", "ru", "es" ;
+	skosmos:explicitLanguageTags true ;
+	skosmos:showTopConcepts true ;
+	skosmos:propertyLabelOverride [ skosmos:property skos:prefLabel ; rdfs:label "Formal Name"@en ] ;
+	skosmos:groupClass skos:ConceptScheme ;
+	#skosmos:indexShowClass <http://metadata.un.org/UNMS/ontology#State> ;
+	skosmos:fullAlphabeticalIndex true ;
+	skosmos:conceptSchemesInHierarchy true ;
+	skosmos:mainConceptScheme <http://metadata.un.org/UNMS/> ;
+	void:sparqlEndpoint <https://metadata.un.org/graphdb/repositories/UNMS_core> .
 
-:categories a skos:ConceptScheme;\t
- skos:prefLabel "Skosmos Vocabulary Categories"@en .
+:categories a skos:ConceptScheme;
+	skos:prefLabel "Skosmos Vocabulary Categories"@en .
 
-:cat_general a skos:Concept ;\t
- skos:topConceptOf :categories ;\t
- skos:inScheme :categories ;\t
- skos:prefLabel "Yleiskäsitteet"@fi,\t
- "Allmänna begrepp"@sv,\t
- "General concepts"@en .
+:cat_general a skos:Concept ;
+	skos:topConceptOf :categories ;
+	skos:inScheme :categories ;
+	skos:prefLabel "Yleiskäsitteet"@fi,
+	"Allmänna begrepp"@sv,
+	"General concepts"@en .
 
-mdrtype:THESAURUS a skos:Concept ;\t
- skos:prefLabel "Тезаурус"@bg, "Tezaurus"@cs, "Tesaurus"@da, "Thesaurus"@de,\t
- "Θησαυρός"@el, "Thesaurus"@en, "Tesaurus"@et, "Tesaurus"@fi,\t
-"Thésaurus"@fr, "Pojmovnik"@hr, "Tezaurusz"@hu, "Tesauro"@it,\t
-"Tēzaurs"@lv, "Tezauras"@lt, "Teżawru"@mt, "Thesaurus"@nl,\t
-"Tesaurus"@no, "Tezaurus"@pl, "Tesauro"@pt, "Tezaur"@ro,\t
-"Synonymický slovník"@sk, "Tezaver"@sl, "Tesauro"@es, "Tesaurus"@sv .
+mdrtype:THESAURUS a skos:Concept ;
+	skos:prefLabel 	"Тезаурус"@bg, "Tezaurus"@cs, "Tesaurus"@da, "Thesaurus"@de,
+					"Θησαυρός"@el, "Thesaurus"@en, "Tesaurus"@et, "Tesaurus"@fi,
+					"Thésaurus"@fr, "Pojmovnik"@hr, "Tezaurusz"@hu, "Tesauro"@it,
+					"Tēzaurs"@lv, "Tezauras"@lt, "Teżawru"@mt, "Thesaurus"@nl,
+					"Tesaurus"@no, "Tezaurus"@pl, "Tesauro"@pt, "Tezaur"@ro,
+					"Synonymický slovník"@sk, "Tezaver"@sl, "Tesauro"@es, 
+					"Tesaurus"@sv .
 
-mdrtype:ONTOLOGY a skos:Concept ;\t
- skos:prefLabel "Онтология"@bg, "Ontologie"@cs, "Ontologi"@da, "Ontologie"@de,\t
- "Οντολογία"@el, "Ontology"@en, "Ontoloogia"@et, "Ontologia"@fi,\t
-"Ontologie"@fr, "Ontologija"@hr, "Ontológia"@hu, "Ontologia"@it,\t
-"Ontoloģija"@lv, "Ontologija"@lt, "Ontoloġija"@mt, "Ontologie"@nl,\t
-"Ontologi"@no, "Struktura pojęciowa"@pl, "Ontologia"@pt,\t
-"Ontologie"@ro, "Ontológia"@sk, "Ontologija"@sl, "Ontología"@es,\t
-"Ontologi"@sv .
+mdrtype:ONTOLOGY a skos:Concept ;
+	skos:prefLabel 	"Онтология"@bg, "Ontologie"@cs, "Ontologi"@da, "Ontologie"@de,
+					"Οντολογία"@el, "Ontology"@en, "Ontoloogia"@et, "Ontologia"@fi,
+					"Ontologie"@fr, "Ontologija"@hr, "Ontológia"@hu, "Ontologia"@it,
+					"Ontoloģija"@lv, "Ontologija"@lt, "Ontoloġija"@mt, "Ontologie"@nl,
+					"Ontologi"@no, "Struktura pojęciowa"@pl, "Ontologia"@pt,
+					"Ontologie"@ro, "Ontológia"@sk, "Ontologija"@sl, "Ontología"@es,
+					"Ontologi"@sv .
