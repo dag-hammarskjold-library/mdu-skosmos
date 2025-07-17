@@ -25,10 +25,10 @@
 	skosmos:serviceName "UN Linked Data" ;
 	skosmos:baseHref "https://metadata.un.org/skosmos/" ;
 	skosmos:languages (
-    	[ rdfs:label "ar" ; rdf:value "ar_EG.utf8" ]
-    	[ rdfs:label "zh" ; rdf:value "zh_CN.utf8" ]
-    	[ rdfs:label "en" ; rdf:value "en_GB.utf8" ]
-    	[ rdfs:label "fr" ; rdf:value "fr_FR.utf8" ]
+		[ rdfs:label "ar" ; rdf:value "ar_EG.utf8" ]
+		[ rdfs:label "zh" ; rdf:value "zh_CN.utf8" ]
+		[ rdfs:label "en" ; rdf:value "en_GB.utf8" ]
+		[ rdfs:label "fr" ; rdf:value "fr_FR.utf8" ]
 		[ rdfs:label "ru" ; rdf:value "ru_RU.utf8" ]
 		[ rdfs:label "es" ; rdf:value "es_ES.utf8" ]
 	) ;
@@ -112,18 +112,18 @@
 
 mdrtype:THESAURUS a skos:Concept ;
 	skos:prefLabel 	"Тезаурус"@bg, "Tezaurus"@cs, "Tesaurus"@da, "Thesaurus"@de,
-					"Θησαυρός"@el, "Thesaurus"@en, "Tesaurus"@et, "Tesaurus"@fi,
-					"Thésaurus"@fr, "Pojmovnik"@hr, "Tezaurusz"@hu, "Tesauro"@it,
-					"Tēzaurs"@lv, "Tezauras"@lt, "Teżawru"@mt, "Thesaurus"@nl,
-					"Tesaurus"@no, "Tezaurus"@pl, "Tesauro"@pt, "Tezaur"@ro,
-					"Synonymický slovník"@sk, "Tezaver"@sl, "Tesauro"@es, 
-					"Tesaurus"@sv .
+			"Θησαυρός"@el, "Thesaurus"@en, "Tesaurus"@et, "Tesaurus"@fi,
+			"Thésaurus"@fr, "Pojmovnik"@hr, "Tezaurusz"@hu, "Tesauro"@it,
+			"Tēzaurs"@lv, "Tezauras"@lt, "Teżawru"@mt, "Thesaurus"@nl,
+			"Tesaurus"@no, "Tezaurus"@pl, "Tesauro"@pt, "Tezaur"@ro,
+			"Synonymický slovník"@sk, "Tezaver"@sl, "Tesauro"@es, 
+			"Tesaurus"@sv .
 
 mdrtype:ONTOLOGY a skos:Concept ;
 	skos:prefLabel 	"Онтология"@bg, "Ontologie"@cs, "Ontologi"@da, "Ontologie"@de,
-					"Οντολογία"@el, "Ontology"@en, "Ontoloogia"@et, "Ontologia"@fi,
-					"Ontologie"@fr, "Ontologija"@hr, "Ontológia"@hu, "Ontologia"@it,
-					"Ontoloģija"@lv, "Ontologija"@lt, "Ontoloġija"@mt, "Ontologie"@nl,
-					"Ontologi"@no, "Struktura pojęciowa"@pl, "Ontologia"@pt,
-					"Ontologie"@ro, "Ontológia"@sk, "Ontologija"@sl, "Ontología"@es,
-					"Ontologi"@sv .
+			"Οντολογία"@el, "Ontology"@en, "Ontoloogia"@et, "Ontologia"@fi,
+			"Ontologie"@fr, "Ontologija"@hr, "Ontológia"@hu, "Ontologia"@it,
+			"Ontoloģija"@lv, "Ontologija"@lt, "Ontoloġija"@mt, "Ontologie"@nl,
+			"Ontologi"@no, "Struktura pojęciowa"@pl, "Ontologia"@pt,
+			"Ontologie"@ro, "Ontológia"@sk, "Ontologija"@sl, "Ontología"@es,
+			"Ontologi"@sv .
