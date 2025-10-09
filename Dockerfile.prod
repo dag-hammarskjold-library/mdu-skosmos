@@ -1,0 +1,80 @@
+FROM ubuntu:24.04
+
+WORKDIR /var/www/html
+
+RUN apt-get update && apt-get install -y \
+    apache2 \
+    curl \
+    gettext \
+    git \
+    libapache2-mod-php8.3 \
+    locales \
+    npm \
+    php8.3 \
+    php8.3-curl \
+    php8.3-xsl \
+    php8.3-intl \
+    php8.3-mbstring \
+    php-apcu \
+    php-zip \
+    unzip \
+ && rm -rf /var/lib/apt/lists/*
+
+RUN rm /var/www/html/index.html
+
+RUN git clone https://github.com/NatLibFi/Skosmos.git /var/www/html
+RUN git checkout v2.18.1
+
+RUN npm install --omit=dev --ignore-scripts
+
+ARG DEBIAN_FRONTEND=noninteractive
+
+RUN sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && \
+    locale-gen \
+        ar_AE.utf8 \
+        en_GB.utf8 \
+        es_ES.utf8 \
+        fr_FR.utf8 \
+        ru_RU.utf8 \
+        zh_CN.utf8
+ENV LANGUAGE=en_US:en  
+ENV LC_ALL=en_US.UTF-8 
+ENV LANG=en_US.UTF-8  
+
+# timezone
+RUN sed -i 's/;date.timezone =/date.timezone = "UTC"/g' /etc/php/8.3/apache2/php.ini
+
+COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
+
+RUN a2enmod rewrite
+RUN a2enmod expires
+
+# set ServerName & redirect error log to stderr for docker logs
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf && \
+        sed -ri \
+        -e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/1!g' \
+        "/etc/apache2/apache2.conf"
+
+WORKDIR /var/www/html
+
+# composer and packages layer
+RUN curl -sS https://getcomposer.org/installer | php
+
+RUN php composer.phar install --no-dev 
+
+COPY config.ttl.prod /var/www/html/config.ttl
+
+# Replace with our corrected file
+COPY model/sparql/GenericSparql.php /var/www/html/model/sparql/GenericSparql.php
+
+WORKDIR /var/www/html/resource/translations
+RUN rm -fr /var/www/html/resource/translations/*
+COPY resource/translations/*.po /var/www/html/resource/translations/
+COPY resource/translations/compile-translations /var/www/html/resource/translations
+RUN sh compile-translations
+
+HEALTHCHECK --interval=5s --timeout=3s --retries=3 CMD curl -f http://localhost || exit 1
+
+EXPOSE 80
+
+CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
