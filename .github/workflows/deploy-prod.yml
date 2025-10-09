@@ -1,0 +1,64 @@
+name: Deploy to Production from latest release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Fetch all history for accurate tagging
+          
+      - name: Get latest release tag from GitHub API
+        id: get_latest_release
+        run: |
+          latest_tag=$(curl -s https://api.github.com/repos/${{ github.repository }}/releases/latest | jq -r .tag_name)
+          echo "latest_tag=$latest_tag" >> $GITHUB_OUTPUT
+
+      - name: Checkout latest release
+        run: |
+          git checkout ${{ steps.get_latest_release.outputs.latest_tag }}
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Build Docker image
+        run: |
+          docker build -t ${{ steps.login-ecr.outputs.registry }}/mdu-skosmos:prod \
+            -f Dockerfile .
+    
+      - name: Push Docker image
+        run: |
+          docker push ${{ steps.login-ecr.outputs.registry }}/mdu-skosmos:prod
+
+      - name: Prepare ECS task definition
+        run: |
+          sed "s|<account_id>|${{ secrets.AWS_ACCOUNT_ID }}|g" ecs/ecs-task-definition.json.template > ecs/ecs-task-definition.json.tmp
+          sed "s|mdu-skosmos-dev|mdu-skosmos-prod|g" ecs/ecs-task-definition.json.tmp > ecs/ecs-task-definition.json
+
+      - name: Fill in image id in ECS task definition
+        id: task-def
+        uses: aws-actions/amazon-ecs-render-task-definition@v1
+        with:
+          task-definition: ./ecs/ecs-task-definition.json
+          container-name: mdu-skosmos-prod
+          image: ${{ steps.login-ecr.outputs.registry }}/mdu-skosmos:prod
+
+      - name: Deploy to ECS
+        uses: aws-actions/amazon-ecs-deploy-task-definition@v2
+        with:
+          cluster: mdu-skosmos-prod-cluster
+          service: mdu-skosmos-prod-task-service
+          task-definition: ${{ steps.task-def.outputs.task-definition }}
+          wait-for-service-stability: true
