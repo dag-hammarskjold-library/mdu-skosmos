@@ -1,4 +1,4 @@
-name: Build Docker image and push to UAT on release
+name: Build Docker image and push to dev on release
 
 on:
   push:

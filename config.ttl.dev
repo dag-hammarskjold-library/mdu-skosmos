@@ -36,7 +36,7 @@
     skosmos:serviceName "UN Linked Data" ;
     # customize the base element. Set this if the automatic base url detection doesn't work. For example setups behind a proxy.
     # skosmos:baseHref "http://localhost/Skosmos/" ;
-    # skosmos:baseHref "https://metadata.un.org/skosmos/" ;
+    skosmos:baseHref "https://metadata.un.org/skosmos/" ;
     # interface languages available, and the corresponding system locales
     skosmos:languages (
         [ rdfs:label "ar" ; rdf:value "ar_AE.utf8" ]
