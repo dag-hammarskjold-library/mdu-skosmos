@@ -1,6 +1,6 @@
 FROM ubuntu:24.04
 
-WORKDIR /var/www/html
+WORKDIR /var/www/html/skosmos-dev
 
 RUN apt-get update && apt-get install -y \
     apache2 \
@@ -22,7 +22,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN rm /var/www/html/index.html
 
-RUN git clone https://github.com/NatLibFi/Skosmos.git /var/www/html
+RUN git clone https://github.com/NatLibFi/Skosmos.git /var/www/html/skosmos-dev
 RUN git checkout v2.18.1
 
 RUN npm install --omit=dev --ignore-scripts
@@ -55,22 +55,22 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf && \
         -e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/1!g' \
         "/etc/apache2/apache2.conf"
 
-WORKDIR /var/www/html
+WORKDIR /var/www/html/skosmos-dev
 
 # composer and packages layer
 RUN curl -sS https://getcomposer.org/installer | php
 
 RUN php composer.phar install --no-dev 
 
-COPY config.ttl.dev /var/www/html/config.ttl
+COPY config.ttl.dev /var/www/html/skosmos-dev/config.ttl
 
 # Replace with our corrected file
 COPY model/sparql/GenericSparql.php /var/www/html/model/sparql/GenericSparql.php
 
-WORKDIR /var/www/html/resource/translations
-RUN rm -fr /var/www/html/resource/translations/*
-COPY resource/translations/*.po /var/www/html/resource/translations/
-COPY resource/translations/compile-translations /var/www/html/resource/translations
+WORKDIR /var/www/html/skosmos-dev/resource/translations
+RUN rm -fr /var/www/html/skosmos-dev/resource/translations/*
+COPY resource/translations/*.po /var/www/html/skosmos-dev/resource/translations/
+COPY resource/translations/compile-translations /var/www/html/skosmos-dev/resource/translations
 RUN sh compile-translations
 
 HEALTHCHECK --interval=5s --timeout=3s --retries=3 CMD curl -f http://localhost || exit 1
