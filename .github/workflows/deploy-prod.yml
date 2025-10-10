@@ -1,4 +1,4 @@
-name: Deploy to Production from latest release
+name: Manually deploy to Production from latest release
 
 on:
   workflow_dispatch:
