@@ -65,7 +65,7 @@ RUN php composer.phar install --no-dev
 COPY config.ttl.dev /var/www/html/skosmos-dev/config.ttl
 
 # Replace with our corrected file
-COPY model/sparql/GenericSparql.php /var/www/html/model/sparql/GenericSparql.php
+COPY model/sparql/GenericSparql.php /var/www/html/skosmos-dev/model/sparql/GenericSparql.php
 
 WORKDIR /var/www/html/skosmos-dev/resource/translations
 RUN rm -fr /var/www/html/skosmos-dev/resource/translations/*
