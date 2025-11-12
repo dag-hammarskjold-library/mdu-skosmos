@@ -113,8 +113,16 @@
         {% if request.vocab.config.hasMultiLingualProperty(property.type) %}
           {% for language,labels in concept.allLabels(property.type) %}
             {% for value in labels %}
+              {% if langage == request.lang %}
             <div class="row other-languages{% if loop.first %} first-of-language{% endif %}">
-            <div class="versal col-6{% if value.type == "skos:altLabel" %} replaced{% endif %}">{% if value.containsHtml %}{{ value.label|raw }}{% else %}{{ value.label }}{% endif %}</div><div class="versal col-6">{% if loop.first %} {{ language }}{% endif %}</div></div>
+            <div class="versal col-6{% if value.type == "skos:altLabel" %} replaced{% endif %}">
+              {% if value.containsHtml %}
+                {{ value.label|raw }}
+              {% else %}
+                {{ value.label }}
+              {% endif %}
+            </div>
+            <!-- <div class="versal col-6">{% if loop.first %} {{ language }}{% endif %}</div></div> -->
             {% endfor %}
           {% endfor %}
         {% else %}
