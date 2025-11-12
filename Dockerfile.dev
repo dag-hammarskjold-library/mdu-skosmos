@@ -68,7 +68,10 @@ COPY config.ttl.dev /var/www/html/skosmos-dev/config.ttl
 COPY model/sparql/GenericSparql.php /var/www/html/skosmos-dev/model/sparql/GenericSparql.php
 
 # Copy views
-COPY view/* /var/www/html/skosmos-dev/view/
+COPY view/about.inc.dist /var/www/html/skosmos-dev/view/about.inc.dist
+COPY view/about.twig /var/www/html/skosmos-dev/view/about.twig
+COPY view/concept-shared.twig /var/www/html/skosmos-dev/view/concept-shared.twig
+COPY view/vocab-shared.twig /var/www/html/skosmos-dev/view/vocab-shared.twig
 
 WORKDIR /var/www/html/skosmos-dev/resource/translations
 RUN rm -fr /var/www/html/skosmos-dev/resource/translations/*
