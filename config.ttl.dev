@@ -96,6 +96,23 @@
     void:sparqlEndpoint <https://metadata.un.org/graphdb/repositories/UNBIST_core> ;
     skosmos:sparqlDialect "Generic" .
 
+:unbist2 a skosmos:Vocabulary, void:Dataset ;
+    dc:title "UNBIS Thesaurus Test" ;
+    skosmos:shortName "UNBIST" ;
+    dc:subject :cat_general ;
+    void:uriSpace "http://metadata.un.org/thesaurus/" ;
+    skosmos:language "ar", "zh", "en", "fr", "ru", "es" ;
+    skosmos:defaultLanguage "en" ;
+    skosmos:fallbackLanguages "ar", "zh", "fr", "ru", "es" ;
+    skosmos:explicitLanguageTags true ;
+    skosmos:groupClass eu:Domain ;
+    skosmos:sortByNotation true ;
+    skosmos:showNotation true ;
+    skosmos:conceptSchemesInHierarchy true ;
+    skosmos:mainConceptScheme <http://metadata.un.org/thesaurus/00> ;
+    void:sparqlEndpoint <https://metadata.un.org/graphdb/repositories/UNBIST-test_core> ;
+    skosmos:sparqlDialect "Generic" .
+
 :sdg a skosmos:Vocabulary, void:Dataset ;
     dc:title "SDGs Ontology" ;
     skosmos:shortName "SDGO" ;
