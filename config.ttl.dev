@@ -86,8 +86,8 @@
     skosmos:defaultLanguage "en" ;
     skosmos:fallbackLanguages "ar", "zh", "fr", "ru", "es" ;
     skosmos:explicitLanguageTags true ;
-    skosmos:showTopConcepts true ;
-    skosmos:fullAlphabeticalIndex true ;
+    #skosmos:showTopConcepts true ;
+    #skosmos:fullAlphabeticalIndex true ;
     skosmos:groupClass eu:Domain ;
     skosmos:sortByNotation true ;
     skosmos:showNotation true ;
