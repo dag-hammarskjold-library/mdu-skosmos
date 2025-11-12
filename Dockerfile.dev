@@ -67,6 +67,9 @@ COPY config.ttl.dev /var/www/html/skosmos-dev/config.ttl
 # Replace with our corrected file
 COPY model/sparql/GenericSparql.php /var/www/html/skosmos-dev/model/sparql/GenericSparql.php
 
+# Copy views
+COPY view/* /var/www/html/skosmos-dev/view/
+
 WORKDIR /var/www/html/skosmos-dev/resource/translations
 RUN rm -fr /var/www/html/skosmos-dev/resource/translations/*
 COPY resource/translations/*.po /var/www/html/skosmos-dev/resource/translations/
