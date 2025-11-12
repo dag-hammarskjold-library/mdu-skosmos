@@ -94,7 +94,7 @@
 
       {% for property in concept.properties %} {# loop through ConceptProperty objects #}
         <!-- todo: get rid of skos:note, skos:histoyyNote, and dcterms:identifier -->
-        {% if property.getSubPropertyOf != 'skos:hiddenLabel' %}
+        {% if property.getSubPropertyOf != 'skos:hiddenLabel' and property.getSubPropertyOf != 'skos:note' and property.getSubPropertyOf != 'skos:historyNote' and property.getSubPropertyOf != 'dcterms:identifier' %}
         <div class="row{% if property.type == 'dc:isReplacedBy' %} replaced-by{% endif%} property prop-{{property.ID}}">
           <div class="property-label">
             <h3 class="versal{% if property.type == 'rdf:type' %}-bold{% endif %}
