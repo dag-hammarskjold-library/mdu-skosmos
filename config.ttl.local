@@ -70,7 +70,7 @@
     skosmos:templateCache "/tmp/skosmos-template-cache" ;
     
     # customize the css by adding your own stylesheet
-    # skosmos:customCss "resource/css/stylesheet.css" ;
+    skosmos:customCss "resource/css/custom.css" ;
 
     # default email address where to send the feedback
     skosmos:feedbackAddress "" ;
@@ -97,7 +97,7 @@
 # Skosmos vocabularies
 
 :unbist a skosmos:Vocabulary, void:Dataset ;
-    dc:title "UN Thesaurus"@en, ""@ar, ""@zh, ""@fr, ""@ru, ""@es ;
+    dc:title "UN Thesaurus"@en, ""@ar, "联合国叙词表"@zh, ""@fr, ""@ru, ""@es ;
     skosmos:shortName "UNBIST" ;
     dc:subject :cat_general ;
     void:uriSpace "http://metadata.un.org/thesaurus/" ;
@@ -116,7 +116,7 @@
     skosmos:sparqlDialect "Generic" .
 
 :unbist2 a skosmos:Vocabulary, void:Dataset ;
-    dc:title "UN Thesaurus Test"@en, ""@ar, ""@zh, ""@fr, ""@ru, ""@es ;
+    dc:title "UN Thesaurus Test"@en, ""@ar, "联合国叙词表 (Test)"@zh, ""@fr, ""@ru, ""@es ;
     skosmos:shortName "UNBIST" ;
     dc:subject :cat_general ;
     void:uriSpace "http://metadata.un.org/thesaurus/" ;

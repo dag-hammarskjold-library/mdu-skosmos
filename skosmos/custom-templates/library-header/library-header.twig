@@ -1,0 +1,163 @@
+<style>
+#un-brand-bar {
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    border: none !important;
+    border-bottom: #009edb solid 5px !important;
+    min-height: auto;
+}
+.un-navbar-default {
+    border-color: #e7e7e7;
+}
+.un-navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}
+@media (min-width: 768px) {
+    .un-navbar-fixed-top, .un-navbar-fixed-bottom {
+        border-radius: 0;
+    }
+}
+.un-navbar-fixed-top, .un-navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.un-navbar::before, .un-navbar::after {
+    display: table;
+    content: " ";
+}
+#un-brand-bar .un-brandbar-header {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+#un-brand-bar .navbar-toggle {
+    margin: 1rem;
+}
+.language-switcher button.navbar-toggle {
+    margin-top: 0;
+    border: none;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    margin-right: 2px;
+}
+.un-navbar-default .navbar-toggle {
+    border-color: #ddd;
+}
+.un-navbar-brand {
+    float: left;
+    height: auto;
+    padding: 0 0;
+    font-size: 1.2857142857rem;
+    line-height: 1.428571429rem;
+}
+@media (min-width: 768px) {
+    .un-navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+        margin-left: 0;
+    }
+}
+#un-brand-bar .un-brandbar-header a.navbar-brand::before {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 600;
+    color: black;
+    content: "\f015";
+    font-size: 0.9rem;
+    margin-right: 0.8rem;
+    float: left;
+}
+#un-brand-bar .un-brandbar-header a.navbar-brand {
+    color: black;
+    font-size: 0.75rem;
+    margin-right: 0.8rem;
+    float: left;
+}
+
+.language-switcher {
+    margin-right: auto;
+    margin-left: auto;
+}
+.language-switcher #language-switcher {
+    border-top: none;
+    padding: 0;
+    float: right;
+}
+
+</style>
+<nav id="un-brand-bar" class="navbar un-navbar-default un-navbar-fixed-top" role="navigation">
+	<!-- UN global brand bar -->
+	<div class="container-fluid un-brandbar-header language-switcher">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#language-switcher" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/">Welcome to the United Nations</a>
+		</div>
+		<div class="navbar-collapse collapse" id="language-switcher">
+			<nav role="navigation">
+				<ul class="language-switcher-locale-url nav navbar-nav navbar-right" role="menu">
+					<ul class="language-switcher-locale-url">
+						<li class="ar first">
+							<a href="/ar/library" class="language-link" xml:lang="ar" title="مكتبة داغ همرشولد" role="menuitem">العربية</a>
+						</li>
+						<li class="zh-hans">
+							<a href="/zh/library" class="language-link" xml:lang="zh-hans" title="图书馆" role="menuitem">中文</a>
+						</li>
+						<li class="nl">
+							<span class="language-link locale-untranslated" xml:lang="nl" role="menuitem">Nederlands</span>
+						</li>
+						<li class="en active">
+							<a href="/en/library" class="language-link active" xml:lang="en" title="Library" role="menuitem">English</a>
+						</li>
+						<li class="fr">
+							<a href="/fr/library" class="language-link" xml:lang="fr" title="Bibliothèque Dag Hammarskjöld" role="menuitem">Français</a>
+						</li>
+						<li class="de">
+							<span class="language-link locale-untranslated" xml:lang="de" role="menuitem">Deutsch</span>
+						</li>
+						<li class="ht">
+							<span class="language-link locale-untranslated" xml:lang="ht" role="menuitem">Kreyòl</span>
+						</li>
+						<li class="hi">
+							<span class="language-link locale-untranslated" xml:lang="hi" role="menuitem">हिन्दी</span>
+						</li>
+						<li class="id">
+							<span class="language-link locale-untranslated" xml:lang="id" role="menuitem">Bahasa Indonesia</span>
+						</li>
+						<li class="it">
+							<span class="language-link locale-untranslated" xml:lang="it" role="menuitem">Italiano</span>
+						</li>
+						<li class="pl">
+							<span class="language-link locale-untranslated" xml:lang="pl" role="menuitem">Polski</span>
+						</li>
+						<li class="pt">
+							<span class="language-link locale-untranslated" xml:lang="pt" role="menuitem">Português</span>
+						</li>
+						<li class="ru">
+							<a href="/ru/library" class="language-link" xml:lang="ru" title="Дага Хаммаршельда Библиотека" role="menuitem">Русский</a>
+						</li>
+						<li class="es">
+							<a href="/es/library" class="language-link" xml:lang="es" title="Biblioteca Dag Hammarskjöld" role="menuitem">Español</a>
+						</li>
+						<li class="sw">
+							<span class="language-link locale-untranslated" xml:lang="sw" role="menuitem">Kiswahili</span>
+						</li>
+						<li class="tr">
+							<span class="language-link locale-untranslated" xml:lang="tr" role="menuitem">Türkçe</span>
+						</li>
+						<li class="uk last">
+							<span class="language-link locale-untranslated" xml:lang="uk" role="menuitem">Українська</span>
+						</li>
+					</ul>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<!-- /.container -->
+</nav>
+

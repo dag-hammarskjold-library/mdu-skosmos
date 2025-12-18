@@ -42,15 +42,25 @@
   --tooltip-border-color: var(--secondary-medium-color);
 
   /* Font definitions */
-  --font-size: 1em; /* same as the browser default font size, often 16px */
-  --font-family: "Roboto";
-  --font-family-heading: "Roboto";
+  /*--font-size: 1rem; /* same as the browser default font size, often 16px */
+  --font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-heading: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --fa-style-family-classic: 'Font Awesome 6 Free';
+  --fa-font-solid: normal 900 1em/1 'Font Awesome 6 Free';
+  --fa-font-regular: normal 400 1em/1 'Font Awesome 6 Free';
+}
+
+html, body {
+  height: 100%;
 }
 
 body {
   color: var(--dark-color);
   font-family: var(--font-family);
-  font-size: var(--font-size);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.43;
+  color: #333333;
 }
 
 /* Utilities
@@ -110,7 +120,7 @@ header .container-fluid .row {
 /* Topbar
 -------------------------------------- */
 #skosmos-logo-top {
-  background-image: url("../pics/skosmos-NEGA-RGB.svg");
+  /* background-image: url("../pics/skosmos-NEGA-RGB.svg"); */
   background-repeat: no-repeat;
   width: 168px;
   height: 60px;
@@ -151,6 +161,7 @@ header .container-fluid .row {
 /* Headerbar
 -------------------------------------- */
 
+/*
 #skosmos-logo {
   background-image: url("../pics/skosmos-RGB.svg");
   background-repeat: no-repeat;
@@ -159,6 +170,7 @@ header .container-fluid .row {
   height: 80px;
   background-size: 300px;
 }
+*/
 
 #vocab-title {
   font-size: 2.5rem;

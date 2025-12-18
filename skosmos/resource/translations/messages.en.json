@@ -121,7 +121,7 @@
     "rdfs:comment": "Description",
     "rdfs:label": "Label",
     "rdfs:seeAlso": "See also",
-    "skos:altLabel": "Entry terms",
+    "skos:altLabel": "Used for",
     "skos:altLabel_help": "Alternative terms for the concept.",
     "skos:broadMatch": "Broader matching concepts",
     "skos:broadMatch_help": "Broader matching concepts in another vocabulary.",
