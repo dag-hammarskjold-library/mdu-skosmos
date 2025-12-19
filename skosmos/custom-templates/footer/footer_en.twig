@@ -1,3 +1,4 @@
+{% if request.lang == 'en' %}
 <style>
 	.home-footer {
 		margin-top: 60px;
@@ -203,10 +204,13 @@
         padding-bottom: 3.3rem;
         border-top: none;
     }
+	.footer .footer-brand {
+		margin-left: -15px;
+	}
     .footer .footer-brand a {
         display: block;
         padding: 0;
-        width: 17rem;
+        width: 11rem;
         height: 3.3rem;
         background: url(//www.un.org/sites/un2.un.org/themes/bootstrap_un2/images/logo-en-reverse.svg) no-repeat;
         background-position: top left;
@@ -223,6 +227,146 @@
         white-space: nowrap;
         width: 1px;
     }
+	.footer .donate {
+		margin-top: 17px;
+		margin-left: 28px;
+		margin-right: 1px;
+		padding-left: 21px;
+		border-left: gray solid 1px;
+	}
+	.pull-right {
+		float: right !important;
+	}
+	.pull-left {
+		float: left !important;
+	}
+	.footer .btn.btn-default {
+		background-color: #ffffff;
+	}
+	.footer .btn-default {
+		color: #454545;
+		background-color: transparent;
+		border-color: #009edb;
+	}
+	.footer .btn {
+		font-weight: 700;
+		font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		letter-spacing: 1.27px;
+		text-transform: uppercase;
+		border: 1px solid transparent;
+		padding: 10px 20px;
+		font-size: 12px;
+		line-height: 1;
+		border-radius: 4px;
+		padding-top: 9px;
+	}
+	.footer .social-media {
+		margin-top: 8px;
+	}
+	footer.footer .social-media .nav.list-inline {
+		float: right;
+	}
+	.footer-fluid .home-footer ul {
+		font-size: 14px;
+		color: #454545;
+		letter-spacing: -0.35px;
+		line-height: 1.35;
+		margin-bottom: 20px;
+		margin-top: 0px;
+	}
+	.footer-fluid .list-inline {
+		padding-left: 0;
+		list-style: none;
+		margin-left: -5px;
+	}
+	.footer-fluid .footer.container.dark ul li::before {
+		content: "";
+	}
+	.social-media li.list-inline-item {
+		padding: 0;
+	}
+	.social-media .list-inline > li {
+		display: inline-block;
+		padding-right: 5px;
+		padding-left: 5px;
+		margin-top: 10px;
+	}
+	.social-media li.twitter a::before {
+		font-size: 24px;
+		font-family: var(--fa-brands) !important;
+		content: '\e61b';
+		color: #c4c4c4;
+		display: inline-block;
+	}
+	.social-media li.youtube a::before {
+		font-size: 24px;
+		font-family: var(--fa-brands) !important;
+		content: "";
+		color: #c4c4c4;
+		display: inline-block;
+	}
+	.social-media li.linkedin a::before {
+		font-size: 24px;
+		font-family: var(--fa-brands) !important;
+		content: "";
+		color: #c4c4c4;
+		display: inline-block;
+	}
+	.social-media li a span.icon-text {
+		border: 0;
+		clip: rect(1px, 1px, 1px, 1px);
+		-webkit-clip-path: inset(100%);
+		clip-path: inset(100%);
+		height: 1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
+	}
+	.footer .footer-links .divider {
+		border-top: #5b5b5b solid 1px;
+		margin: 16px 0 19px 0;
+		padding: 0 1rem;
+	}
+	.home-footer .divider {
+		border: none;
+		border-top: solid;
+		border-width: 3px;
+		border-color: #ededed;
+		/*margin: 0 1.4rem 2.5rem 1.4rem;*/
+	}
+	.footer .footer-links .nav {
+		margin-top: 0;
+		padding-top: 0;
+		font-size: 16px;
+		color: #454545;
+		letter-spacing: -0.35px;
+		line-height: 1.35;
+	}
+	.footer .footer-links .nav li {
+		display: inline;
+	}
+	.footer .footer-links .nav li > a {
+		font-weight: 500;
+		font-size: 12px;
+		color: white;
+		letter-spacing: 0.77px;
+		line-height: 1.1667;
+		padding: 0;
+		text-transform: uppercase;
+	}
+	.footer .footer-links .nav li {
+		padding: 0 13px 0 10px;
+		border-right: gray solid 3px;
+	}
+	.footer .footer-links .nav li.last {
+		padding-right: 0;
+		border-right: none;
+	}
+	.list-inline-item:not(:last-child) {
+		margin-right: 0;
+	}
 </style>
 <div class="section section-fluid home-footer gray-bg">
 	<div class="container">
@@ -432,6 +576,16 @@
 									<span class="icon-text">twitter</span>
 								</a>
 							</li>
+							<li class="list-inline-item youtube">
+								<a href="https://www.youtube.com/@DagHammarskj%C3%B6ldLibrary">
+									<span class="icon-text">youtube</span>
+								</a>
+							</li>
+							<li class="list-inline-item linkedin">
+								<a href="https://www.linkedin.com/company/un-library/">
+									<span class="icon-text">linkedin</span>
+								</a>
+							</li>					
 						</ul>
 					</div>
 					<!-- /social media links -->
@@ -478,3 +632,4 @@
 	</div>
 	<!-- UN.ORG footer end -->
 </div>
+{% endif %}

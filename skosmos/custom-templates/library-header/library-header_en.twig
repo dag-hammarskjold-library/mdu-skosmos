@@ -1,0 +1,509 @@
+{% if request.lang == 'en' %}
+	<style>
+
+		.navbar::after {
+			clear: both;
+		}
+		.navbar::before, .navbar::after {
+			display: table;
+			content: " ";
+		}
+		.navbar-right {
+			float: right !important;
+			margin-right: 0;
+		}
+		.navbar-left {
+			float: left !important;
+			margin-left: 0;
+		}
+		.navbar-default {
+			background-color: #f8f8f8;
+			border-color: #e7e7e7;
+		}
+		.navbar-fixed-top {
+			top: 0;
+			border-width: 0 0 1px;
+		}
+		.navbar-fixed-top, .navbar-fixed-bottom {
+			border-radius: 0;
+		}
+		.navbar-fixed-top, .navbar-fixed-bottom {
+			position: fixed;
+			right: 0;
+			left: 0;
+			z-index: 1030;
+		}
+		.container-fluid::after {
+			clear: both;
+		}
+		.container-fluid::before, .container-fluid::after {
+			display: table;
+			content: " ";
+		}
+		#brand-bar {
+			background: #f2f2f2;
+			margin: 0;
+			padding: 0;
+			border: none !important;
+			border-bottom: #009edb solid 5px !important;
+			min-height: auto;
+		}
+		#brand-bar .brandbar-header {
+			padding-left: 6rem;
+			padding-right: 6rem;
+		}
+		.container-fluid {
+			padding-right: 15px;
+			padding-left: 15px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		.navbar-header::after {
+			clear: both;
+		}
+		.navbar-header::before, .navbar-header::after {
+			display: table;
+			content: " ";
+		}
+		#brand-bar .navbar-header {
+			width: inherit;
+		}
+		.container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
+			margin-right: 0;
+			margin-left: 0;
+		}
+		.container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
+			margin-right: 0;
+			margin-left: 0;
+		}
+		@media (min-width: 768px) {
+			.navbar-header {
+				float: left;
+			}
+		}
+		.navbar-collapse::after {
+			clear: both;
+		}
+		.navbar-collapse::before, .navbar-collapse::after {
+			display: table;
+			content: " ";
+		}
+		.language-switcher #language-switcher {
+			border-top: none;
+			padding: 0;
+			float: right;
+		}
+		.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+			border-color: #e7e7e7;
+		}
+		@media (min-width: 768px) {
+			.container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
+				margin-right: 0;
+				margin-left: 0;
+			}
+		}
+		.container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
+			margin-right: 0;
+			margin-left: 0;
+		}
+		.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+			max-height: 340px;
+		}
+		@media (min-width: 768px) {
+			.navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+				padding-right: 0;
+				padding-left: 0;
+			}
+		}
+		@media (min-width: 768px) {
+			.container-fluid .navbar-collapse.collapse {
+				display: block !important;
+				height: auto !important;
+				padding-bottom: 0;
+				overflow: visible !important;
+			}
+		}
+		@media (min-width: 768px) {
+			.container-fluid .navbar-collapse {
+				width: auto;
+				border-top: 0;
+				box-shadow: none;
+			}
+		}
+		.container-fluid .navbar-collapse {
+			padding-right: 0;
+			padding-left: 0;
+			overflow-x: visible;
+			border-top: 1px solid transparent;
+			box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+			-webkit-overflow-scrolling: touch;
+		}
+		#language-switcher nav {
+			display: block;
+		}
+
+		.language-switcher {
+			margin-right: auto;
+			margin-left: auto;
+		}
+		.language-switcher #language-switcher {
+			border-top: none;
+			padding: 0;
+			float: right;
+		}
+		.language-switcher #language-switcher ul.language-switcher-locale-url {
+			list-style: none;
+			padding: 0;
+		}
+		
+		.language-switcher #language-switcher ul.language-switcher-locale-url li {
+			float: left;
+		}
+		.language-switcher #language-switcher ul.language-switcher-locale-url li {
+			list-style-image: none;
+			list-style-type: none;
+			margin-left: 0;
+		}
+		.language-switcher #language-switcher ul.language-switcher-locale-url li a {
+			padding: 7px 12px 10px;
+			background: transparent;
+			border-top: transparent solid 3px;
+			text-decoration: none;
+			color: black;
+		}
+		.language-switcher .navbar-collapse::after {
+			clear: both;
+		}
+		.language-switcher .navbar-collapse::before,
+		.navbar-collapse::after {
+			display: table;
+			content: " ";
+		}
+		.language-switcher .navbar-fixed-top .navbar-collapse,
+		.navbar-fixed-bottom .navbar-collapse {
+			max-height: 340px;
+		}
+		.language-switcher .navbar-collapse.collapse {
+			display: block !important;
+			height: auto !important;
+			padding-bottom: 0;
+			overflow: visible !important;
+		}
+		.language-switcher .navbar-default .navbar-collapse,
+		.navbar-default .navbar-form {
+			border-color: #e7e7e7;
+		}
+		.language-switcher .container > .navbar-header,
+		.container > .navbar-collapse,
+		.container-fluid > .navbar-header,
+		.container-fluid > .navbar-collapse {
+			margin-right: 0;
+			margin-left: 0;
+		}
+		body .locale-untranslated {
+			display: none;
+		}
+		.locale-untranslated {
+			font-style: normal;
+			text-decoration: line-through;
+		}
+		.language-switcher #language-switcher ul.language-switcher-locale-url li a.active {
+			font-weight: 700;
+			background-color: white;
+			border-top: #c5c5c5 solid 3px;
+		}
+
+		nav .language-switcher #language-switcher ul.language-switcher-locale-url li a:hover, nav .language-switcher #language-switcher ul.language-switcher-locale-url li a.active, nav .language-switcher #language-switcher ul.language-switcher-locale-url li a.active:hover {
+			background-color: inherit;
+			border-top: none;
+		}
+
+		#library-header .navbar-header {
+			padding-top: 39.7301012822px;
+			padding-bottom: 39.7301012822px;
+			width: 100%;
+		}
+	</style>
+	<nav
+		id="brand-bar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<!-- UN global brand bar -->
+		<div class="container-fluid brandbar-header language-switcher">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#language-switcher" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">Welcome to the United Nations</a>
+			</div>
+			<div class="navbar-collapse collapse" id="language-switcher">
+				<nav role="navigation">
+					<ul class="language-switcher-locale-url nav navbar-nav navbar-right" role="menu">
+						<ul class="language-switcher-locale-url">
+							<li class="ar first">
+								{% if request.lang == 'ar' %}
+									<a href="./ar" class="language-link active" xml:lang="ar" title="مكتبة داغ همرشولد" role="menuitem">العربية</a>
+								{% else %}
+									<a href="./ar" class="language-link" xml:lang="ar" title="مكتبة داغ همرشولد" role="menuitem">العربية</a>
+								{% endif %}
+							</li>
+							<li class="zh-hans">
+								{% if request.lang == 'zh' %}
+									<a href="./zh" class="language-link active" xml:lang="zh-hans" title="图书馆" role="menuitem">中文</a>
+								{% else %}
+									<a href="./zh" class="language-link" xml:lang="zh-hans" title="图书馆" role="menuitem">中文</a>
+								{% endif %}
+							</li>
+							<li class="nl">
+								<span class="language-link locale-untranslated" xml:lang="nl" role="menuitem">Nederlands</span>
+							</li>
+							<li class="en active">
+								{% if request.lang == 'en' %}
+									<a href="./en" class="language-link active" xml:lang="en" title="Library" role="menuitem">English</a>
+								{% else %}
+									<a href="./en" class="language-link" xml:lang="en" title="Library" role="menuitem">English</a>
+								{% endif %}
+							</li>
+							<li class="fr">
+								{% if request.lang == 'fr' %}
+									<a href="./fr" class="language-link active" xml:lang="fr" title="Bibliothèque Dag Hammarskjöld" role="menuitem">Français</a>
+								{% else %}
+									<a href="./fr" class="language-link" xml:lang="fr" title="Bibliothèque Dag Hammarskjöld" role="menuitem">Français</a>
+								{% endif %}
+							</li>
+							<li class="de">
+								<span class="language-link locale-untranslated" xml:lang="de" role="menuitem">Deutsch</span>
+							</li>
+							<li class="ht">
+								<span class="language-link locale-untranslated" xml:lang="ht" role="menuitem">Kreyòl</span>
+							</li>
+							<li class="hi">
+								<span class="language-link locale-untranslated" xml:lang="hi" role="menuitem">हिन्दी</span>
+							</li>
+							<li class="id">
+								<span class="language-link locale-untranslated" xml:lang="id" role="menuitem">Bahasa Indonesia</span>
+							</li>
+							<li class="it">
+								<span class="language-link locale-untranslated" xml:lang="it" role="menuitem">Italiano</span>
+							</li>
+							<li class="pl">
+								<span class="language-link locale-untranslated" xml:lang="pl" role="menuitem">Polski</span>
+							</li>
+							<li class="pt">
+								<span class="language-link locale-untranslated" xml:lang="pt" role="menuitem">Português</span>
+							</li>
+							<li class="ru">
+								{% if request.lang == 'ru' %}
+									<a href="./ru" class="language-link active" xml:lang="ru" title="Дага Хаммаршельда Библиотека" role="menuitem">Русский</a>
+								{% else %}
+									<a href="./ru" class="language-link" xml:lang="ru" title="Дага Хаммаршельда Библиотека" role="menuitem">Русский</a>
+								{% endif %}
+							</li>
+							<li class="es">
+								{% if request.lang == 'es' %}
+									<a href="./es" class="language-link active" xml:lang="es" title="Biblioteca Dag Hammarskjöld" role="menuitem">Español</a>
+								{% else %}
+									<a href="./es" class="language-link" xml:lang="es" title="Biblioteca Dag Hammarskjöld" role="menuitem">Español</a>
+								{% endif %}
+							</li>
+							<li class="sw">
+								<span class="language-link locale-untranslated" xml:lang="sw" role="menuitem">Kiswahili</span>
+							</li>
+							<li class="tr">
+								<span class="language-link locale-untranslated" xml:lang="tr" role="menuitem">Türkçe</span>
+							</li>
+							<li class="uk last">
+								<span class="language-link locale-untranslated" xml:lang="uk" role="menuitem">Українська</span>
+							</li>
+						</ul>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- /.container -->
+	</nav>
+
+	<div
+		id="library-header" class="container">
+		<!-- <nav class="navbar navbar-default"> -->
+		<div class="navbar-header">
+
+			<a class="logo navbar-btn pull-left flip emblem_menu_and_masthead" href="/en" title="United Nations">
+				<img src="https://www.un.org/sites/un2.un.org/themes/bootstrap_un2/logo.png" alt="UN logo">
+			</a>
+			<div class="navbar-brand-img-subtitle-1 col-md-5">
+				<a href="/en/library">Dag Hammarskjöld Library</a>
+			</div>
+
+
+			<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-main-menu">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+
+
+		<div class="collapse navbar-collapse" id="bs-navbar-main-menu">
+			<ul id="main-menu" class="nav navbar-nav">
+				<li class="menu-20243 top-level">
+					<a href="#" role="button" class="" aria-expanded="false" title="">About
+						<span class="sf-sub-indicator">
+							»</span>
+					</a>
+					<ul class="subnav" id="subnav-20243">
+						<li class="menu-20243">
+							<a href="/en/library/contact-us" title="" class="">Contact Us</a>
+						</li>
+						<li class="menu-20243">
+							<a href="/en/library/page/our-activities" title="" class="">Our Activities</a>
+						</li>
+						<li class="menu-20243">
+							<a href="/en/library/page/our-mandate-history" title="" class="">Our Mandate &amp; History</a>
+						</li>
+						<li class="menu-20243">
+							<a href="/en/library/page/our-collections" title="" class="">Our Collections</a>
+						</li>
+						<li class="menu-20243">
+							<a href="/en/library/page/united-nations-depository-library-programme" title="" class="">UN Depository Libraries</a>
+						</li>
+						<li class="menu-20243">
+							<a href="/en/library/librarynews" title="" class="">Library News</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu-20246 top-level">
+					<a href="#" role="button" class="" aria-expanded="false" title="">Research the UN
+						<span class="sf-sub-indicator">
+							»</span>
+					</a>
+					<ul class="subnav" id="subnav-20246">
+						<li class="menu-20246">
+							<a href="/en/library/page/un-resources-documents" title="" class="">UN Resources &amp; Documents</a>
+						</li>
+						<li class="menu-20246">
+							<a href="https://digitallibrary.un.org/" title="" class="">UN Digital Library</a>
+						</li>
+						<li class="menu-20246">
+							<a href="/en/library/page/index-proceedings" title="" class="">Index to Proceedings</a>
+						</li>
+						<li class="menu-20246">
+							<a href="http://metadata.un.org/" title="" class="">Linked Data Services</a>
+						</li>
+						<li class="menu-20246">
+							<a href="http://research.un.org/en" title="" class="">Research Guides</a>
+						</li>
+						<li class="menu-20246">
+							<a href="/en/library/page/speeches-and-meetings" title="" class="">Speeches</a>
+						</li>
+						<li class="menu-20246">
+							<a href="/en/library/page/voting-information" title="" class="">Voting Information</a>
+						</li>
+						<li class="menu-20246">
+							<a href="/en/library/unms" title="" class="">Member States on the Record</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu-20249 top-level">
+					<a href="#" role="button" class="" aria-expanded="false" title="">Find
+						<span class="sf-sub-indicator">
+							»</span>
+					</a>
+					<ul class="subnav" id="subnav-20249">
+						<li class="menu-20249">
+							<a href="/en/library/page/articles-books-more" title="" class="">Articles, Books &amp; More</a>
+						</li>
+						<li class="menu-20249">
+							<a href="/en/library/page/databases" title="" class="">Databases</a>
+						</li>
+						<li class="menu-20249">
+							<a href="/en/library/page/journals" title="" class="">Journals</a>
+						</li>
+						<li class="menu-20249">
+							<a href="/en/library/page/un-resources-documents" title="" class="">UN Resources &amp; Documents</a>
+						</li>
+						<li class="menu-20249">
+							<a href="/en/library/page/un-libraries" title="" class="">UN Libraries</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu-20252 top-level">
+					<a href="#" role="button" class="" aria-expanded="false" title="">Help
+						<span class="sf-sub-indicator">
+							»</span>
+					</a>
+					<ul class="subnav " id="subnav-20252">
+						<li class="menu-20252">
+							<a href="/en/library/page/training-and-events" title="" class="">Training</a>
+						</li>
+						<li class="menu-20252">
+							<a href="http://research.un.org/en" title="" class="">Research Guides</a>
+						</li>
+						<li class="menu-20252">
+							<a href="http://ask.un.org/" title="" class="">Ask DAG</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu-20255 top-level">
+					<a href="#" role="button" class="" aria-expanded="false" title="">Services for...
+						<span class="sf-sub-indicator">
+							»</span>
+					</a>
+					<ul class="subnav " id="subnav-20255">
+						<li class="menu-20255">
+							<a href="/en/library/page/services-delegates" title="" class="">Delegates</a>
+						</li>
+						<li class="menu-20255">
+							<a href="/en/library/page/services-un-staff" title="" class="">UN Staff</a>
+						</li>
+						<li class="menu-20255">
+							<a href="/en/library/page/services-researchers-and-librarians" title="" class="">Researchers &amp; Librarians</a>
+						</li>
+						<li class="menu-20255">
+							<a href="/en/library/page/services-general-public" title="" class="">General Public</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu-20258 top-level">
+					<a href="#" role="button" class="" aria-expanded="false" title="">Using the Library
+						<span class="sf-sub-indicator">
+							»</span>
+					</a>
+					<ul class="subnav " id="subnav-20258">
+						<li class="menu-20258">
+							<a href="/en/library/page/access-electronic-resources" title="" class="">Access Electronic Resources</a>
+						</li>
+						<li class="menu-20258">
+							<a href="/en/library/page/borrow-books-more" title="" class="">Borrow Books &amp; More</a>
+						</li>
+						<li class="menu-20258">
+							<a href="/en/library/page/request-articles-books-documents" title="" class="">Request Articles, Books &amp; Documents</a>
+						</li>
+						<li class="menu-20258">
+							<a href="/en/library/page/visit-library" title="" class="">Visit the Library</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu-47757 top-level">
+					<a href="https://www.un.org/en/library/OS" role="button" title="" class="">Open Science
+					</a>
+				</li>
+				<li class="menu-20261 top-level">
+					<a href="/en/library/contact-us" role="button" class="" aria-expanded="false" title="">Contact Us
+						<span class="sf-sub-indicator">
+							»</span>
+					</a>
+					<ul class="subnav " id="subnav-20261">
+						<li class="menu-20261">
+							<a href="/en/library/contact-us" title="" class="">Contact Us</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+{% endif %}
