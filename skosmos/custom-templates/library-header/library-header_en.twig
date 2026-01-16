@@ -640,6 +640,7 @@
 				</ul>
 			</div>
 		</div>
+		<!-- Vocabulary-level header -->
 		{% if request.vocabid == '' and request.page != 'about' and request.page != 'feedback' %}
 			<div class="collapse container mt-2 pe-0 py-3" id="global-search-bar">
 				<div class="row">
@@ -675,7 +676,23 @@
 				</div>
 				<div id="headerbar-bottom-slot" class="row"></div>
 			</div>
-
 		{% endif %}
+		<ul class="nav nav-pills ms-auto my-auto text-dark gx-3 py-3" id="topbar-nav">
+			<li class="nav-item">
+				<a href="en" id="navi1" class="fs-6 topbar-nav-link text-dark ms-3 text-decoration-none">
+					<i class="fa-solid fa-house"></i>&nbsp;{{ "Vocabularies" | trans }}
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="en/about" id="navi2" class="fs-6 topbar-nav-link text-dark ms-3 text-decoration-none">
+					<i class="fa-solid fa-circle-info"></i>&nbsp;{{ "About" | trans }}
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="http://www.un.org/en/library/contact-us" id="navi3" class="fs-6 topbar-nav-link text-dark ms-3 text-decoration-none">
+					<i class="fa-solid fa-comment"></i>&nbsp;{{ "Feedback" | trans }}
+				</a>
+			</li>
+		</ul>
 	</div>
 </header>
