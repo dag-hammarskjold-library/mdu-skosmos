@@ -1,0 +1,681 @@
+<style>
+	body {
+		background-color: #fff;
+	}
+	header {
+		background-color: #fff;
+	}
+	nav#brand-bar {
+		margin-left: 0;
+		margin-right: 0;
+		border-bottom: #009edb solid 5px !important;
+		background: var(--medium-color);
+	}
+	.navbar-brand::before {
+		font: var(--fa-font-solid);
+		color: black;
+		content: "\f015";
+		font-size: 18px;
+		margin-right: 8px;
+		{% if request.lang == 'ar' %}
+			float: right;
+		{% else %}
+			float: left;
+		{% endif %}
+	}
+	.navbar-brand {
+		font-family: var(--font-family);
+		font-size: 12.35px;
+		letter-spacing: 0.375px;
+	}
+	.language-switcher {
+		margin-left: 3em;
+		margin-right: 3em;
+	}
+	.language-switcher button.navbar-toggle {
+		margin-top: 0;
+		border: none;
+		padding: 0;
+		background: transparent;
+		border-radius: 0;
+		margin-right: 2px;
+	}
+	.language-switcher-locale-url .nav-link:hover,
+	.language-switcher-locale-url .nav-link:focus {
+		background: none;
+		color: inherit;
+		text-decoration: none;
+	}
+	.navbar-collapse::before,
+	.navbar-collapse::after {
+		display: table;
+		content: " ";
+	}
+	.language-switcher #language-switcher {
+		border-top: none;
+		padding: 0;
+	}
+	@media(min-width: 768px) {
+		.navbar-toggle {
+			display: none;
+		}
+		.navbar-collapse {
+			display: block;
+		}
+		.collapse {
+			margin-right: 0;
+			margin-left: 0;
+			display: block !important;
+			height: auto !important;
+			padding-bottom: 0;
+			overflow: visible !important;
+		}
+		.navbar-collapse.collapse {
+			display: block !important;
+			height: auto !important;
+			padding-bottom: 0;
+			overflow: visible !important;
+		}
+		.navbar-right {
+			{% if request.lang == 'ar' %}
+				float: left !important;
+				margin-right: auto;
+				margin-left: 0;
+			{% else %}
+				float: right !important;
+				margin-right: 0;
+				margin-left: auto;
+			{% endif %}
+		}
+		.navbar-header {
+			{% if request.lang == 'ar' %}
+				float: right;
+			{% else %}
+				float: left;
+			{% endif %}
+		}
+	}
+	li.nav-item {
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0;
+	}
+	li a.nav-link {
+		padding-left: 12px;
+		padding-right: 12px;
+		color: black;
+		font-family: var(--font-family);
+		display: block;
+		font-size: 12.35px;
+	}
+	li a.nav-link.active {
+		font-weight: bold;
+	}
+	.navbar-collapse {
+		flex-grow: 1;
+		flex-basis: 0;
+		align-items: center;
+	}
+	#brand-bar .navbar-toggle {
+		margin: 1rem;
+	}
+	.sr-only,
+	.fa-sr-only {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+		border-width: 0;
+	}
+	.navbar-toggle {
+		position: relative;
+		float: right;
+		padding: 9px 10px;
+		margin-right: 0;
+		margin-top: auto-34px / 2;
+		margin-bottom: auto-34px / 2;
+		background-color: transparent;
+		background-image: none;
+		border: 1px solid transparent;
+		border-radius: 0.2857142857rem;
+	}
+	.language-switcher button.navbar-toggle span.icon-bar {
+		background-color: #009edb;
+	}
+	.navbar-toggle .icon-bar {
+		display: block;
+		width: 22px;
+		height: 2px;
+		border-radius: 1px;
+	}
+	.un-logo {
+		{% if request.lang == 'ar' %}
+			border-left: solid black 1px;
+		{% else %}
+			border-right: solid black 1px;
+		{% endif %}
+		display: block;
+		width: 17rem;
+		height: 5rem;
+		background-position: left top !important;
+	}
+	.subtitle-1 {
+		font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		line-height: 1;
+		text-transform: none;
+		letter-spacing: 0.027em;
+		font-weight: 700;
+		color: #4d4d4d;
+		font-size: 1.8rem;
+		margin-top: 1.5rem;
+	}
+	ul#main-menu {
+		background: #4d4d4d;
+		position: relative;
+		width: 100%;
+		/* Add this to ensure subnav can be absolutely positioned to this ancestor */
+		z-index: 1000;
+		margin: 0;
+		padding: 0;
+	}
+	ul#main-menu li a {
+		font-weight: 300;
+		background: #4d4d4d;
+		border-right: solid 1px #fff;
+		color: white;
+		text-decoration: none;
+		padding-left: 12px;
+		padding-right: 12px;
+		display: block;
+		font-size: 12.35px;
+	}
+	ul#main-menu li.nav-item > a.nav-link:hover {
+		background: #f2f2f2;
+		color: #000000;
+	}
+	ul#main-menu li.nav-item > a.nav-link.active {
+		background: #f2f2f2;
+		color: #000000;
+		font-weight: bold;
+	}
+	ul#main-menu li.nav-item > a.nav-link.active + ul.subnav {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	ul#main-menu li.nav-item {
+		position: static;
+	}
+	ul#main-menu li.nav-item > ul.subnav {
+		display: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		width: 100%;
+		min-width: 100%;
+		box-sizing: border-box;
+		background-color: #f2f2f2;
+		padding: 0;
+		list-style: none;
+		z-index: 1001;
+		top: 100%;
+		margin: 0;
+		/* Make sure it sits above the menu bar */
+	}
+
+	ul#main-menu li.nav-item:hover > ul.subnav,
+	ul#main-menu li.nav-item:focus-within > ul.subnav {
+		display: flex;
+		flex-wrap: wrap;
+		z-index: 1002;
+	}
+
+	ul#main-menu li.nav-item > ul.subnav li {
+		flex: 0 0 auto;
+		margin: 0;
+		padding: 0;
+		background: #f2f2f2;
+		display: inline-block;
+	}
+
+	ul#main-menu li.nav-item > ul.subnav li a {
+		background: #f2f2f2;
+		border: none;
+		color: #000000;
+		padding: 12px 15px;
+		display: inline-block;
+		font-weight: 400;
+		white-space: nowrap;
+		text-decoration: none;
+		line-height: 1.3rem;
+		font-size: 12.35px;
+	}
+</style>
+{% set menu = {
+    'about': [
+        {'key': 'contact', 'label': 'Contact Us'},
+        {'key': 'activities', 'label': 'Our Activities'},
+        {'key': 'mandate', 'label': 'Our Mandate & History'},
+        {'key': 'collections', 'label': 'Our Collections'},
+        {'key': 'depository', 'label': 'UN Depository Libraries'},
+        {'key': 'news', 'label': 'Library News'}
+    ],
+    'research': [
+        {'key': 'resources', 'label': 'UN Resources & Documents'},
+        {'key': 'digitallibrary', 'label': 'UN Digital Library'},
+        {'key': 'itp', 'label': 'Index to Proceedings'},
+        {'key': 'linkeddata', 'label': 'Linked Data Services'},
+        {'key': 'guides', 'label': 'Research Guides'},
+        {'key': 'speeches', 'label': 'Speeches'},
+        {'key': 'voting', 'label': 'Voting Information'},
+        {'key': 'msor', 'label': 'Member States on the Record'}
+    ],
+    'find': [
+        {'key': 'articles', 'label': 'Articles, Books & More'},
+        {'key': 'databases', 'label': 'Databases'},
+        {'key': 'journals', 'label': 'Journals'},
+        {'key': 'resources', 'label': 'UN Resources & Documents'},
+        {'key': 'libraries', 'label': 'UN Libraries'}
+    ],
+    'help': [
+        {'key': 'training', 'label': 'Training'},
+        {'key': 'guides', 'label': 'Research Guides'},
+        {'key': 'askdag', 'label': 'Ask DAG'}
+    ],
+    'services': [
+        {'key': 'delegates', 'label': 'Delegates'},
+        {'key': 'staff', 'label': 'UN Staff'},
+        {'key': 'researchers', 'label': 'Researchers & Librarians'},
+        {'key': 'public', 'label': 'General Public'}
+    ],
+    'using': [
+        {'key': 'access', 'label': 'Access Electronic Resources'},
+        {'key': 'borrow', 'label': 'Borrow Books & More'},
+        {'key': 'request', 'label': 'Request Articles, Books & Documents'},
+        {'key': 'visit', 'label': 'Visit the Library'}
+    ],
+    'openscience': [
+        {'key': 'openscience', 'label': 'Open Science'}
+    ],
+    'contact': [
+        {'key': 'contact', 'label': 'Contact Us'}
+    ]
+} %}
+{% set menu_links = {
+    'contact': {
+        'ar': '//www.un.org/ar/library/contact-us',
+        'zh': '//www.un.org/zh/library/contact-us',
+        'en': '//www.un.org/en/library/contact-us',
+        'fr': '//www.un.org/fr/library/contact-us',
+        'ru': '//www.un.org/ru/library/contact-us',
+        'es': '//www.un.org/es/library/contact-us'
+    },
+    'activities': {
+        'ar': 'https://www.un.org/ar/library/page/our-activities',
+        'zh': 'https://www.un.org/zh/library/page/our-activities',
+        'en': 'https://www.un.org/en/library/page/our-activities',
+        'fr': 'https://www.un.org/fr/library/page/our-activities',
+        'ru': 'https://www.un.org/ru/library/page/our-activities',
+        'es': 'https://www.un.org/es/library/page/our-activities'
+    },
+    'mandate': {
+        'ar': 'https://www.un.org/ar/library/page/our-mandate-history',
+        'zh': 'https://www.un.org/zh/library/page/our-mandate-history',
+        'en': 'https://www.un.org/en/library/page/our-mandate-history',
+        'fr': 'https://www.un.org/fr/library/page/our-mandate-history',
+        'ru': 'https://www.un.org/ru/library/page/our-mandate-history',
+        'es': 'https://www.un.org/es/library/page/our-mandate-history'
+    },
+    'collections': {
+        'ar': 'https://www.un.org/ar/74777/page/78399',
+        'zh': 'https://www.un.org/zh/library/page/our-collections',
+        'en': 'https://www.un.org/en/library/page/our-collections',
+        'fr': 'https://www.un.org/fr/library/page/our-collections',
+        'ru': 'https://www.un.org/ru/library/page/our-collections',
+        'es': 'https://www.un.org/es/library/page/our-collections'
+    },
+    'depository': {
+        'en': 'https://www.un.org/en/library/page/united-nations-depository-library-programme',
+    },
+    'news': {
+        'en': 'https://www.un.org/en/library/librarynews',
+    },
+    'resources': {
+        'ar': 'https://www.un.org/ar/library/page/un-resources-documents',
+        'zh': 'https://www.un.org/zh/library/page/un-resources-documents',
+        'en': 'https://www.un.org/en/library/page/un-resources-documents',
+        'fr': 'https://www.un.org/fr/library/page/un-resources-documents',
+        'ru': 'https://www.un.org/ru/library/page/un-resources-documents',
+        'es': 'https://www.un.org/es/library/page/un-resources-documents'
+    },
+    'digitallibrary': {
+        'ar': 'https://digitallibrary.un.org/?lang=ar',
+        'zh': 'https://digitallibrary.un.org/?lang=zh',
+        'en': 'https://digitallibrary.un.org/?lang=en',
+        'fr': 'https://digitallibrary.un.org/?lang=fr',
+        'ru': 'https://digitallibrary.un.org/?lang=ru',
+        'es': 'https://digitallibrary.un.org/?lang=es'
+    },
+    'itp': {
+        'ar': 'https://www.un.org/ar/library/page/index-proceedings',
+        'zh': 'https://www.un.org/zh/library/page/index-proceedings',
+        'en': 'https://www.un.org/en/library/page/index-proceedings',
+        'fr': 'https://www.un.org/fr/library/page/index-proceedings',
+        'ru': 'https://www.un.org/ru/library/page/index-proceedings',
+        'es': 'https://www.un.org/es/library/page/index-proceedings'
+    },
+    'linkeddata': {
+        'ar': 'https://metadata.un.org/ar',
+        'zh': 'https://metadata.un.org/zh',
+        'en': 'https://metadata.un.org/en',
+        'fr': 'https://metadata.un.org/fr',
+        'ru': 'https://metadata.un.org/ru',
+        'es': 'https://metadata.un.org/es'
+    },
+    'guides': {
+        'ar': 'https://research.un.org/ar',
+        'zh': 'https://research.un.org/zh',
+        'en': 'https://research.un.org/en',
+        'fr': 'https://research.un.org/fr',
+        'ru': 'https://research.un.org/ru',
+        'es': 'https://research.un.org/es'
+    },
+    'speeches': {
+        'ar': 'https://www.un.org/ar/library/page/speeches-and-meetings',
+        'zh': 'https://www.un.org/zh/library/page/speeches-and-meetings',
+        'en': 'https://www.un.org/en/library/page/speeches-and-meetings',
+        'fr': 'https://www.un.org/fr/library/page/speeches-and-meetings',
+        'ru': 'https://www.un.org/ru/library/page/speeches-and-meetings',
+        'es': 'https://www.un.org/es/library/page/speeches-and-meetings'
+    },
+    'voting': {
+        'ar': 'https://www.un.org/ar/library/page/voting-information',
+        'zh': 'https://www.un.org/zh/library/page/voting-information',
+        'en': 'https://www.un.org/en/library/page/voting-information',
+        'fr': 'https://www.un.org/fr/library/page/voting-information',
+        'ru': 'https://www.un.org/ru/library/page/voting-information',
+        'es': 'https://www.un.org/es/library/page/voting-information'
+    },
+    'msor': {
+        'ar': 'https://www.un.org/ar/library/unms',
+        'zh': 'https://www.un.org/zh/library/unms',
+        'en': 'https://www.un.org/en/library/unms',
+        'fr': 'https://www.un.org/fr/library/unms',
+        'ru': 'https://www.un.org/ru/library/unms',
+        'es': 'https://www.un.org/es/library/unms'
+    },
+    'articles': {
+        'ar': 'https://www.un.org/ar/library/page/articles-books-more',
+        'zh': 'https://www.un.org/zh/library/page/articles-books-more',
+        'en': 'https://www.un.org/en/library/page/articles-books-more',
+        'fr': 'https://www.un.org/fr/library/page/articles-books-more',
+        'ru': 'https://www.un.org/ru/library/page/articles-books-more',
+        'es': 'https://www.un.org/es/library/page/articles-books-more'
+    },
+    'databases': {
+        'ar': 'https://www.un.org/ar/library/page/databases',
+        'zh': 'https://www.un.org/zh/library/page/databases',
+        'en': 'https://www.un.org/en/library/page/databases',
+        'fr': 'https://www.un.org/fr/library/page/databases',
+        'ru': 'https://www.un.org/ru/library/page/databases',
+        'es': 'https://www.un.org/es/library/page/databases'
+    },
+    'journals': {
+        'ar': 'https://www.un.org/ar/library/page/journals',
+        'zh': 'https://www.un.org/zh/library/page/journals',
+        'en': 'https://www.un.org/en/library/page/journals',
+        'fr': 'https://www.un.org/fr/library/page/journals',
+        'ru': 'https://www.un.org/ru/74768/page/77676',
+        'es': 'https://www.un.org/es/library/page/journals'
+    },
+    'libraries': {
+        'ar': 'https://www.un.org/ar/library/page/un-libraries',
+        'zh': 'https://www.un.org/zh/library/page/un-libraries',
+        'en': 'https://www.un.org/en/library/page/un-libraries',
+        'fr': 'https://www.un.org/fr/library/page/un-libraries',
+        'ru': 'https://www.un.org/ru/library/page/un-libraries',
+        'es': 'https://www.un.org/es/library/page/un-libraries'
+    },
+    'training': {
+        'ar': 'https://www.un.org/ar/library/page/training-and-events',
+        'zh': 'https://www.un.org/zh/library/page/training-and-events',
+        'en': 'https://www.un.org/en/library/page/training-and-events',
+        'fr': 'https://www.un.org/fr/library/page/training-and-events',
+        'ru': 'https://www.un.org/ru/library/page/training-and-events',
+        'es': 'https://www.un.org/es/library/page/training-and-events'
+    },
+    'askdag': {
+        'ar': 'https://ask.un.org/ar',
+        'zh': 'https://ask.un.org/zh',
+        'en': 'https://ask.un.org/en',
+        'fr': 'https://ask.un.org/fr',
+        'ru': 'https://ask.un.org/ru',
+        'es': 'https://ask.un.org/es'
+    },
+    'delegates': {
+        'ar': 'https://www.un.org/ar/library/page/services-delegates',
+        'zh': 'https://www.un.org/zh/library/page/services-delegates',
+        'en': 'https://www.un.org/en/library/page/services-delegates',
+        'fr': 'https://www.un.org/fr/library/page/services-delegates',
+        'ru': 'https://www.un.org/ru/library/page/services-delegates',
+        'es': 'https://www.un.org/es/library/page/services-delegates'
+    },
+    'staff': {
+        'ar': 'https://www.un.org/ar/library/page/services-un-staff',
+        'zh': 'https://www.un.org/zh/library/page/services-un-staff',
+        'en': 'https://www.un.org/en/library/page/services-un-staff',
+        'fr': 'https://www.un.org/fr/library/page/services-un-staff',
+        'ru': 'https://www.un.org/ru/library/page/services-un-staff',
+        'es': 'https://www.un.org/es/library/page/services-un-staff'
+    },
+    'researchers': {
+        'ar': 'https://www.un.org/ar/library/page/services-researchers-and-librarians',
+        'zh': 'https://www.un.org/zh/library/page/services-researchers-and-librarians',
+        'en': 'https://www.un.org/en/library/page/services-researchers-and-librarians',
+        'fr': 'https://www.un.org/fr/library/page/services-researchers-and-librarians',
+        'ru': 'https://www.un.org/ru/library/page/services-researchers-and-librarians',
+        'es': 'https://www.un.org/es/library/page/services-researchers-and-librarians'
+    },
+    'public': {
+        'ar': 'https://www.un.org/ar/library/page/services-general-public',
+        'zh': 'https://www.un.org/zh/library/page/services-general-public',
+        'en': 'https://www.un.org/en/library/page/services-general-public',
+        'fr': 'https://www.un.org/fr/library/page/services-general-public',
+        'ru': 'https://www.un.org/ru/library/page/services-general-public',
+        'es': 'https://www.un.org/es/library/page/services-general-public'
+    },
+    'access': {
+        'ar': 'https://www.un.org/ar/library/page/access-electronic-resources',
+        'zh': 'https://www.un.org/zh/library/page/access-electronic-resources',
+        'en': 'https://www.un.org/en/library/page/access-electronic-resources',
+        'fr': 'https://www.un.org/fr/library/page/access-electronic-resources',
+        'ru': 'https://www.un.org/ru/library/page/access-electronic-resources',
+        'es': 'https://www.un.org/es/library/page/access-electronic-resources'
+    },
+    'borrow': {
+        'ar': 'https://www.un.org/ar/library/page/borrow-books-more',
+        'zh': 'https://www.un.org/zh/library/page/borrow-books-more',
+        'en': 'https://www.un.org/en/library/page/borrow-books-more',
+        'fr': 'https://www.un.org/fr/library/page/borrow-books-more',
+        'ru': 'https://www.un.org/ru/library/page/borrow-books-more',
+        'es': 'https://www.un.org/es/library/page/borrow-books-more'
+    },
+    'request': {
+        'ar': 'https://www.un.org/ar/library/page/request-articles-books-documents',
+        'zh': 'https://www.un.org/zh/library/page/request-articles-books-documents',
+        'en': 'https://www.un.org/en/library/page/request-articles-books-documents',
+        'fr': 'https://www.un.org/fr/library/page/request-articles-books-documents',
+        'ru': 'https://www.un.org/ru/library/page/request-articles-books-documents',
+        'es': 'https://www.un.org/es/library/page/request-articles-books-documents'
+    },
+    'visit': {
+        'ar': 'https://www.un.org/ar/library/page/visit-library',
+        'zh': 'https://www.un.org/zh/library/page/visit-library',
+        'en': 'https://www.un.org/en/library/page/visit-library',
+        'fr': 'https://www.un.org/fr/library/page/visit-library',
+        'ru': 'https://www.un.org/ru/library/page/visit-library',
+        'es': 'https://www.un.org/es/library/page/visit-library'
+    },
+    'openscience': {
+        'ar': 'https://www.un.org/ar/library/OS',
+        'zh': 'https://www.un.org/zh/library/OS',
+        'en': 'https://www.un.org/en/library/OS',
+        'fr': 'https://www.un.org/fr/library/OS',
+        'ru': 'https://www.un.org/ru/library/OS',
+        'es': 'https://www.un.org/es/library/OS'
+    }
+} %}
+{% set main_menu = [
+    {'label': 'About', 'key': 'about'},
+    {'label': 'Research the UN', 'key': 'research'},
+    {'label': 'Find', 'key': 'find'},
+    {'label': 'Help', 'key': 'help'},
+    {'label': 'Services for...', 'key': 'services'},
+    {'label': 'Using the Library', 'key': 'using'},
+    {'label': 'Open Science', 'key': 'openscience', 'single': true},
+    {'label': 'Contact Us', 'key': 'contact', 'single': false}
+] %}
+<nav
+	id="brand-bar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<!-- UN global brand bar -->
+	<div class="container-fluid language-switcher">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#language-switcher" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/">{{ 'Welcome to the United Nations' | trans }}</a>
+		</div>
+		<div class="navbar-collapse collapse" id="language-switcher">
+			<nav role="navigation" class="navbar-right">
+				<ul class="language-switcher-locale-url nav" role="menu">
+					<li class="ar first nav-item">
+						{% if request.lang == 'ar' %}
+							<a href="{{ request.langurl('ar') }}" class="nav-link active" xml:lang="ar" title="مكتبة داغ همرشولد" role="menuitem">العربية</a>
+						{% else %}
+							<a href="{{ request.langurl('ar') }}" class="nav-link" xml:lang="ar" title="مكتبة داغ همرشولد" role="menuitem">العربية</a>
+						{% endif %}
+					</li>
+					<li class="zh-hans nav-item lang">
+						{% if request.lang == 'zh' %}
+							<a href="{{ request.langurl('zh') }}" class="nav-link active" xml:lang="zh-hans" title="图书馆" role="menuitem">中文</a>
+						{% else %}
+							<a href="{{ request.langurl('zh') }}" class="nav-link" xml:lang="zh-hans" title="图书馆" role="menuitem">中文</a>
+						{% endif %}
+					</li>
+					<li class="en nav-item">
+						{% if request.lang == 'en' %}
+							<a href="{{ request.langurl('en') }}" class="nav-link active" xml:lang="en" title="Library" role="menuitem">English</a>
+						{% else %}
+							<a href="{{ request.langurl('en') }}" class="nav-link" xml:lang="en" title="Library" role="menuitem">English</a>
+						{% endif %}
+					</li>
+					<li class="fr nav-item">
+						{% if request.lang == 'fr' %}
+							<a href="{{ request.langurl('fr') }}" class="nav-link active" xml:lang="fr" title="Bibliothèque Dag Hammarskjöld" role="menuitem">Français</a>
+						{% else %}
+							<a href="{{ request.langurl('fr') }}" class="nav-link" xml:lang="fr" title="Bibliothèque Dag Hammarskjöld" role="menuitem">Français</a>
+						{% endif %}
+					</li>
+					<li class="ru nav-item">
+						{% if request.lang == 'ru' %}
+							<a href="{{ request.langurl('ru') }}" class="nav-link active" xml:lang="ru" title="Дага Хаммаршельда Библиотека" role="menuitem">Русский</a>
+						{% else %}
+							<a href="{{ request.langurl('ru') }}" class="nav-link" xml:lang="ru" title="Дага Хаммаршельда Библиотека" role="menuitem">Русский</a>
+						{% endif %}
+					</li>
+					<li class="es nav-item">
+						{% if request.lang == 'es' %}
+							<a href="{{ request.langurl('es') }}" class="nav-link active" xml:lang="es" title="Biblioteca Dag Hammarskjöld" role="menuitem">Español</a>
+						{% else %}
+							<a href="{{ request.langurl('es') }}" class="nav-link" xml:lang="es" title="Biblioteca Dag Hammarskjöld" role="menuitem">Español</a>
+						{% endif %}
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<!-- /.container -->
+</nav>
+
+<header id="navbar">
+	<div id="library-header" class="container">
+		<div class="row mt-5">
+			<div class="col-md-3 un-logo">
+				<a class="logo" href="//www.un.org/{{request.lang}}" title="{{ 'United Nations' | trans }}">
+					<img src="//www.un.org/sites/un2.un.org/themes/bootstrap_un2/images/logo-{{request.lang}}.svg" alt="{{ 'UN logo' | trans }}">
+				</a>
+			</div>
+			<div class="col-md-9 subtitle-1 mx-4">{{ "Dag Hammarskjöld Library" | trans }}</div>
+		</div>
+		<div class="row mt-5">
+			<div id="bs-navbar-main-menu" class="collapse navbar-collapse">
+				<ul id="main-menu" class="nav mb-5">
+					{% for item in main_menu %}
+						<li class="nav-item top-level">
+							{% if item.single %}
+								<a class="nav-link" href="{{ menu_links[item.key][request.lang] }}">{{ item.label | trans }}</a>
+							{% else %}
+								<a class="nav-link{% if item.key == 'research' %} active{% endif %}" href="#">
+									{{ item.label | trans }}
+									<span class="sf-sub-indicator">»</span>
+								</a>
+								<ul class="subnav">
+									{% for sub in menu[item.key] %}
+										{% if menu_links[sub.key][request.lang] is defined and menu_links[sub.key][request.lang] %}
+											<li>
+												<a href="{{ menu_links[sub.key][request.lang] }}">{{ sub.label | trans }}</a>
+											</li>
+										{% endif %}
+									{% endfor %}
+								</ul>
+							{% endif %}
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+		{% if request.vocabid == '' and request.page != 'about' and request.page != 'feedback' %}
+			<div class="collapse container mt-2 pe-0 py-3" id="global-search-bar">
+				<div class="row">
+					<div class="d-flex flex-column flex-xl-row align-items-start align-items-xl-center my-auto">
+						<div id="global-search-text">
+							<h2>{{ "Search across vocabularies"|trans }}</h2>
+						</div>
+						<div class="ms-0 ms-xl-auto pt-3 pt-xl-0" id="global-search-wrapper"></div>
+					</div>
+				</div>
+			</div>
+		{% endif %}
+		{% if pageType in ['landing', 'vocab-home', 'concept', 'vocab-search'] %}
+			<div class="container-fluid bg-white py-4" id="headerbar">
+				<div id="headerbar-top-slot" class="row"></div>
+				<div class="row">
+					<div class="d-flex flex-column flex-xl-row align-items-start align-items-xl-center my-auto{% if pageType == 'landing' %} p-0{% endif %}">
+						{% if pageType == 'landing' %}
+							<div id="skosmos-logo">
+								<h1 class="visually-hidden">Skosmos</h1>
+							</div>
+						{% else %}
+							<h2 class="fw-bold" id="vocab-title">
+								<a class="text-decoration-none" href="{{ 'home' | global_url(request.lang, request.contentLang, request.vocabid, request.queryParam('anylang') == 'on') }}">
+									{{ request.vocab.title(request.contentLang) }}
+								</a>
+							</h2>
+							<div class="ms-0 ms-xl-auto pt-3 pt-xl-0">
+								<div id="search-vocab"></div>
+							</div>
+						{% endif %}
+					</div>
+				</div>
+				<div id="headerbar-bottom-slot" class="row"></div>
+			</div>
+
+		{% endif %}
+	</div>
+</header>

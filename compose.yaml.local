@@ -1,0 +1,15 @@
+services:
+  skosmos:
+    build:
+      context: ./
+      dockerfile: Dockerfile.local
+    ports:
+      - ${SKOSMOS_PORT:-9090}:80
+    develop:
+      watch: 
+        - path: ./skosmos/
+          action: sync
+          target: /var/www/html/skosmos-dev/
+        - path: ./config.ttl.local
+          action: sync
+          target: /var/www/html/skosmos-dev/config.ttl

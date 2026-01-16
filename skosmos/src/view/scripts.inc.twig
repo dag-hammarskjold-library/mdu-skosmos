@@ -1,0 +1,94 @@
+<!-- Skosmos variables passed from the backend to the frontend code-->
+<!-- NB: Do not add comments inside the JS object as it would break JSON parsing -->
+<script id="skosmos-global-vars">
+window.SKOSMOS = {
+  "content_lang": "{{ request.contentLang }}",
+  "explicitLangCodes": {{ explicit_langcodes ? "true" : "false" }},
+  "lang": "{{ request.lang }}",
+  "vocab": "{{ request.vocabid }}",
+  "pageType": "{{ pageType }}",
+  "vocab_list": { {% for key, vocabs in request.vocabList %}{% for key2, value in vocabs %}"{{ value.resource.localname }}": "{{ value.config.shortname }}"{% if not loop.last %}, {% endif %}
+{% endfor %}{% if not loop.last %}, {% endif %}
+{% endfor %}  },
+  "vocab_id": [ {% for vocab in request.vocabid %} "{{ vocab }}"{% if not loop.last %},
+  {% endif %}{% endfor %}],
+  "waypoint_results": {{ parameters ? parameters.searchLimit : "null" }},
+  {%- if request.page == "page" and concept %}
+  "prefLabels": [{"lang": "{{ concept.label.lang }}","label": "{{ concept.label }}"}{% for lang in concept.foreignLabels %}{% for literal in lang %}{% if literal.type == "skos:prefLabel" %},{"lang": "{{literal.lang}}", "label": "{{literal.label}}"}{% endif %}{% endfor %}{% endfor %}],
+  "uri": "{{ concept.uri }}",
+  {% endif %}
+  {%- if request.vocab ~%}
+  "showNotation": {{ request.vocab.config.showNotation ? "true" : "false" }},
+  "sortByNotation": {% if request.vocab.config.sortByNotation %}"{{ request.vocab.config.sortByNotation }}"{% else %}null{% endif ~%},
+  "showConceptSchemesInHierarchy": {{ request.vocab.config.showConceptSchemesInHierarchy ? "true" : "false" }},
+  "uriSpace": {% if request.vocab.uriSpace %}"{{ request.vocab.uriSpace }}"{% else %}null{% endif ~%},
+  "vocShortName": "{{ request.vocab.config.shortname }}",
+  {%- endif %}
+  {%- if plugin_params ~%}
+  "pluginParameters": {{ plugin_params|raw }},
+  {%- endif %}
+  {%- if request.plugins.callbacks ~%}
+  "pluginCallbacks": [{% for function in request.plugins.callbacks %}{% if not loop.first %}, {% endif %}"{{ function }}"{% endfor %}],
+  {%- endif ~%}
+  {%- if custom_labels -%}
+  "customLabels": { 
+    {%- for k, v in custom_labels -%}
+      {%- set label = v['label'][request.lang] -%}
+      {%- set description = v['description'][request.lang] -%}
+      {%- if not loop.first -%}, {%- endif -%}"{{k}}": ["{{label[:1]|upper ~ label[1:]}}", "{{description[:1]|upper ~ description[1:]}}"]{%- endfor -%} 
+  },
+  {%- endif -%}
+  "baseHref": "{{ BaseHref }}",
+  {%- if types -%}
+  "types": { {%- for uri, info in types %}"{{ uri }}": "{{ info.label }}"{% if not loop.last %},{% endif %}{%- endfor %} },
+  {%- endif -%}
+  "contentLanguages": { {% for code, name in content_languages %}"{{ code }}": "{{ name }}"{% if not loop.last %}, {% endif %}{% endfor %} }
+}
+</script>
+
+<!-- Search result data -->
+<script type="application/ld+json" id="json-ld-data">
+  {%- if concept -%}
+    {{ concept.dumpJsonLd|raw }}
+  {%- else -%}
+    {}
+  {%- endif -%}
+</script>
+
+<!-- Bootstrap -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+<!-- Vue.js -->
+{% if GlobalConfig.uiDevMode %}
+<script src="node_modules/vue/dist/vue.global.js"></script>
+{% else %}
+<script src="node_modules/vue/dist/vue.global.prod.js"></script>
+{% endif %}
+
+<!-- Plugin JS sources -->
+{% for files in request.plugins.pluginsJS %}
+  {% for file in files %}<script src="{{ file }}"></script>{% endfor %}
+{% endfor %}
+
+<!-- Helper methods shared by Vue.js components -->
+<script src="resource/js/partial-page-load.js"></script>
+<script src="resource/js/get-concept-url.js"></script>
+<script src="resource/js/translation-service.js"></script>
+
+<!-- Vue.js components -->
+<!-- <script src="resource/js/resource-counts.js"></script> -->
+<script src="resource/js/term-counts.js"></script>
+<script src="resource/js/concept-mappings.js"></script>
+<script src="resource/js/tab-alpha.js"></script>
+<script src="resource/js/tab-hierarchy.js"></script>
+<script src="resource/js/tab-groups.js"></script>
+<script src="resource/js/tab-changes.js"></script>
+<script src="resource/js/vocab-search.js"></script>
+<script src="resource/js/global-search.js"></script>
+
+<!-- Other (non-Vue) JS functionality -->
+<script src="resource/js/copy-to-clipboard.js"></script>
+<script src="resource/js/navbar.js"></script>
+<script src="resource/js/truncate-property-values.js"></script>
+<script src="resource/js/truncate-search-results.js"></script>
+<script src="resource/js/make-plugin-callbacks.js"></script>
