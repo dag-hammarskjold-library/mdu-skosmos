@@ -20,7 +20,7 @@
 :config a skosmos:Configuration ;
     # SPARQL endpoint
     # a local Fuseki server is usually on localhost:3030
-    skosmos:sparqlEndpoint <http://localhost:3030> ;
+    skosmos:sparqlEndpoint <https://metadata.un.org/graphdb/repositories/UNBIST-test_core> ;
 
     # sparql-query extension, or "Generic" for plain SPARQL 1.1
     # set to "JenaText" instead if you use Fuseki with jena-text index
@@ -39,7 +39,8 @@
 
     # customize the base element. Set this if the automatic base url detection doesn't work. For example setups behind a proxy.
     # skosmos:baseHref "http://localhost/Skosmos/" ;
-    skosmos:baseHref "https://metadata.un.org/skosmos-dev/" ;
+    # skosmos:baseHref "https://metadata.un.org/skosmos-dev/" ;
+    skosmos:baseHref "http://localhost:9090/skosmos-dev/" ;
 
     # interface languages available, and the corresponding system locales
     skosmos:languages (
@@ -69,7 +70,7 @@
     skosmos:templateCache "/tmp/skosmos-template-cache" ;
     
     # customize the css by adding your own stylesheet
-    # skosmos:customCss "resource/css/stylesheet.css" ;
+    skosmos:customCss "resource/css/custom.css" ;
 
     # default email address where to send the feedback
     skosmos:feedbackAddress "" ;
@@ -96,7 +97,7 @@
 # Skosmos vocabularies
 
 :unbist a skosmos:Vocabulary, void:Dataset ;
-    dc:title "UN Thesaurus"@en, ""@ar, ""@zh, ""@fr, ""@ru, ""@es ;
+    dc:title "UN Thesaurus"@en, ""@ar, "联合国叙词表"@zh, ""@fr, ""@ru, ""@es ;
     skosmos:shortName "UNBIST" ;
     dc:subject :cat_general ;
     void:uriSpace "http://metadata.un.org/thesaurus/" ;
@@ -115,7 +116,7 @@
     skosmos:sparqlDialect "Generic" .
 
 :unbist2 a skosmos:Vocabulary, void:Dataset ;
-    dc:title "UN Thesaurus Test"@en, ""@ar, ""@zh, ""@fr, ""@ru, ""@es ;
+    dc:title "UN Thesaurus Test"@en, ""@ar, "联合国叙词表 (Test)"@zh, ""@fr, ""@ru, ""@es ;
     skosmos:shortName "UNBIST" ;
     dc:subject :cat_general ;
     void:uriSpace "http://metadata.un.org/thesaurus/" ;
