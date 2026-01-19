@@ -166,7 +166,7 @@
     skosmos:fullAlphabeticalIndex true ;
     skosmos:conceptSchemesInHierarchy true ;
     skosmos:mainConceptScheme <http://metadata.un.org/UNMS/> ;
-    void:sparqlEndpoint <https://metadata.un.org/graphdb/repositories/UNMS_test_AH_core> .
+    void:sparqlEndpoint <https://metadata.un.org/graphdb/repositories/UNMS_core> .
 
 :categories a skos:ConceptScheme;
     skos:prefLabel "UN Linked Data Services"@en,
