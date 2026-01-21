@@ -105,7 +105,7 @@
     skosmos:defaultLanguage "en" ;
     skosmos:fallbackLanguages "ar", "zh", "fr", "ru", "es" ;
     skosmos:explicitLanguageTags true ;
-    #skosmosyy:showTopConcepts true ;
+    #skosmos:showTopConcepts true ;
     skosmos:fullAlphabeticalIndex true ;
     skosmos:groupClass eu:Domain ;
     skosmos:sortByNotation true ;
@@ -160,6 +160,7 @@
     skosmos:fallbackLanguages "ar", "zh", "fr", "ru", "es" ;
     skosmos:explicitLanguageTags true ;
     skosmos:showTopConcepts true ;
+    skosmos:conceptSchemesInHierarchy true ;
     skosmos:propertyLabelOverride [ skosmos:property skos:prefLabel ; rdfs:label "Formal Name"@en ] ;
     skosmos:groupClass skos:ConceptScheme ;
     #skosmos:indexShowClass <http://metadata.un.org/UNMS/ontology#State> ;
