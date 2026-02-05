@@ -146,7 +146,7 @@
 												{% if value.type == "skos:prefLabel" and value.lang in request.vocab.config.languages %}
 													<a {% if descriptionId %} aria-describedby="{{ descriptionId }}" {% endif %} href="{{ concept.uri|link_url(request.vocabid,request.lang, 'page', value.lang) }}" hreflang="{{ value.lang }}">{{ value.label }}</a>
 												{% else %}
-													<span class="altlabel" {% if descriptionId %} aria-describedby="{{ descriptionId }}" {% endif %}>{{ value.label }}</span>
+													<!-- <span class="altlabel" {% if descriptionId %} aria-describedby="{{ descriptionId }}" {% endif %}>{{ value.label }}</span> -->
 												{% endif %}
 											</li>
 										{% endfor %}
