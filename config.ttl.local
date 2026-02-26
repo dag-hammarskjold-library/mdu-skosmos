@@ -13,6 +13,7 @@
 @prefix mdrtype: <http://publications.europa.eu/resource/authority/dataset-type/> .
 @prefix eu: <http://eurovoc.europa.eu/schema#> .
 @prefix unmso: <http://metadata.un.org/UNMS/ontology#> .
+@prefix sdgo: <http://metadata.un.org/sdg/ontology#> .
 @prefix : <#> .
 
 # Skosmos main configuration
@@ -143,11 +144,10 @@
     skosmos:fallbackLanguages "ar", "zh", "fr", "ru", "es" ;
     skosmos:explicitLanguageTags true ;
     skosmos:showTopConcepts true ;
-    #skosmos:showAlphabeticalIndex false ;
     skosmos:showTopConcepts true ;
-    #skosmos:conceptSchemesInHierarchy true ;
     skosmos:defaultSidebarView "hierarchy" ;
-    skosmos:sortByNotation true ;
+    skosmos:sortByNotation "natural" ;
+    skosmos:groupClass sdgo:SDGCodeCompact ;
     skosmos:showNotation true ;
     void:sparqlEndpoint <https://metadata.un.org/graphdb/repositories/SDG-test_core> .
 
