@@ -55,7 +55,7 @@
 			</div>
 
 			{% for property in concept.properties %}
-				{% if property.getSubPropertyOf != 'skos:hiddenLabel' %}
+				{% if property.getSubPropertyOf != 'skos:hiddenLabel' and property.type != 'skos:notation' and property.type != 'skos:note' and property.type != 'dc:identifier' and property.type != 'skos:historyNote' %}
 					<div class="row property prop-{{property.ID}}">
 						<div class="col-lg-4 ps-0 property-label">
 							<h2>
