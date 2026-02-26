@@ -1,258 +1,270 @@
 <style>
-	body {
-		background-color: #fff;
-	}
-	header {
-		background-color: #fff;
-	}
-	nav#brand-bar {
-		margin-left: 0;
-		margin-right: 0;
-		border-bottom: #009edb solid 5px !important;
-		background: var(--medium-color);
-	}
-	.navbar-brand::before {
-		font: var(--fa-font-solid);
-		color: black;
-		content: "\f015";
-		font-size: 18px;
-		margin-right: 8px;
-		{% if request.lang == 'ar' %}
-			float: right;
-		{% else %}
-			float: left;
-		{% endif %}
-	}
-	.navbar-brand {
-		font-family: var(--font-family);
-		font-size: 12.35px;
-		letter-spacing: 0.375px;
-	}
-	.language-switcher {
-		margin-left: 3em;
-		margin-right: 3em;
-	}
-	.language-switcher button.navbar-toggle {
-		margin-top: 0;
-		border: none;
-		padding: 0;
-		background: transparent;
-		border-radius: 0;
-		margin-right: 2px;
-	}
-	.language-switcher-locale-url .nav-link:hover,
-	.language-switcher-locale-url .nav-link:focus {
-		background: none;
-		color: inherit;
-		text-decoration: none;
-	}
-	.navbar-collapse::before,
-	.navbar-collapse::after {
-		display: table;
-		content: " ";
-	}
-	.language-switcher #language-switcher {
-		border-top: none;
-		padding: 0;
-	}
-	@media(min-width: 768px) {
-		.navbar-toggle {
-			display: none;
-		}
-		.navbar-collapse {
-			display: block;
-		}
-		.collapse {
-			margin-right: 0;
-			margin-left: 0;
-			display: block !important;
-			height: auto !important;
-			padding-bottom: 0;
-			overflow: visible !important;
-		}
-		.navbar-collapse.collapse {
-			display: block !important;
-			height: auto !important;
-			padding-bottom: 0;
-			overflow: visible !important;
-		}
-		.navbar-right {
-			{% if request.lang == 'ar' %}
-				float: left !important;
-				margin-right: auto;
-				margin-left: 0;
-			{% else %}
-				float: right !important;
-				margin-right: 0;
-				margin-left: auto;
-			{% endif %}
-		}
-		.navbar-header {
-			{% if request.lang == 'ar' %}
-				float: right;
-			{% else %}
-				float: left;
-			{% endif %}
-		}
-	}
-	li.nav-item {
-		margin-left: 0;
-		margin-right: 0;
-		padding: 0;
-	}
-	li a.nav-link {
-		padding-left: 12px;
-		padding-right: 12px;
-		color: black;
-		font-family: var(--font-family);
-		display: block;
-		font-size: 12.35px;
-	}
-	li a.nav-link.active {
-		font-weight: bold;
-	}
-	.navbar-collapse {
-		flex-grow: 1;
-		flex-basis: 0;
-		align-items: center;
-	}
-	#brand-bar .navbar-toggle {
-		margin: 1rem;
-	}
-	.sr-only,
-	.fa-sr-only {
-		position: absolute;
-		width: 1px;
-		height: 1px;
-		padding: 0;
-		margin: -1px;
-		overflow: hidden;
-		clip: rect(0, 0, 0, 0);
-		white-space: nowrap;
-		border-width: 0;
-	}
-	.navbar-toggle {
-		position: relative;
-		float: right;
-		padding: 9px 10px;
-		margin-right: 0;
-		margin-top: auto-34px / 2;
-		margin-bottom: auto-34px / 2;
-		background-color: transparent;
-		background-image: none;
-		border: 1px solid transparent;
-		border-radius: 0.2857142857rem;
-	}
-	.language-switcher button.navbar-toggle span.icon-bar {
-		background-color: #009edb;
-	}
-	.navbar-toggle .icon-bar {
-		display: block;
-		width: 22px;
-		height: 2px;
-		border-radius: 1px;
-	}
-	.un-logo {
-		{% if request.lang == 'ar' %}
-			border-left: solid black 1px;
-		{% else %}
-			border-right: solid black 1px;
-		{% endif %}
-		display: block;
-		width: 17rem;
-		height: 5rem;
-		background-position: left top !important;
-	}
-	.subtitle-1 {
-		font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		line-height: 1;
-		text-transform: none;
-		letter-spacing: 0.027em;
-		font-weight: 700;
-		color: #4d4d4d;
-		font-size: 1.8rem;
-		margin-top: 1.5rem;
-	}
-	ul#main-menu {
-		background: #4d4d4d;
-		position: relative;
-		width: 100%;
-		/* Add this to ensure subnav can be absolutely positioned to this ancestor */
-		z-index: 1000;
-		margin: 0;
-		padding: 0;
-	}
-	ul#main-menu li a {
-		font-weight: 300;
-		background: #4d4d4d;
-		border-right: solid 1px #fff;
-		color: white;
-		text-decoration: none;
-		padding-left: 12px;
-		padding-right: 12px;
-		display: block;
-		font-size: 12.35px;
-	}
-	ul#main-menu li.nav-item > a.nav-link:hover {
-		background: #f2f2f2;
-		color: #000000;
-	}
-	ul#main-menu li.nav-item > a.nav-link.active {
-		background: #f2f2f2;
-		color: #000000;
-		font-weight: bold;
-	}
-	ul#main-menu li.nav-item > a.nav-link.active + ul.subnav {
-		display: flex;
-		flex-wrap: wrap;
-	}
-	ul#main-menu li.nav-item {
-		position: static;
-	}
-	ul#main-menu li.nav-item > ul.subnav {
-		display: none;
-		position: absolute;
-		left: 0;
-		right: 0;
-		width: 100%;
-		min-width: 100%;
-		box-sizing: border-box;
-		background-color: #f2f2f2;
-		padding: 0;
-		list-style: none;
-		z-index: 1001;
-		top: 100%;
-		margin: 0;
-		/* Make sure it sits above the menu bar */
-	}
-
-	ul#main-menu li.nav-item:hover > ul.subnav,
-	ul#main-menu li.nav-item:focus-within > ul.subnav {
-		display: flex;
-		flex-wrap: wrap;
-		z-index: 1002;
-	}
-
-	ul#main-menu li.nav-item > ul.subnav li {
-		flex: 0 0 auto;
-		margin: 0;
-		padding: 0;
-		background: #f2f2f2;
-		display: inline-block;
-	}
-
-	ul#main-menu li.nav-item > ul.subnav li a {
-		background: #f2f2f2;
-		border: none;
-		color: #000000;
-		padding: 12px 15px;
-		display: inline-block;
-		font-weight: 400;
-		white-space: nowrap;
-		text-decoration: none;
-		line-height: 1.3rem;
-		font-size: 12.35px;
-	}
+    body {
+        background-color: #fff;
+    }
+    header {
+        background-color: #fff;
+    }
+    nav#brand-bar {
+        margin: 0;
+        border-bottom: #009edb solid 5px !important;
+        background: var(--medium-color);
+    }
+    .navbar-brand::before {
+        font: var(--fa-font-solid);
+        color: black;
+        content: "\f015";
+        font-size: 18px;
+        margin-right: 8px;
+        {% if request.lang == 'ar' %}
+            float: right;
+        {% else %}
+            float: left;
+        {% endif %}
+    }
+    .navbar-brand {
+        font-family: var(--font-family);
+        font-size: 12.35px;
+        letter-spacing: 0.375px;
+    }
+    .language-switcher {
+        margin: 0 3em;
+    }
+    .language-switcher-locale-url .nav-link:hover,
+    .language-switcher-locale-url .nav-link:focus {
+        background: none;
+        color: inherit;
+        text-decoration: none;
+    }
+    .navbar-collapse::before,
+    .navbar-collapse::after {
+        display: table;
+        content: " ";
+    }
+    .language-switcher #language-switcher {
+        border-top: none;
+        padding: 0;
+    }
+    .navbar-toggle {
+        position: relative;
+        padding: 9px 10px;
+        margin: 0;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 0.2857142857rem;
+    }
+    .navbar-toggle .icon-bar {
+        display: block;
+        width: 22px;
+        height: 2px;
+        margin-bottom: 3px;
+        border-radius: 1px;
+        background-color: #009edb;
+    }
+    .language-switcher .navbar-toggle {
+        border: none;
+        padding: 0;
+        background: transparent;
+        border-radius: 0;
+		float: {% if request.lang == 'ar' %}left{% else %}right{% endif %};
+    }
+    li.nav-item {
+        margin: 0;
+        padding: 0;
+    }
+    li a.nav-link {
+        padding: 0 12px;
+        color: black;
+        font-family: var(--font-family);
+        display: block;
+        font-size: 12.35px;
+    }
+    li a.nav-link.active {
+        font-weight: bold;
+    }
+    .navbar-collapse {
+        flex-grow: 1;
+        flex-basis: 0;
+        align-items: center;
+    }
+    .sr-only,
+    .fa-sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+    }
+    .un-logo {
+        {% if request.lang == 'ar' %}
+            border-left: solid black 1px;
+        {% else %}
+            border-right: solid black 1px;
+        {% endif %}
+        display: block;
+        width: 17rem;
+        height: 5rem;
+        background-position: left top !important;
+    }
+    .subtitle-1 {
+        font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: 0.027em;
+        font-weight: 700;
+        color: #4d4d4d;
+        font-size: 1.8rem;
+        margin-top: 1.5rem;
+    }
+    ul#main-menu {
+        background: #4d4d4d;
+        position: relative;
+        width: 100%;
+        z-index: 1000;
+        margin: 0;
+        padding: 0;
+    }
+    ul#main-menu li a {
+        font-weight: 300;
+        background: #4d4d4d;
+        border-right: solid 1px #fff;
+        color: white;
+        text-decoration: none;
+        padding: 0 12px;
+        display: block;
+        font-size: 12.35px;
+    }
+    ul#main-menu li.nav-item > a.nav-link:hover,
+    ul#main-menu li.nav-item > a.nav-link.active {
+        background: #f2f2f2;
+        color: #000;
+    }
+    ul#main-menu li.nav-item > a.nav-link.active {
+        font-weight: bold;
+    }
+    ul#main-menu li.nav-item > a.nav-link.active + ul.subnav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul#main-menu li.nav-item {
+        position: static;
+    }
+    ul#main-menu li.nav-item > ul.subnav {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #f2f2f2;
+        padding: 0;
+        list-style: none;
+        z-index: 1001;
+        top: 100%;
+        margin: 0;
+    }
+    ul#main-menu li.nav-item:hover > ul.subnav,
+    ul#main-menu li.nav-item:focus-within > ul.subnav {
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 1002;
+    }
+    ul#main-menu li.nav-item > ul.subnav li {
+        flex: 0 0 auto;
+        margin: 0;
+        padding: 0;
+        background: #f2f2f2;
+        display: inline-block;
+    }
+    ul#main-menu li.nav-item > ul.subnav li a {
+        background: #f2f2f2;
+        border: none;
+        color: #000;
+        padding: 12px 15px;
+        display: inline-block;
+        font-weight: 400;
+        white-space: nowrap;
+        text-decoration: none;
+        line-height: 1.3rem;
+        font-size: 12.35px;
+    }
+    @media(max-width: 767px) {
+        .navbar-toggle {
+            display: block;
+            float: {% if request.lang == 'ar' %}left{% else %}right{% endif %};
+        }
+        .language-switcher .navbar-toggle {
+            position: absolute;
+            {% if request.lang == 'ar' %}
+                left: 0;
+            {% else %}
+                right: 0;
+            {% endif %}
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+        }
+        .language-switcher .navbar-header {
+            position: relative;
+            width: 100%;
+        }
+        .navbar-collapse {
+            display: none !important;
+        }
+        .navbar-collapse.in,
+        .navbar-collapse.collapse.in {
+            display: block !important;
+        }
+        ul#main-menu {
+            margin-top: 0;
+        }
+        ul#main-menu li.nav-item > ul.subnav {
+            position: static;
+            display: none;
+            width: 100%;
+        }
+        ul#main-menu li.nav-item > ul.subnav li a {
+            padding-left: 24px;
+        }
+    }
+    @media(min-width: 768px) {
+        .navbar-toggle {
+            display: none;
+        }
+        .navbar-collapse {
+            display: block !important;
+        }
+        .collapse {
+            margin: 0;
+            display: block !important;
+            height: auto !important;
+            padding-bottom: 0;
+            overflow: visible !important;
+        }
+        .navbar-right {
+            {% if request.lang == 'ar' %}
+                float: left !important;
+                margin-right: auto;
+                margin-left: 0;
+            {% else %}
+                float: right !important;
+                margin-right: 0;
+                margin-left: auto;
+            {% endif %}
+        }
+        .navbar-header {
+            {% if request.lang == 'ar' %}
+                float: right;
+            {% else %}
+                float: left;
+            {% endif %}
+        }
+    }
 </style>
 {% set menu = {
     'about': [
@@ -539,21 +551,21 @@
     {'label': 'Contact Us', 'key': 'contact', 'single': false}
 ] %}
 <nav
-	id="brand-bar" class="navbar navbar-default navbar-fixed-top" role="navigation">
-	<!-- UN global brand bar -->
-	<div class="container-fluid language-switcher">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#language-switcher" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="/">{{ 'Welcome to the United Nations' | trans }}</a>
-		</div>
-		<div class="navbar-collapse collapse" id="language-switcher">
-			<nav role="navigation" class="navbar-right">
-				<ul class="language-switcher-locale-url nav" role="menu">
+    id="brand-bar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <!-- UN global brand bar -->
+    <div class="container-fluid language-switcher">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#language-switcher-collapse" aria-expanded="false" aria-controls="language-switcher-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">{{ 'Welcome to the United Nations' | trans }}</a>
+        </div>
+        <div class="navbar-collapse collapse" id="language-switcher-collapse">
+            <nav role="navigation" class="navbar-right">
+                <ul class="language-switcher-locale-url nav" role="menu">
 					<li class="ar first nav-item">
 						{% if request.lang == 'ar' %}
 							<a href="{{ request.langurl('ar') }}" class="nav-link active" xml:lang="ar" title="مكتبة داغ همرشولد" role="menuitem">العربية</a>
@@ -604,18 +616,26 @@
 </nav>
 
 <header id="navbar">
-	<div id="library-header" class="container">
-		<div class="row mt-5">
-			<div class="col-md-3 un-logo">
-				<a class="logo" href="//www.un.org/{{request.lang}}" title="{{ 'United Nations' | trans }}">
-					<img src="//www.un.org/sites/un2.un.org/themes/bootstrap_un2/images/logo-{{request.lang}}.svg" alt="{{ 'UN logo' | trans }}">
-				</a>
-			</div>
-			<div class="col-md-9 subtitle-1 mx-4">{{ "Dag Hammarskjöld Library" | trans }}</div>
-		</div>
-		<div class="row mt-5">
-			<div id="bs-navbar-main-menu" class="collapse navbar-collapse">
-				<ul id="main-menu" class="nav mb-5">
+    <div id="library-header" class="container">
+        <div class="row mt-5">
+            <div class="col-md-3 un-logo">
+                <a class="logo" href="//www.un.org/{{request.lang}}" title="{{ 'United Nations' | trans }}">
+                    <img src="//www.un.org/sites/un2.un.org/themes/bootstrap_un2/images/logo-{{request.lang}}.svg" alt="{{ 'UN logo' | trans }}">
+                </a>
+            </div>
+            <div class="col-md-9 subtitle-1 mx-4">{{ "Dag Hammarskjöld Library" | trans }}</div>
+        </div>
+        <div class="row mt-5">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-main-menu" aria-expanded="false" aria-controls="bs-navbar-main-menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="bs-navbar-main-menu" class="collapse navbar-collapse">
+                <ul id="main-menu" class="nav mb-5">
 					{% for item in main_menu %}
 						<li class="nav-item top-level">
 							{% if item.single %}
@@ -695,4 +715,29 @@
 			</li>
 		</ul>
 	</div>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			// Language switcher hamburger
+			const languageSwitcherBtn = document.querySelector('[data-target="#language-switcher-collapse"]');
+			const languageSwitcherCollapse = document.getElementById('language-switcher-collapse');
+			
+			if (languageSwitcherBtn && languageSwitcherCollapse) {
+				languageSwitcherBtn.addEventListener('click', function() {
+					languageSwitcherCollapse.classList.toggle('in');
+					this.classList.toggle('collapsed');
+				});
+			}
+			
+			// Main menu hamburger
+			const mainMenuBtn = document.querySelector('[data-target="#bs-navbar-main-menu"]');
+			const mainMenuCollapse = document.getElementById('bs-navbar-main-menu');
+			
+			if (mainMenuBtn && mainMenuCollapse) {
+				mainMenuBtn.addEventListener('click', function() {
+					mainMenuCollapse.classList.toggle('in');
+					this.classList.toggle('collapsed');
+				});
+			}
+		});
+	</script>
 </header>
