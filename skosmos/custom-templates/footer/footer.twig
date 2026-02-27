@@ -1,4 +1,3 @@
-{% if request.lang == 'en' %}
 <style>
 	.home-footer {
 		margin-top: 60px;
@@ -382,22 +381,22 @@
 								<h4 class="font-bold">About</h4>
 								<ul class="menu nav">
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/contact-us">Contact Us</a>
+										<a href="https://www.un.org/{{request.lang}}/library/contact-us">{{ "Contact Us" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/page/our-activities">Our Activities</a>
+										<a href="https://www.un.org/{{request.lang}}/library/page/our-activities">{{ "Our Activities" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/page/our-mandate-history">Our Mandate & History</a>
+										<a href="https://www.un.org/{{request.lang}}/library/page/our-mandate-history">{{ "Our Mandate & History" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/page/our-collections">Our Collections</a>
+										<a href="https://www.un.org/{{request.lang}}/library/page/our-collections">{{ "Our Collections" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/page/united-nations-depository-library-programme">UN Depository Libraries</a>
+										<a href="https://www.un.org/{{request.lang}}/library/page/united-nations-depository-library-programme">{{ "UN Depository Libraries" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/librarynews">Library News</a>
+										<a href="https://www.un.org/{{request.lang}}/library/librarynews">{{ "Library News" | trans() }}</a>
 									</li>
 								</ul>
 							</div>
@@ -409,19 +408,19 @@
 								<h4 class="font-bold">Find</h4>
 								<ul class="menu nav">
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/page/articles-books-more">Articles, Books & More</a>
+										<a href="https://www.un.org/{{request.lang}}/library/page/articles-books-more">{{ "Articles, Books & More" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/page/databases">Databases</a>
+										<a href="https://www.un.org/{{request.lang}}/library/page/databases">{{ "Databases" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/page/journals">Journals</a>
+										<a href="https://www.un.org/{{request.lang}}/library/page/journals">{{ "Journals" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/page/un-resources-documents">UN Resources & Documents</a>
+										<a href="https://www.un.org/{{request.lang}}/library/page/un-resources-documents">{{ "UN Resources & Documents" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/page/un-libraries">UN Libraries</a>
+										<a href="https://www.un.org/{{request.lang}}/library/page/un-libraries">{{ "UN Libraries" | trans() }}</a>
 									</li>
 								</ul>
 							</div>
@@ -433,16 +432,16 @@
 								<h4 class="font-bold">Services for...</h4>
 								<ul class="menu nav">
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/page/services-delegates">Delegates</a>
+										<a href="https://www.un.org/{{request.lang}}/library/page/services-delegates">{{ "Delegates" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/page/services-un-staff">UN Staff</a>
+										<a href="https://www.un.org/{{request.lang}}/library/page/services-un-staff">{{ "UN Staff" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/page/services-researchers-and-librarians">Researchers & Librarians</a>
+										<a href="https://www.un.org/{{request.lang}}/library/page/services-researchers-and-librarians">{{ "Researchers & Librarians" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/page/services-general-public">General Public</a>
+										<a href="https://www.un.org/{{request.lang}}/library/page/services-general-public">{{ "General Public" | trans() }}</a>
 									</li>
 								</ul>
 							</div>
@@ -456,25 +455,25 @@
 								<h4 class="font-bold">Research the UN</h4>
 								<ul class="menu nav">
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/page/un-resources-documents">UN Resources & Documents</a>
+										<a href="https://www.un.org/{{request.lang}}/library/page/un-resources-documents">{{ "UN Resources & Documents" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="https://digitallibrary.un.org/">UN Digital Library</a>
+										<a href="https://digitallibrary.un.org/">{{ "UN Digital Library" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/page/index-proceedings">Index to Proceedings</a>
+										<a href="https://www.un.org/{{request.lang}}/library/page/index-proceedings">{{ "Index to Proceedings" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="http://metadata.un.org/">Linked Data Services</a>
+										<a href="http://metadata.un.org/">{{ "Linked Data Services" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="http://research.un.org/en">Research Guides</a>
+										<a href="http://research.un.org/{{request.lang}}">{{ "Research Guides" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/page/speeches-and-meetings">Speeches</a>
+										<a href="https://www.un.org/{{request.lang}}/library/page/speeches-and-meetings">{{ "Speeches" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/unms">UN Member States on the Record</a>
+										<a href="https://www.un.org/{{request.lang}}/library/unms">{{ "UN Member States on the Record" | trans() }}</a>
 									</li>
 								</ul>
 							</div>
@@ -486,13 +485,13 @@
 								<h4 class="font-bold">Help</h4>
 								<ul class="menu nav">
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/page/training-and-events">Training</a>
+										<a href="https://www.un.org/{{request.lang}}/library/page/training-and-events">{{ "Training" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="http://research.un.org/en">Research Guides</a>
+										<a href="http://research.un.org/{{request.lang}}">{{ "Research Guides" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="http://ask.un.org/">Ask DAG</a>
+										<a href="http://ask.un.org/">{{ "Ask DAG" | trans() }}</a>
 									</li>
 								</ul>
 							</div>
@@ -504,16 +503,16 @@
 								<h4 class="font-bold">Using the Library</h4>
 								<ul class="menu nav">
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/page/access-electronic-resources">Access Electronic Resources</a>
+										<a href="https://www.un.org/{{request.lang}}/library/page/access-electronic-resources">{{ "Access Electronic Resources" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/page/borrow-books-more">Borrow Books & More</a>
+										<a href="https://www.un.org/{{request.lang}}/library/page/borrow-books-more">{{ "Borrow Books & More" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/page/request-articles-books-documents">Request Articles, Books & Documents</a>
+										<a href="https://www.un.org/{{request.lang}}/library/page/request-articles-books-documents">{{ "Request Articles, Books & Documents" | trans() }}</a>
 									</li>
 									<li class="leaf">
-										<a href="https://www.un.org/en/library/page/visit-library">Visit the Library</a>
+										<a href="https://www.un.org/{{request.lang}}/library/page/visit-library">{{ "Visit the Library" | trans() }}</a>
 									</li>
 								</ul>
 							</div>
@@ -527,18 +526,18 @@
 						<div id="views-bootstrap-grid-4" class="views-bootstrap-grid-plugin-style">
 							<div class="row">
 								<div class="footer_banner_item col-xs-12 col-sm-12 col-md-12 col-lg-12">
-									<p>169,000 pages digitized in 2023</p>
+									<p>{{"169,000 pages digitized in 2023" | trans() }}</p>
 								</div>
 								<div class="footer_banner_item col-xs-12 col-sm-12 col-md-12 col-lg-12">
-									<h4 class="font-bold">OPENING HOURS:</h4>
+									<h4 class="font-bold">{{ "OPENING HOURS:" | trans() }}</h4>
 									<p>
-										<strong>Monday to Friday</strong>
+										<strong>{{ "Monday to Friday" | trans() }}</strong>
 									</p>
 									<p>
-										<a href="https://www.un.org/en/library/contact-us" target="_blank">Online: 9am–5pm ET</a>
+										<a href="https://www.un.org/{{request.lang}}/library/contact-us" target="_blank">{{ "Online: 9am–5pm ET" | trans() }}</a>
 									</p>
-									<p>1st Floor Reading rooms:&nbsp;11am-3pm ET</p>
-									<p>2nd Floor Reading rooms: 10am-5pm ET</p>
+									<p>{{ "1st Floor Reading rooms: 11am-3pm ET" | trans() }}</p>
+									<p>{{ "2nd Floor Reading rooms: 10am-5pm ET" | trans() }}</p>
 								</div>
 							</div>
 						</div>
@@ -559,13 +558,13 @@
 					<div
 						class="pull-left flip footer-brand en">
 						<!-- footer brand -->
-						<a href="https://www.un.org/en/" title="Home">
-							<span class="site-name">United Nations</span>
+						<a href="https://www.un.org/{{request.lang}}/" title="{{'Home' | trans() }}">
+							<span class="site-name">{{ "United Nations" | trans() }}</span>
 						</a>
 					</div>
 					<!-- /footer brand -->
 					<div class="pull-right flip donate">
-						<a href="https://www.un.org/en/about-us/how-to-donate-to-the-un-system" class="btn btn-default btn-reverse dark" role="button" id="donate_button">Donate</a>
+						<a href="https://www.un.org/{{request.lang}}/about-us/how-to-donate-to-the-un-system" class="btn btn-default btn-reverse dark" role="button" id="donate_button">{{ "Donate" | trans() }}</a>
 					</div>
 					<div
 						class="pull-right flip social-media" role="navigation">
@@ -602,25 +601,25 @@
 						<div id="block-menu-menu-footer-links" class="block block-menu" role="navigation">
 							<ul class="nav list-inline">
 								<li class="list-inline-item ">
-									<a href="https://www.un.org/en/site-index">A-Z Site Index</a>
+									<a href="https://www.un.org/{{request.lang}}/site-index">{{ "A-Z Site Index" | trans() }}</a>
 								</li>
 								<li class="list-inline-item ">
-									<a href="https://www.un.org/en/contact-us-0">Contact</a>
+									<a href="https://www.un.org/{{request.lang}}/contact-us-0">{{ "Contact" | trans() }}</a>
 								</li>
 								<li class="list-inline-item ">
-									<a href="https://www.un.org/en/about-us/copyright">Copyright</a>
+									<a href="https://www.un.org/{{request.lang}}/about-us/copyright">{{ "Copyright" | trans() }}</a>
 								</li>
 								<li class="list-inline-item ">
-									<a href="https://www.un.org/en/about-us/frequently-asked-questions">FAQ</a>
+									<a href="https://www.un.org/{{request.lang}}/about-us/frequently-asked-questions">{{ "FAQ" | trans() }}</a>
 								</li>
 								<li class="list-inline-item ">
-									<a href="https://www.un.org/en/about-us/fraud-alert">Fraud Alert</a>
+									<a href="https://www.un.org/{{request.lang}}/about-us/fraud-alert">{{ "Fraud Alert" | trans() }}</a>
 								</li>
 								<li class="list-inline-item ">
-									<a href="https://www.un.org/en/about-us/privacy-notice">Privacy Notice</a>
+									<a href="https://www.un.org/{{request.lang}}/about-us/privacy-notice">{{ "Privacy Notice" | trans() }}</a>
 								</li>
 								<li class="list-inline-item last">
-									<a href="https://www.un.org/en/about-us/terms-of-use">Terms of Use</a>
+									<a href="https://www.un.org/{{request.lang}}/about-us/terms-of-use">{{ "Terms of Use" | trans() }}</a>
 								</li>
 							</ul>
 						</div>
@@ -632,4 +631,3 @@
 	</div>
 	<!-- UN.ORG footer end -->
 </div>
-{% endif %}
