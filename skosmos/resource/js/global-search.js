@@ -104,7 +104,7 @@ function startGlobalSearchApp () {
         return { ...languages, ...anyLanguageEntry }
       },
       formatSearchUrlParams () {
-        const params = new URLSearchParams({ q: this.searchTerm })
+        const params = new URLSearchParams({ q: this.searchTerm.includes('*') ? this.searchTerm : `*${this.searchTerm}*` })
         if (this.selectedLanguage === 'all') {
           params.set('anylang', 'on')
         } else {

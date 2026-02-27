@@ -190,8 +190,9 @@ function startVocabSearchApp () {
       },
       gotoSearchPage () {
         if (!this.searchTerm) return
+        const thisSearchTerm = this.formatSearchTerm() // format the search term the same way as in the API call, so that the search page gets the same search term and can show the same results
 
-        const searchUrlParams = new URLSearchParams({ clang: window.SKOSMOS.content_lang, q: this.searchTerm })
+        const searchUrlParams = new URLSearchParams({ clang: window.SKOSMOS.content_lang, q: thisSearchTerm })
         if (this.selectedLanguage === 'all') searchUrlParams.set('anylang', 'true')
         const searchUrl = window.SKOSMOS.vocab + '/' + window.SKOSMOS.lang + '/search?' + searchUrlParams.toString()
         window.location.href = searchUrl
