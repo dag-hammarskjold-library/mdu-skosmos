@@ -23,14 +23,12 @@ def main():
         if file.endswith('.twig')
     )
 
-    results = []
+    results = {}
 
     for file_path in files_with_matches:
         matches = extract_trans_calls(file_path)
-        results.append({
-            'file': file_path,
-            'matches': matches
-        })
+        for match in matches:
+            results[f"{match}"] = f"{match}"
 
     print(json.dumps(results, indent=4))
 

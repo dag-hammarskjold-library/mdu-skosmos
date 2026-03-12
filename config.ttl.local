@@ -118,7 +118,7 @@
     skosmos:sparqlDialect "Generic" .
 
 :unbist2 a skosmos:Vocabulary, void:Dataset ;
-    dc:title "UN Thesaurus Test"@en, ""@ar, "联合国叙词表 (Test)"@zh, ""@fr, ""@ru, ""@es ;
+    dc:title "UN Thesaurus Test"@en, ""@ar, "联合国叙词表 (Test)"@zh, ""@fr, ""@ru, "Tesauro de la ONU"@es ;
     skosmos:shortName "UNBIST" ;
     dc:subject :cat_general ;
     void:uriSpace "http://metadata.un.org/thesaurus/" ;
@@ -153,7 +153,7 @@
     void:sparqlEndpoint <https://metadata.un.org/graphdb/repositories/SDG-test_core> .
 
 :unms a skosmos:Vocabulary, void:Dataset ;
-    dc:title "UN Member States"@en, ""@ar, ""@zh, ""@fr, ""@ru, ""@es ;
+    dc:title "UN Member States"@en, ""@ar, ""@zh, ""@fr, ""@ru, "Estados Miembros de la ONU"@es ;
     skosmos:shortName "UNMS" ;
     dc:subject :cat_general ;
     void:uriSpace "http://metadata.un.org/UNMS/" ;
@@ -184,7 +184,7 @@
     skos:topConceptOf :categories ;
     skos:inScheme :categories ;
     skos:prefLabel "Services Available"@en,
-        ""@ar, ""@fr, ""@zh, ""@ru, ""@es
+        ""@ar, ""@fr, ""@zh, ""@ru, "Servicios Disponibles"@es
 .
 
 mdrtype:THESAURUS a skos:Concept ;
