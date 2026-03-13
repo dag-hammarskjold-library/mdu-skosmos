@@ -143,6 +143,7 @@
     skosmos:language "ar", "zh", "en", "fr", "ru", "es" ;
     skosmos:defaultLanguage "en" ;
     skosmos:fallbackLanguages "ar", "zh", "fr", "ru", "es" ;
+    skosmos:sidebarViews ("alphabetical" "hierarchy" "groups") ;
     skosmos:explicitLanguageTags true ;
     skosmos:showTopConcepts true ;
     skosmos:showTopConcepts true ;
@@ -160,6 +161,7 @@
     skosmos:language "ar", "zh", "en", "fr", "ru", "es" ;
     skosmos:defaultLanguage "en" ;
     skosmos:fallbackLanguages "ar", "zh", "fr", "ru", "es" ;
+    skosmos:sidebarViews ("alphabetical" "hierarchy" "groups") ;
     skosmos:explicitLanguageTags true ;
     skosmos:showTopConcepts true ;
     skosmos:conceptSchemesInHierarchy true ;
