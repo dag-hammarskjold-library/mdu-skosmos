@@ -532,12 +532,7 @@
         'es': 'https://www.un.org/es/library/page/visit-library'
     },
     'openscience': {
-        'ar': 'https://www.un.org/ar/library/OS',
-        'zh': 'https://www.un.org/zh/library/OS',
-        'en': 'https://www.un.org/en/library/OS',
-        'fr': 'https://www.un.org/fr/library/OS',
-        'ru': 'https://www.un.org/ru/library/OS',
-        'es': 'https://www.un.org/es/library/OS'
+        'en': 'https://www.un.org/en/library/OS'
     }
 } %}
 {% set main_menu = [
@@ -639,7 +634,9 @@
 					{% for item in main_menu %}
 						<li class="nav-item top-level">
 							{% if item.single %}
-								<a class="nav-link" href="{{ menu_links[item.key][request.lang] }}">{{ item.label | trans }}</a>
+                                {% if menu_links[item.key][request.lang] %}
+								    <a class="nav-link" href="{{ menu_links[item.key][request.lang] }}">{{ item.label | trans }}</a>
+                                {% endif %}
 							{% else %}
 								<a class="nav-link{% if item.key == 'research' %} active{% endif %}" href="#">
 									{{ item.label | trans }}
