@@ -211,8 +211,12 @@
         padding: 0;
         width: 11rem;
         height: 3.3rem;
-        background: url(//www.un.org/sites/un2.un.org/themes/bootstrap_un2/images/logo-en-reverse.svg) no-repeat;
+        background: url(//www.un.org/sites/un2.un.org/themes/bootstrap_un2/images/logo-{{request.lang}}-reverse.svg) no-repeat;
+		{% if request.lang == 'ar' %}
+		background-position: top right;
+		{% else %}
         background-position: top left;
+		{% endif %}
     }
     .footer .footer-brand a span {
         border: 0;
@@ -234,10 +238,18 @@
 		border-left: gray solid 1px;
 	}
 	.pull-right {
+		{% if request.lang == 'ar' %}
+		float: left !important;
+		{% else %}
 		float: right !important;
+		{% endif %}
 	}
 	.pull-left {
+		{% if request.lang == 'ar' %}
+		float: right !important;
+		{% else %}
 		float: left !important;
+		{% endif %}
 	}
 	.footer .btn.btn-default {
 		background-color: #ffffff;
@@ -378,7 +390,7 @@
 					<div class="col-md-4">
 						<section class="region region-footer-1">
 							<div class="block block-menu">
-								<h4 class="font-bold">About</h4>
+								<h4 class="font-bold">{{"About" |trans() }}</h4>
 								<ul class="menu nav">
 									<li class="leaf">
 										<a href="https://www.un.org/{{request.lang}}/library/contact-us">{{ "Contact Us" | trans() }}</a>
@@ -392,12 +404,14 @@
 									<li class="leaf">
 										<a href="https://www.un.org/{{request.lang}}/library/page/our-collections">{{ "Our Collections" | trans() }}</a>
 									</li>
+									{% if request.lang == 'en' %}
 									<li class="leaf">
 										<a href="https://www.un.org/{{request.lang}}/library/page/united-nations-depository-library-programme">{{ "UN Depository Libraries" | trans() }}</a>
 									</li>
 									<li class="leaf">
 										<a href="https://www.un.org/{{request.lang}}/library/librarynews">{{ "Library News" | trans() }}</a>
 									</li>
+									{% endif %}
 								</ul>
 							</div>
 						</section>
@@ -405,7 +419,7 @@
 					<div class="col-md-4">
 						<section class="region region-footer-1">
 							<div class="block block-menu">
-								<h4 class="font-bold">Find</h4>
+								<h4 class="font-bold">{{"Find" |trans()}}</h4>
 								<ul class="menu nav">
 									<li class="leaf">
 										<a href="https://www.un.org/{{request.lang}}/library/page/articles-books-more">{{ "Articles, Books & More" | trans() }}</a>
@@ -429,7 +443,7 @@
 					<div class="col-md-4">
 						<section class="region region-footer-1">
 							<div class="block block-menu">
-								<h4 class="font-bold">Services for...</h4>
+								<h4 class="font-bold">{{ "Services for..." | trans() }}</h4>
 								<ul class="menu nav">
 									<li class="leaf">
 										<a href="https://www.un.org/{{request.lang}}/library/page/services-delegates">{{ "Delegates" | trans() }}</a>
@@ -452,7 +466,7 @@
 					<div class="col-md-4">
 						<section class="region region-footer-1">
 							<div class="block block-menu">
-								<h4 class="font-bold">Research the UN</h4>
+								<h4 class="font-bold">{{"Research the UN" | trans()}}</h4>
 								<ul class="menu nav">
 									<li class="leaf">
 										<a href="https://www.un.org/{{request.lang}}/library/page/un-resources-documents">{{ "UN Resources & Documents" | trans() }}</a>
@@ -482,7 +496,7 @@
 					<div class="col-md-4">
 						<section class="region region-footer-1">
 							<div class="block block-menu">
-								<h4 class="font-bold">Help</h4>
+								<h4 class="font-bold">{{"Help" |trans()}}</h4>
 								<ul class="menu nav">
 									<li class="leaf">
 										<a href="https://www.un.org/{{request.lang}}/library/page/training-and-events">{{ "Training" | trans() }}</a>
@@ -500,7 +514,7 @@
 					<div class="col-md-4">
 						<section class="region region-footer-1">
 							<div class="block block-menu">
-								<h4 class="font-bold">Using the Library</h4>
+								<h4 class="font-bold">{{"Using the Library" | trans()}}</h4>
 								<ul class="menu nav">
 									<li class="leaf">
 										<a href="https://www.un.org/{{request.lang}}/library/page/access-electronic-resources">{{ "Access Electronic Resources" | trans() }}</a>
