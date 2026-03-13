@@ -193,43 +193,102 @@
 		padding: 35px;
 		margin-bottom: 0;
 	}
-    .footer-fluid {
-        border-top: #009edb solid 0.3rem;
-        background: #333333;
-    }
-    .footer {
-        margin-top: 0;
-        padding-top: 31.7967997456px;
-        padding-bottom: 3.3rem;
-        border-top: none;
-    }
+	.home-footer ul li::before {
+		margin-top: 0.5rem;
+		font: var(--fa-font-solid);
+		font-size: 10px;
+		/*font-family: "Font Awesome 6 Free" !important;*/
+		content: "\f111";
+		float: left;
+		margin-left: -1.75rem;
+		margin-right: 0;
+		padding-top: 0.3000428633rem;
+		color: #c4c4c4;
+	}
+
+	.home-footer.ar ul li::before {
+		float: right;
+		margin-left: 0;
+		margin-right: -2.5rem;
+	}
+
+	.home-footer.ar ul li {
+		padding-left: 0;
+		padding-right: 0;
+		margin-right: 0;
+		text-align: right;
+	}
+
+	.home-footer.ar h4 {
+		text-align: right;
+	}
+
+	.home-footer.ar h4::after {
+		margin-left: 0;
+		margin-right: 1px;
+		width: 15%;
+	}
+
+	.footer-fluid {
+		border-top: #6e7f86 solid 0.3rem;
+		background: #333333;
+	}
+	.footer {
+		margin-top: 0;
+		padding-top: 31.7967997456px;
+		padding-bottom: 3.3rem;
+		border-top: none;
+	}
 	.footer .footer-brand {
 		margin-left: -15px;
 	}
-    .footer .footer-brand a {
-        display: block;
-        padding: 0;
-        width: 11rem;
-        height: 3.3rem;
-        background: url(//www.un.org/sites/un2.un.org/themes/bootstrap_un2/images/logo-{{request.lang}}-reverse.svg) no-repeat;
+	.footer .footer-brand a {
+		display: block;
+		padding: 0;
+		width: 11rem;
+		height: 3.3rem;
+		background: url('//www.un.org/sites/un2.un.org/themes/bootstrap_un2/images/logo-{{request.lang}}-reverse.svg') no-repeat;
 		{% if request.lang == 'ar' %}
-		background-position: top right;
+			background-position: top right;
 		{% else %}
-        background-position: top left;
+			background-position: top left;
 		{% endif %}
+	}
+	.footer .footer-brand a span {
+		border: 0;
+		clip: rect(1px, 1px, 1px, 1px);
+		-webkit-clip-path: inset(100%);
+		clip-path: inset(100%);
+		height: 1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
+	}
+
+	.footer.ar .footer-brand {
+        margin-left: auto;
+        margin-right: -15px;
+        float: right !important;
     }
-    .footer .footer-brand a span {
-        border: 0;
-        clip: rect(1px, 1px, 1px, 1px);
-        -webkit-clip-path: inset(100%);
-        clip-path: inset(100%);
-        height: 1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        white-space: nowrap;
-        width: 1px;
+
+    .footer.ar .donate {
+        float: left !important;
+        margin-left: 28px;
+        margin-right: 1px;
+        border-left: gray solid 1px;
+        border-right: none;
+        padding-left: 21px;
+        padding-right: 0;
     }
+
+    .footer.ar .social-media {
+        float: left !important;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
 	.footer .donate {
 		margin-top: 17px;
 		margin-left: 28px;
@@ -238,18 +297,10 @@
 		border-left: gray solid 1px;
 	}
 	.pull-right {
-		{% if request.lang == 'ar' %}
-		float: left !important;
-		{% else %}
 		float: right !important;
-		{% endif %}
 	}
 	.pull-left {
-		{% if request.lang == 'ar' %}
-		float: right !important;
-		{% else %}
 		float: left !important;
-		{% endif %}
 	}
 	.footer .btn.btn-default {
 		background-color: #ffffff;
@@ -265,11 +316,10 @@
 		letter-spacing: 1.27px;
 		text-transform: uppercase;
 		border: 1px solid transparent;
-		padding: 10px 20px;
+		padding: 9px 20px 10px;
 		font-size: 12px;
 		line-height: 1;
 		border-radius: 4px;
-		padding-top: 9px;
 	}
 	.footer .social-media {
 		margin-top: 8px;
@@ -283,7 +333,7 @@
 		letter-spacing: -0.35px;
 		line-height: 1.35;
 		margin-bottom: 20px;
-		margin-top: 0px;
+		margin-top: 0;
 	}
 	.footer-fluid .list-inline {
 		padding-left: 0;
@@ -337,7 +387,7 @@
 	}
 	.footer .footer-links .divider {
 		border-top: #5b5b5b solid 1px;
-		margin: 16px 0 19px 0;
+		margin: 16px 0 19px;
 		padding: 0 1rem;
 	}
 	.home-footer .divider {
@@ -375,11 +425,56 @@
 		padding-right: 0;
 		border-right: none;
 	}
+
+	footer .footer-links .nav li {
+		padding: 0 13px 0 10px;
+		border-right: gray solid 3px;
+	}
+	.footer .footer-links .nav li.last {
+		padding-right: 0;
+		border-right: none;
+	}
+
+	.footer.ar .footer-brand {
+		margin-left: auto;
+		margin-right: -15px;
+	}
+
+	.footer.ar .donate,
+	.footer.ar .social-media {
+		float: left !important;
+	}
+
+	.footer.ar .donate {
+        float: left !important;
+        margin-left: 0;
+        margin-right: 28px;
+        border-right: gray solid 1px;
+        padding-left: 0;
+        padding-right: 21px;
+    }
+
+	.footer.ar .footer-links .nav {
+		float: left !important;
+	}
+
+	.footer.ar .footer-links .nav li {
+		padding: 0 10px 0 13px;
+		border-right: none;
+		border-left: gray solid 3px;
+	}
+
+	.footer.ar .footer-links .nav li.last {
+		padding-left: 0;
+		border-left: none;
+	}
+
 	.list-inline-item:not(:last-child) {
 		margin-right: 0;
 	}
 </style>
-<div class="section section-fluid home-footer gray-bg">
+{% set lang_class = request.lang == 'ar' ? 'ar' : '' %}
+<div class="section section-fluid home-footer gray-bg {{ lang_class }}">
 	<div class="container">
 		<div class="row topmargin">
 			<div class="divider"></div>
@@ -405,12 +500,12 @@
 										<a href="https://www.un.org/{{request.lang}}/library/page/our-collections">{{ "Our Collections" | trans() }}</a>
 									</li>
 									{% if request.lang == 'en' %}
-									<li class="leaf">
-										<a href="https://www.un.org/{{request.lang}}/library/page/united-nations-depository-library-programme">{{ "UN Depository Libraries" | trans() }}</a>
-									</li>
-									<li class="leaf">
-										<a href="https://www.un.org/{{request.lang}}/library/librarynews">{{ "Library News" | trans() }}</a>
-									</li>
+										<li class="leaf">
+											<a href="https://www.un.org/{{request.lang}}/library/page/united-nations-depository-library-programme">{{ "UN Depository Libraries" | trans() }}</a>
+										</li>
+										<li class="leaf">
+											<a href="https://www.un.org/{{request.lang}}/library/librarynews">{{ "Library News" | trans() }}</a>
+										</li>
 									{% endif %}
 								</ul>
 							</div>
@@ -564,13 +659,13 @@
 
 	<!-- begin un-footer -->
 	<!-- UN.ORG footer -->
-		<div class="section-fluid footer-fluid"> <footer class="footer container dark">
+		<div class="section-fluid footer-fluid"> <footer class="footer container dark {{ lang_class }}">
 			<div
 				class="row">
 				<!-- row -->
 				<div class="col-md-12">
 					<div
-						class="pull-left flip footer-brand en">
+						class="pull-left flip footer-brand {{ lang_class }}">
 						<!-- footer brand -->
 						<a href="https://www.un.org/{{request.lang}}/" title="{{'Home' | trans() }}">
 							<span class="site-name">{{ "United Nations" | trans() }}</span>
@@ -598,7 +693,7 @@
 								<a href="https://www.linkedin.com/company/un-library/">
 									<span class="icon-text">linkedin</span>
 								</a>
-							</li>					
+							</li>
 						</ul>
 					</div>
 					<!-- /social media links -->
