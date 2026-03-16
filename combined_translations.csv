@@ -1,277 +1,284 @@
-key,fr,ar,es,zh,en,ru
-Any language,Toutes les langues,أي لغة,Cualquier lengua,,Any language,Любой язык
-Download this concept,Télécharger ce concept,تحميل هذا المفهوم,Descargue este concepto,,Download this concept,Скачать концепцию
-%search_count% results for '%term%',%search_count% résultat(s) pour '%term%',%search_count% نتائج '%term%',%search_count% resultados para '%term%',搜索...术语结果计数,%search_count% results for '%term%',Всего результатов для %te: %s
-404 Error: The page %requested_page% cannot be found.,Erreur 404 : La page %requested_page% n'existe pas.,خطأ 404: الصفحة المطلوبة %requested_page% غير موجودة.,,,404 Error: The page %requested_page% cannot be found.,Ошибка 404: Запрашиваемая страница %requested_page% не найдена
-A-Z,A-Z,أ-ي,A-Z,全部，A到Z（按字母顺序排列的）索引,A-Z,А-Я
-About,À propos,حول,Acerca de,关于,About,О проекте
-About page,À propos,حول,Acerca de,关于,About,О проекте
-All %d results displayed,Tous les résultats sont affichés (%d),كافة%d النتائج معروضة,Todos los %d resultados visualizados,所有...%d的结果已显示。,All %d results displayed,Все результаты показаны: %d
-Alpha-nav,Liste,هجائي,Alfabéticamente,按照字母顺序的,Alphabetical,По алфавиту
-Alphabetical index,Index alphabétique,الكشاف الهجائي,Índice alfabético,字顺索引（按字母顺序排列）,Alphabetical index,Алфавитный индекс
-Alternate terms,Termes synonymes,المصطلحات البديلة,Términos alternativos,交替术语,Alternate terms,Альтернативные термины
-By group,Par groupe,وفقا للمجموعة,Por grupo,按组,By group,По группе
-By parent,Par parent,وفقا للأصل,Por parentesco,根据隶属关系,By parent,По родителю
-By scheme,Par sous-vocabulaire,وفقا للمفردات الفرعية,,,By subvocabulary,По субсловарю
-By type,Par type,وفقا للنوع,Por tipo,按类型,By type,По типу
-Changes-nav,Nouveautés,جديد,,,New,Новые
-Clear limitations,Enlever les critères,حذف المحددات,Limpie las delimitaciones,明确限定,Clear limitations,Очистить ограничения поиска
-Concept language,Langue,اللغة,Lengua,语言,Language,Язык
-Contact us!,Contactez-nous !,اتصل بنا,¡Contáctenos!,联系我们！,Contact us!,Свяжитесь с нами!
-Content and search language,Langue du contenu et de la recherche,لغة المحتوى والبحث,,,Content and search language,Язык содержимого и поиска
-Content language,Langue des données,لغة المحتوى,Lengua del contenido,内容语言,Content language,Язык содержимого
-Count,Nombre,العدد,Recuento,计数,Count,Всего
-Download this vocabulary as SKOS/RDF:,Télécharger ce vocabulaire en SKOS/RDF :,تحميل هذه المفردات في صيغة SKOS/RDF:,Descargue este vocabulario como SKOS/RDF:,以SKOS或RDF格式下载此词汇表,,Скачать этот словарь в SKOS/RDF:
-E-mail:,E-mail,البريد الإلكتروني:,Correo electrónico:,电子邮件,,E-mail:
-Enter search term,Entrez votre terme de recherche,أدخل مصطلح البحث,,,Enter search term,Введите термин для поиска
-Enter your e-mail address,Saisissez votre adresse e-mail,أدخل عنوان بريدك الالكتروني,Ingrese su correo electrónico,输入您的电子邮件地址,Enter your e-mail address,Введите ваш e-mail
-Enter your name,Saisissez votre nom,أدخل اسمك,Ingrese su nombre,输入您的姓名,Enter your name,Введите ваше имя
-Error: Requested vocabulary not found!,Erreur : Le vocabulaire demandé n'a pas été trouvé !,خطأ: المفردات المطلوبة غير موجودة!,Error: ¡No se encuentra el vocabulario solicitado! ,错误：请求的词汇未找到！,Error: Requested vocabulary not found!,Ошибка: Запрашиваемый словарь не найден!
-"Error: Term ""%term%"" not found in vocabulary!","Erreur : Le term ""%term%"" n'a pas été trouvé dans le vocabulaire !","خطأ: المصطلح ""%term%"" غير موجود في المفردات!","Error: ¡el término ""%term%"" solicitado no se encuentra en el vocabulario!",错误：术语...不存在词汇表中！,"Error: Term ""%term%"" not found in vocabulary!",Ошибка: Термин %teне найден в словаре!
-Feedback,Vos commentaires,التعليقات,Comentarios,意见反馈,Feedback,Обратная связь
-Feedback has been sent!,Votre commentaire a été envoyé !,تم إرسال التعليقات!,¡El comentario ha sido enviado!,反馈已发送！,Feedback has been sent!,Ваш отзыв отправлен!
-Group index,Groupes,كشاف المجموعة,Índice del grupo,分组指数,Group index,Индекс группы
-Group-nav,Groupes,مجموعات,Grupos,组别，群组,Groups,Группы
-Help,Aide,مساعدة,Ayuda,帮助,Help,Помощь
-Hidden terms,Termes cachés,المصطلحات المخفية,Términos ocultos,隐藏术语,Hidden terms,Скрытые термины
-Hier-nav,Hiérarchie,تسلسل هرمي,Jerarquía,层级，层次结构,Hierarchy,Иерархия
-Interface language,Langue de navigation,لغة الواجهة,Idioma,界面语言,Interface language,Язык интерфейса
-Leave this field blank,Laissez ce champ vide,اترك هذا الحقل فارغا,Deje este campo en blanco,保留此字段为空,,Оставьте это поле пустым
-Limit search,Limitez la recherche,تحديد البحث,Delimte la búsqueda,限定检索,Limit search,Ограничить поиск
-Loading,Chargement,جار التحميل,Cargando,加载中,Loading,Загружается
-Loading more items,Chargement de plus de données,جار تحميل المزيد من العناصر,Cargando más ítemes,加载更多条目,Loading more items,Загружается
-Message:,Message :,رسالة:,Mensaje:,消息,,Сообщение:
-Name:,Nom :,الاسم:,Nombre:,姓名,,Имя:
-No results,Pas de résultats,لا توجد نتائج,Sin resultados,没有结果,No results,Нет результатов
-No vocabularies on the server!,Pas de vocabulaires sur le serveur !,لا تتوفر مفردات على الخادم!,¡No hay vocabularios en el servidor!,该服务器上没有词汇表！,No vocabularies on the server!,Нет словарей на сервере!
-Not to a specific vocabulary,Pas de vocabulaire spécifique,لا تتعلق بمفردات محددة,Sin vocabulario específico,不符合特定的词汇表,Not to a specific vocabulary,Не для определённого словаря
-Preferred terms,Termes préférentiels,المصطلحات المفضلة,Términos preferidos,优选词，正式主题词,Preferred terms,Предпочитаемые термины
-Resource counts by type,Nombre d'entrées par type,العدد الكلي للمصادر وفقا للنوع,Listado de recursos por tipo,按类型资源计数,Resource counts by type,Количество ресурсов по типу
-Search,Chercher,البحث,Buscar,检索,Search,Поиск
-Search from vocabulary,Choisissez le vocabulaire dans lequel chercher,البحث في المفردات,,,Search from vocabulary,Поиск по словарю
-Search options,Options de recherche,خيارات البحث,Opciones de búsqueda,搜索选项,Search options,Опции поиска
-Send feedback,Envoyer un commentaire,أرسل التعليقات,Enviar comentario,发送反馈,Send feedback,Отправить отзыв
-Skosmos version %version%,Skosmos version %version%,إصدارة Skosmos %version%,Skosmos versión %version%,Skosmos版本,Skosmos version %version%,Skosmos версия %version%
-Submit search,Lancer la recherche,إرسال البحث,,,Submit search,Найти
-Term counts by language,Nombre de termes par langue,العدد الكلي للمصطلحات وفقا للغة,Recuento de términos por lengua,按语言术语计数,Term counts by language,Количество ресурсов по языку
-Thank you for your feedback,Merci pour votre commentaire. Nous faisons de notre mieux pour prendre en compte les commentaires dès que possible.,شكرا لك على تعليقاتك. نحن نسعى جاهدين للرد على جميع التعليقات في أقرب وقت ممكن.,Gracias por sus comentarios. Nos esforzaremos en contestarlos todos lo más pronto posible.,谢谢您的反馈。我们努力尽快回复所有反馈。,Thank you for your feedback. We strive to answer all feedback as soon as possible.,Спасибо за ваш отзыв. Мы стараемся ответить на все отзывы как можно скорее.
-The search provided no results.,La recherche n'a ramené aucun résultat.,البحث لم يقدم أية نتائج.,La búsqueda no brinda resultados,该检索没有结果。,The search provided no results.,Поиск не дал результатов.
-There is no term for this concept in this language,Pas de terme dans cette langue pour ce concept,لا يوجد مصطلح لهذا المفهوم في هذه اللغة.,,,There is no term for this concept in this language.,На этом языке нет термина для этой концепции.
-Type,Type,النوع,Tipo,类型,Type,Тип
-Value is required and can not be empty,Champ obligatoire,القيمة مطلوبة ولا يمكن أن تترك فارغة,"Se requiere algún valor, el campo no puede quedar en blanco",需要赋值，不能为空。,Value is required and can not be empty,Значение является обязательным и не может быть пустым
-Vocabularies,Vocabulaires,المفردات,,,Vocabularies,Словари
-Vocabularies-nav,Vocabulaires,المفردات,Vocabularios,词汇表,Vocabularies,Словари
-Vocabulary information,Description du vocabulaire,معلومات المفردات,Información del vocabulario,词汇表信息,Vocabulary information,Информация о словаре
-cc:attributionName,Nom d'attribution,اسم الإسناد,,,Attribution Name,Имя аттрибута
-cc:attributionUrl,URL d'attribution,Url الإسناد,,,Attribution Url,URL аттрибута
-cc:license,Licence,الترخيص,,,License,Лицензия
-cc:morePermissions,Autres autorisations,المزيد من الأذونات,,,More Permissions,Ещё о правах доступа
-cc:useGuidelines,règles d'utilisation,استخدم الأدلة الإرشادية,,,use guidelines,Руководство по использованию
-dc:conformsTo,Conforme à,يتوافق مع,,,Conforms To,Соответствует
-dc:contributor,Contributeur,المساهم,Colaborador,其他责任者,Contributor,Контрибьютор
-dc:coverage,Couverture,التغطية,,,Coverage,Покрытие
-dc:created,Date de création,تاريخ الإنشاء,Creado,创建的,Created,Создано
-dc:creator,Créateur,المنشئ,Creador,创建者,Creator,Автор
-dc:date,Date,التاريخ,Fecha,日期,Date,Дата
-dc:description,Description,الوصف,Descripción,描述，说明,Description,Описание
-dc:format,Format,الصيغة,,,Format,Формат
-dc:identifier,Identifiant,المُعَرِّف,,,Identifier,Идентификатор
-dc:isReplacedBy,Est remplacé par,حل محله,,,Is replaced by,Заменено
-dc:isRequiredBy,Est nécessaire pour,مطلوب من,,,Is Required By,Требуется
-dc:issued,Date de publication,تاريخ الإصدار,Fecha de publicación,发行日期,Date issued,Дата выпуска
-dc:language,Langue,اللغة,Lengua,语言,Language,Язык
-dc:license,Licence,الترخيص,Licencia,许可,License,Лицензия
-dc:modified,Date de dernière modification,آخر تعديل,Última modificación,最后修改,Last modified,Последнее изменение
-dc:publisher,Editeur,الناشر,Editor,出版者,Publisher,Издатель
-dc:relation,Relation,العلاقة,Relación,关系,Relation,Отношение
-dc:replaces,Remplace,يحل محل,,,Replaces,Заменяет
-dc:rights,Droits,الحقوق,Derechos,权限,Rights,Права
-dc:rightsHolder,Détenteur des droits,صاحب الحقوق,,,Rights Holder,Правообладатель
-dc:source,Source,المصدر,Fuente,来源,Source,Источник
-dc:source_help,La source des informations.,مصدر لوصف المفهوم.,,,Source for the description of the concept.,Источник описания концепции.
-dc:spatial,Couverture spatiale,التغطية المكانية,,,Spatial coverage,Пространственное покрытие
-dc:subject,Sujet,الموضوع,Materia,主题,Subject,Тема
-dc:temporal,Couverture temporelle,تغطية زمنية,,,Temporal coverage,Временное покрытие
-dc:title,Titre,العنوان,Título,题名,Title,Название
-dc:type,Type,النوع,,,Type,Тип
-deprecated,Ce concept a été déprécié.,هذا المفهوم غير متاح للإستخدام. لا تستخدم هذا المفهوم للشرح!,Este concepto está obsoleto.,此概念已弃用，请不要使用用于注释。,This concept has been deprecated.,Данная концепция устарела. Не используйте эту концепцию для аннотации!
-foaf:homepage,Accueil,الصفحة الرئيسية,Página de inicio,主页,Homepage,Домашняя страница
-foaf:page,Page,الصفحة,,,Page,Страница
-foreign prefLabel help,Termes du concept dans d'autres langues.,مصطلحات هذا المفهوم باللغات الأخرى.,Términos para el concepto en otras lenguas.,其它语言中概念术语,Terms for the concept in other languages.,Термины для концепции на других языках.
-foreign prefLabels,Traductions,بلغات أخرى,En otras lenguas,其它语言,In other languages,На других языках
-from all,Partout,من الكل,Todos,全部源自，所有来源,from all,из всех
-helper_help,Passer le curseur sur un texte souligné en pointillé pour voir plus d'informations sur la propriété.,مرر مؤشر الفأرة فوق النص الموضوع أسفله خط منقط لعرض التعليمات حول الموقع.,Desplace su cursor sobre el texto con el subrayado punteado para ver las instrucciones de la propiedad.,用点下划线在文本上悬停鼠标，以查看属性说明,Hover your cursor over the text with a dotted underline to see instructions about the property.,"Наведите указатель мышки на текст с пунктирным подчеркиванием, чтобы увидеть информацию о свойстве."
-hierarchy-disabled-help,Impossible d'afficher les concepts racines de la hiérarchie pour ce vocabulaire.,لا يمكن عرض التسلسل الهرمي للمستوى الأعلى في هذه المفردات.,Los conceptos superiores en la jerarquía no pueden ser visualizados en este vocabulario,该词汇表不显示顶级类层级。,The top level hierarchy can't be shown in this vocabulary.,Иерархия верхнего уровня не может быть показана в этом словаре.
-in_this_language,Français,بالإنجليزية, Español ,英语,English,на русском
-isothes:ConceptGroup,Groupe de concepts,مجموعة مفاهيم,Agrupación de conceptos,概念组,Concept group,Группа концепций
-isothes:ThesaurusArray,Tableau de concepts frères,مصفوفة من مفاهيم قريبة,Conjunto de conceptos hermanos,同位叙词概念类组,Array of sibling concepts,Массив родственных концепций
-isothes:broaderGeneric,Concepts génériques,مفاهيم أوسع,,,Broader concepts,Концепции более широкого понятия
-isothes:broaderInstantial,Concept générique (classe-instance),مفهوم أوسع (آني),,,Broader concept (instantial),Концепция более широкого понятия (примерно)
-isothes:broaderPartitive,Concept générique (tout-partie),مفهوم أوسع (جزئي),,,Broader concept (partitive),Концепции более широкого понятия (частично)
-isothes:narrowerGeneric,Concepts spécifiques,مفاهيم أضيق,,,Narrower concepts,Концепции более узкого понятия
-isothes:narrowerInstantial,Concepts spécifiques (classe-instance),مفاهيم أضيق (آنية),,,Narrower concepts (instantial),Концепции более узкого понятия (примерно)
-isothes:narrowerPartitive,Concepts spécifiques (tout-partie),مفاهيم أضيق (جزئية),,,Narrower concepts (partitive),Концепции более узкого понятия (частично)
-isothes:superGroup,Groupe parent,المجموعة الرئيسة,Supergrupo,超级组,Super group,Супер группа
-layout designed by Hahmo,Mise en page : Hahmo Design,التصميم بواسطة Hahmo Design,diagramación diseñada por Hahmo Design,依据Hahmo Design公司设计的版面/布局,layout designed by Hahmo Design,дизайн разработан Hahmo Design
-limited to group,groupe,المجموعة,grupo,组,group,группа
-limited to parent,parent,الأصل,padre,隶属关系,parent,родитель
-limited to scheme,au sein du vocabulaire,يقتصر على المخطط,,,limited to scheme,по схеме
-limited to type,type,النوع,tipo,类型,type,тип
-owl:sameAs,Concepts équivalents,المفاهيم المتكافئة,Conceptos equivalentes,同等概念,Equivalent concepts,Эквивалентные концепции
-owl:versionInfo,Version,الإصدارة,Versión,版本,Version,Версия
-rdf:type,Type,النوع,Tipo,类型,Type,Тип
-rdf:type_help,Type d'entrée,نوع الكيان,Tipo,实体类型,Type of entity,Тип объекта
-rdfs:comment,Description,الوصف,Descripción,描述，说明,Description,Описание
-rdfs:label,Label,التسمية,Etiqueta,标签,Label,Термин
-rdfs:seeAlso,Voir aussi,انظر أيضا,Véase además,参见,See also,Смотрите также
-search_example_text,"Pour les recherches avec troncature, utilisez le symbole * , par exemple *animal ou *brevet*. La recherche utilise automatiquement une troncature en fin de mot, même sans le symbole de troncature : la recherche chat donnera donc les mêmes résultats que chat*.",للبحث الاقتطاعي، الرجاء استخدام الرمز * كما هو الحال في *حيوان أو *براءة*. بالنسبة لنهاية كلمات البحث، سيتم اقتطاع البحث تلقائيًا، حتى إذا لم يتم إدخال رمز الاقتطاع يدويا: وهكذا، سيؤدي البحث عن قط إلى الحصول على نفس نتائج البحث عن قط*.,"Para la búsqueda por truncamiento, por favor utilice el símbolo * como en *animal o *patente*. Para los sufijos de las palabras de búsqueda, la búsqueda se truncará automáticamente, incluso si el símbolo de truncamiento no se ingresa manualmente: asi, gat producirá los mismos resultados que gat*",对于截词检索，请使用符号*作为*动物或*专利。对于检索词的结尾，检索将会自动截词，即使截词符号没有自动输入，因此输入cat将会产生和输入cat*同样的结果。,"For truncation search, please use the symbol * as in *animal or *patent*. For ends of search words, the search will be truncated automatically, even if the truncation symbol is not entered manually: thus, cat will yield the same results as cat*.","Для сокращения поиска, пожалуйста, используйте символ * как в *животное или *патент*. В конце поисковых слов, поиск будет сокращён автоматически, даже если символ сокращения не введён вручную: таким образом, кот выдаст те же результаты, что и кот*."
-selected,sélectionné,محدَّد,seleccionado,所选的，选择的,,выбранно
-show all # paths,voir tous les # chemins,عرض جميع الـ # مسارات,muestre todas las # rutas,显示所有路径,show all # paths,показать все # пути
-skos:Collection,Collection,المجموعة,Colección,收藏，集,Collection,Коллекция
-skos:Concept,Concept,مفهوم,Concepto,概念,Concept,Концепция
-skos:altLabel,Variante,مصطلحات المداخل,Etiquetas alternativas,,Used for,Термины
-skos:altLabel_help,Synonymes pour le concept.,مصطلحات بديلة للمفهوم.,Términos alternativos para el concepto.,此概念交替术语,Alternative terms for the concept.,Альтернативные термины для концепции.
-skos:broadMatch,Equivalence générique,مفاهيم أوسع مطابقة,Concepto genérico concordante,简单知识组织系统：广泛匹配,Broader matching concepts,Концепции соответствия более широкого понятия
-skos:broadMatch_help,Concept générique dans un autre vocabulaire,مفاهيم أوسع مطابقة في مفردات أخرى.,Concepto genérico concordante en otro vocabulario.,在另一词汇表中匹配的上位概念,Broader matching concepts in another vocabulary.,Концепции соответствия более широкого понятия в другом словаре.
-skos:broader,Concept générique,مفهوم أوسع,Concepto genérico,上位概念,Broader concept,Концепция более широкого понятия
-skos:broader_help,Concept générique (TG),مفهوم أوسع,Concepto genérico,上位概念,Broader concept,Концепция более широкого понятия
-skos:changeNote,Note de changement,تبصرة تغيير,Nota de cambio,变更注释，变更说明,Change note,Заметка об изменениях
-skos:closeMatch,Concept proche,مفاهيم متطابقة بشكل وثيق,Concepto equivalente concordante,紧密匹配的概念,Closely matching concepts,Концепции близкого соответствия 
-skos:closeMatch_help,Concept proche dans un autre vocabulaire,مفاهيم متطابقة بشكل وثيق في مفردات أخرى.,Concepto equivalente concordante en otro vocabulario.,在另一词汇表中紧密匹配的概念,Closely matching concepts in another vocabulary.,Концепции близкого соответствия в другом словаре.
-skos:definition,Définition,تعريف,Definición,定义,Definition,Определение
-skos:definition_help,Une explication du sens précis de ce concept,شرح كامل للمعنى المقصود لمفهوم,Una explicación completa del significado deseado para un concepto,某概念特定涵义的完全解释,A complete explanation of the intended meaning of a concept,Полное объяснение предполагаемого значения концепции
-skos:editorialNote,Note éditoriale,تبصرة تحريرية,Nota editorial,编者按,Editorial note,Редакционная заметка
-skos:exactMatch,Equivalence exacte,مفاهيم مطابقة تماما,Concordancia exacta,精确匹配,Exactly matching concepts,Концепции точного соответствия
-skos:exactMatch_help,Concepts équivalents dans un autre vocabulaire.,مفاهيم مطابقة تماما في مفردات أخرى.,Conceptos exactamente concordantes en otro vocabulario.,在另一词汇表中精确匹配的概念,Exactly matching concepts in another vocabulary.,Концепции точного соответствия в другом словаре.
-skos:example,Exemple,مثال,Ejemplo,实例,Example,Пример
-skos:hasTopConcept,A pour top concept,لديه مفهوم أعلى,Conceptos cabecera,有顶层概念,Has top concept,Имеет топ концепцию
-skos:historyNote,Note historique,تبصرة تاريخية,Nota histórica,历史注解,History note,Историческая справка
-skos:inScheme,Schéma de concept,مخطط المفهوم,Esquema de conceptos,概念结构,Concept scheme,Концептуальная схема
-skos:member,Membres du groupe,أعضاء المجموعة,Miembros del grupo,小组成员,Group members,Члены группы
-skos:member_help,Membres du groupe,أعضاء المجموعة,Integrantes del grupo,小组成员,Members of the group,Члены группы
-skos:narrowMatch,Equivalences spécifiques,مفاهيم أضيق مطابقة,Conceptos específicos concordantes,狭义匹配概念,Narrower matching concepts,Концепции соответствия более узкого понятия
-skos:narrowMatch_help,Concepts spécifiques dans un autre vocabulaire.,مفاهيم أضيق مطابقة في مفردات أخرى.,Concepto específico concordante en otro vocabulario.,在另一词汇表中匹配的狭义概念,Narrower matching concepts in another vocabulary.,Концепции соответствия более узкого понятия в другом словаре.
-skos:narrower,Concepts spécifiques,مفاهيم أضيق,Conceptos específicos,狭义概念,Narrower concepts,Концепции более узкого понятия
-skos:narrower_help,Concepts spécifiques (TS).,مفاهيم أضيق.,Conceptos específicos,狭义概念,Narrower concepts.,Концепции более узкого понятия.
-skos:note,Note,تبصرة,Nota,注释，说明,Note,Заметка
-skos:note_help,Notes,تبصرات,Notas,注释，说明（复数）,Notes,Заметки
-skos:prefLabel,Terme préférentiel,المصطلح المفضل,Término preferido,优选词，正式主题词,Preferred term,Предпочитаемый термин
-skos:related,Concepts associés,المفاهيم ذات الصلة,Conceptos relacionados,相关概念,Related concepts,Родственные концепции
-skos:relatedMatch,Concepts associés dans d'autres vocabulaires,المفاهيم المطابقة ذات الصلة,Conceptos relacionados en otros vocabularios,其他词汇表中相关概念,Related matching concepts,Концепции родственного соответствия
-skos:related_help,"Concepts associés (TA, related)",المفاهيم المتعلقة بهذا المفهوم.,Conceptos relacionados con este concepto.,与本概念相关的概念,Concepts related to this concept.,"Концепции, связанные с этой концепцией."
-skos:scopeNote,Note d'application,تبصرة توضيحية,Nota de alcance,范围注释，叙词含义说明,Scope note,Примечание
-skos:scopeNote_help,Notes sur l'utilisation et la couverture de ce concept.,تبصرات حول استخدام ومجال المفهوم.,Notas acerca de la utilización y el alcance del concepto.,概念使用与范围的说明,Notes about the usage and scope of the concept.,Заметки об использовании и сфере применения концепции.
-skos:topConceptOf,Appartient au vocabulaire,ينتمي إلى المفردات,Pertenece al vocabulario,属于词汇表,Belongs to vocabulary,Принадлежит словарю
-skosext:DeprecatedConcept,Concept déprécié,مفهوم غير مستخدم,Concepto obsoleto,已弃用概念,Deprecated concept,Устаревшая концепция
-skosext:partOf,Est partie de,جزء من,Es parte de,是...部分,Is part of,Часть
-skosext:partOf_help,L'ensemble duquel ce concept est une partie.,الكل الذي يعد المفهوم جزء منه.,El todo del cual el concepto hace parte.,该概念为的整体一部分,Whole which the concept is a part of.,"Целое, частью которого является концепция."
-skosmos:created,Date de création,تاريخ الإنشاء,Creado,创建的,Created,Создано
-skosmos:memberOf,Appartient au groupe,ينتمي إلى المجموعة,Pertenece al grupo,属于组,Belongs to group,Принадлежит к группе
-skosmos:memberOfArray,Appartient au tableau,ينتمي إلى المصفوفة,,,Belongs to array,Принадлежит к массиву
-skosmos:memberOfArray_help,Le tableau de concepts auquel ce concept appartient.,المصفوفة التي ينتمي إليها المفهوم.,,,Array which the concept belongs to.,"Массив, которому принадлежит концепция."
-skosmos:memberOf_help,Le groupe auquel appartient le concept.,المجموعة التي ينتمي إليها المفهوم.,Grupo al cual pertenece el concepto.,概念归属的组,Group which the concept belongs to.,"Группа, которой принадлежит концепция."
-skosmos:modified,dernière modification le,آخر تعديل,última modificación,最后修改,last modified,последнее изменение
-Welcome to the United Nations,Bienvenue aux Nations Unies,مرحباً بكم في الأمم المتحدة,Bienvenidos a las Naciones Unidas,欢迎来到联合国，您的世界！,,Добро пожаловать в ООН!
-zxx-x-taxon,Nom scientifique,الاسم العلمي,,,Scientific name,Научное название
-concept_types,,أنواع المفاهيم,,,Concept types,Типы концепций
-feedback_enter_name_email,,برجاء إدخال إسمك وعنوان بريدك الإلكترونى إذا كنت ترغب فى تلقي رد مباشر.  لديك أيضًا خيار إرسال تعليقاتك كمجهول. ملحوظة: يتم إحالة الملاحظات المتعلقة بمفردات محددة مباشرة إلى المسؤول عن إدارتها.,,,Please enter your name and email address if you wish to receive a direct response. You also have the option to submit your feedback anonymously. NB: Feedback regarding a specific vocabulary is referred directly to its administrator.,"Пожалуйста, введите ваше имя и адрес электронной почты, если вы хотите получить прямой ответ. У вас также есть возможность отправить свой отзыв анонимно. NB: Отзывы о конкретном словаре направляются непосредственно его администратору."
-Download this vocabulary:,,,,,Download this vocabulary:,Скачать этот словарь:
-Changes-and-deprecations-nav,,,,,New and Deprecated,
-show all # values,,,,,show all # values,показать все # значения
-wgs84:lat,,,,,Latitude,
-wgs84:lat_help,,,,,Latitude in decimal degrees according to WGS 84 system.,
-wgs84:long,,,,,Longitude,
-wgs84:long_help,,,,,Longitude in decimal degrees according to WGS 84 system.,
-skosmos:marcSourceCode,,,,,MARC source code,
-Skip to main,,,,,Skip to main content,Перейти к основному содержанию
-Available vocabularies and ontologies,,,,,Available vocabularies and ontologies,Доступные словари и онтологии
-Search from selected vocabularies,,,,,Search from selected vocabularies,Поиск по выбранным словарям
-List vocabulary concepts alphabetically,,,,,List vocabulary concepts alphabetically,Показать словарные концепции по алфавиту
-List vocabulary concepts and groupings hierarchically,,,,,List vocabulary concepts and groupings hierarchically,Показать словарные концепции и группы по иерархии
-List vocabulary concepts by newest additions,,,,,List vocabulary concepts by newest additions,Показать словарные концепции по новейшим дополнениям
-List vocabulary concepts hierarchically,,,,,List vocabulary concepts hierarchically,Показать словарные концепции по иерархии
-Choose alphabetical listing letter,,,,,Choose alphabetical listing letter,Выберите букву для алфавитного порядка
-Concept information,,,,,Concept information,Информация о концепции
-Hierarchical listing of vocabulary concepts,,,,,Hierarchical listing of vocabulary concepts,Иерархический список словарных концепций
-Hierarchical listing of vocabulary concepts and groupings,,,,,Hierarchical listing of vocabulary concepts and groupings,Иерархический список словарных концепций и групп
-Listing vocabulary concepts alphabetically,,,,,Listing vocabulary concepts alphabetically,Словарные концепции по алфавиту
-Listing vocabulary concepts by newest additions,,,,,Listing vocabulary concepts by newest additions,Показать словарные концепции по новейшим дополнениям
-Prefer using,,,,,,Предпочитаю использовать
-Search options tab,,,,,Search options tab,Поиск по опциям
-Search results,,,,,Search results,Поиск по результатам
-Sidebar listing: list and traverse vocabulary contents by a criterion,,,,,Sidebar listing: list and traverse vocabulary contents by a criterion,Список на боковой панели: составить список и просмотреть содержимое словаря по критерию
+key,ar,en,es,fr,ru,zh
+%search_count% results for '%term%',%search_count% نتائج '%term%',%search_count% results for '%term%',%search_count% resultados para '%term%',%search_count% résultat(s) pour '%term%',Всего результатов для %te: %s,搜索...术语结果计数
+1. Choose vocabulary,,1. Choose vocabulary,,,,
+"169,000 pages digitized in 2023",يتوزع موظفي المكتبة على أكثر من 26 جنسية,"169,000 pages digitized in 2023","1,320 personas asistieron a nuestras capacitaciones en 2019",1 320 personnes ont suivi nos formations en 2019,1320 человек участвовали в наших учебных программах в 2019,代表26多国家的图书馆员
+1st Floor Reading rooms: 11am-3pm ET,غرف القراءة: مفتوحة  من الإثنين إلى الجمعة ، من 11 صباحًا حتى 3 مساءً (حسب التوقيت الشرقي القياسي),1st Floor Reading rooms: 11am-3pm ET,"Salas de lectura: de lunes a viernes, de 11 a.m. a 3 p.m. (EST)","Salles de lecture : du lundi au vendredi, de 11 h à 15 h (EST)",Читальные залы: понедельник-пятница с 11:00 до 15:00 (EST – Североамериканское Восточное Стандартное Время),阅览室：周一至周五: 上午11:00—下午3:00 (ET)
+2. Choose language,,2. Choose language,,,,
+2nd Floor Reading rooms: 10am-5pm ET,,2nd Floor Reading rooms: 10am-5pm ET,,,,
+3. Enter search term,,3. Enter search term,,,,
+404 Error: The page %requested_page% cannot be found.,خطأ 404: الصفحة المطلوبة %requested_page% غير موجودة.,404 Error: The page %requested_page% cannot be found.,,Erreur 404 : La page %requested_page% n'existe pas.,Ошибка 404: Запрашиваемая страница %requested_page% не найдена,
+A-Z,أ-ي,A-Z,A-Z,A-Z,А-Я,全部，A到Z（按字母顺序排列的）索引
+A-Z Site Index,دليل الموقع,A-Z Site Index,ÍNDICE DEL SITIO,INDEX DE A À Z,УКАЗАТЕЛЬ,网址索引
+About,حول,About,Acerca de,À propos,О проекте,关于
+About page,حول,About,Acerca de,À propos,О проекте,关于
+Access Electronic Resources,الوصول إلى الموارد الإلكترونية,Access Electronic Resources,Acceso a recursos electrónicos,Accéder aux ressources électroniques,Доступ к электронным ресурсам,访问电子资源
+Adding an empty twig file will remove this message.,,Adding an empty twig file will remove this message.,,,,
+All %d results displayed,كافة%d النتائج معروضة,All %d results displayed,Todos los %d resultados visualizados,Tous les résultats sont affichés (%d),Все результаты показаны: %d,所有...%d的结果已显示。
+Alpha-nav,هجائي,Alphabetical,Alfabéticamente,Liste,По алфавиту,按照字母顺序的
+Alphabetical index,الكشاف الهجائي,Alphabetical index,Índice alfabético,Index alphabétique,Алфавитный индекс,字顺索引（按字母顺序排列）
+Alternate terms,المصطلحات البديلة,Alternate terms,Términos alternativos,Termes synonymes,Альтернативные термины,交替术语
+Any language,أي لغة,Any language,Cualquier lengua,Toutes les langues,Любой язык,
+"Articles, Books & More",المقالات والكتب وغيرها,"Articles, Books & More","Artículos, libros y otros documentos","Articles, livres et plus","Статьи, книги и другие материалы",文章、书籍和更多
+Ask DAG,اِسأل المكتبة,Ask DAG,Pregunta a DAG,Demandez à DAG,Спросите DAG,问达格
+Available vocabularies and ontologies,,Available vocabularies and ontologies,,,Доступные словари и онтологии,
+Borrow Books & More,استعارة الكتب وغيرها,Borrow Books & More,Préstamo de libros y otros materiales,Emprunter des livres et plus,Получение книг и других материалов,借书和更多
+Breadcrumbs,,Breadcrumbs,,,,
+By group,وفقا للمجموعة,By group,Por grupo,Par groupe,По группе,按组
+By parent,وفقا للأصل,By parent,Por parentesco,Par parent,По родителю,根据隶属关系
+By scheme,وفقا للمفردات الفرعية,By subvocabulary,,Par sous-vocabulaire,По субсловарю,
+By type,وفقا للنوع,By type,Por tipo,Par type,По типу,按类型
+Changes-and-deprecations-nav,,New and Deprecated,,,,
+Changes-nav,جديد,New,,Nouveautés,Новые,
+Choose alphabetical listing letter,,Choose alphabetical listing letter,,,Выберите букву для алфавитного порядка,
+Clear limitations,حذف المحددات,Clear limitations,Limpie las delimitaciones,Enlever les critères,Очистить ограничения поиска,明确限定
+Concept %term% in vocabulary %vocab%,,Concept %term% in vocabulary %vocab%,,,,
+Concept information,,Concept information,,,Информация о концепции,
+Concept language,اللغة,Language,Lengua,Langue,Язык,语言
+Contact,اتصل بنا,Contact,COMUNÍQUESE CON NOSOTROS,CONTACTEZ-NOUS,НАШ АДРЕС,联系我们
+Contact Us,اتصل بنا,Contact Us,Contacto,Contactez-nous,Обратная связь,联系我们
+Contact us!,اتصل بنا,Contact us!,¡Contáctenos!,Contactez-nous !,Свяжитесь с нами!,联系我们！
+Content and search language,لغة المحتوى والبحث,Content and search language,,Langue du contenu et de la recherche,Язык содержимого и поиска,
+Content language,لغة المحتوى,Content language,Lengua del contenido,Langue des données,Язык содержимого,内容语言
+Copy to clipboard,,Copy to clipboard,,,,
+Copyright,حقوق النشر والطبع,Copyright,PROPIEDAD INTELECTUAL,DROITS D'AUTEUR,© ООН,版权所有
+Count,العدد,Count,Recuento,Nombre,Всего,计数
+Dag Hammarskjöld Library,مكتبة داغ همرشولد,Dag Hammarskjöld Library,Biblioteca Dag Hammarskjöld,Dag Hammarskjöld Library,Дага Хаммаршельда Библиотека,图书馆
+Databases,قواعد البيانات,Databases,Bases de datos,Bases de données,Базы данных,数据库
+Delegates,الوفود,Delegates,Delegados,des délégués,Делегатов,代表
+Deprecated concept,,Deprecated concept,,,,
+Donate,تبرعوا,Donate,DONACIONES,FAITES UN DON,Пожертвования,捐款
+Download this concept,تحميل هذا المفهوم,Download this concept,Descargue este concepto,Télécharger ce concept,Скачать концепцию,
+Download this vocabulary as SKOS/RDF:,تحميل هذه المفردات في صيغة SKOS/RDF:,,Descargue este vocabulario como SKOS/RDF:,Télécharger ce vocabulaire en SKOS/RDF :,Скачать этот словарь в SKOS/RDF:,以SKOS或RDF格式下载此词汇表
+Download this vocabulary:,,Download this vocabulary:,,,Скачать этот словарь:,
+E-mail,,E-mail,,,,
+E-mail:,البريد الإلكتروني:,,Correo electrónico:,E-mail,E-mail:,电子邮件
+Enter search term,أدخل مصطلح البحث,Enter search term,,Entrez votre terme de recherche,Введите термин для поиска,
+Enter your e-mail address,أدخل عنوان بريدك الالكتروني,Enter your e-mail address,Ingrese su correo electrónico,Saisissez votre adresse e-mail,Введите ваш e-mail,输入您的电子邮件地址
+Enter your name,أدخل اسمك,Enter your name,Ingrese su nombre,Saisissez votre nom,Введите ваше имя,输入您的姓名
+Error,,Error,,,,
+Error: Failed to retrieve vocabulary information!,,Error: Failed to retrieve vocabulary information!,,,,
+Error: Loading more items failed!,,Error: Loading more items failed!,,,,
+Error: Requested vocabulary not found!,خطأ: المفردات المطلوبة غير موجودة!,Error: Requested vocabulary not found!,Error: ¡No se encuentra el vocabulario solicitado! ,Erreur : Le vocabulaire demandé n'a pas été trouvé !,Ошибка: Запрашиваемый словарь не найден!,错误：请求的词汇未找到！
+Error: Search failed!,,Error: Search failed!,,,,
+"Error: Term ""%term%"" not found in vocabulary!","خطأ: المصطلح ""%term%"" غير موجود في المفردات!","Error: Term ""%term%"" not found in vocabulary!","Error: ¡el término ""%term%"" solicitado no se encuentra en el vocabulario!","Erreur : Le term ""%term%"" n'a pas été trouvé dans le vocabulaire !",Ошибка: Термин %teне найден в словаре!,错误：术语...不存在词汇表中！
+FAQ,أسئلة شائعة,FAQ,PREGUNTAS FRECUENTES,FAQ,ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ,常见问题解答
+Feedback,التعليقات,Feedback,Comentarios,Vos commentaires,Обратная связь,意见反馈
+Feedback has been sent!,تم إرسال التعليقات!,Feedback has been sent!,¡El comentario ha sido enviado!,Votre commentaire a été envoyé !,Ваш отзыв отправлен!,反馈已发送！
+Find,ابحث عن,,Buscar,Trouver,Поиск,查找
+Fraud Alert,تحذير من عمليات إحتيال,Fraud Alert,ALERTA DE FRAUDE,COURRIERS FRAUDULEUX,ОСТЕРЕГАЙТЕСЬ МОШЕННИЧЕСТВА,提防诈骗
+General Public,لعامة الجمهور,General Public,Público en general,du grand public,Широкой публики,公众
+Go to the concept page,,Go to the concept page,,,,
+Group index,كشاف المجموعة,Group index,Índice del grupo,Groupes,Индекс группы,分组指数
+Group-nav,مجموعات,Groups,Grupos,Groupes,Группы,组别，群组
+Help,مساعدة,Help,Ayuda,Aide,Помощь,帮助
+Hidden terms,المصطلحات المخفية,Hidden terms,Términos ocultos,Termes cachés,Скрытые термины,隐藏术语
+Hier-nav,تسلسل هرمي,Hierarchy,Jerarquía,Hiérarchie,Иерархия,层级，层次结构
+Hierarchical listing of vocabulary concepts,,Hierarchical listing of vocabulary concepts,,,Иерархический список словарных концепций,
+Hierarchical listing of vocabulary concepts and groupings,,Hierarchical listing of vocabulary concepts and groupings,,,Иерархический список словарных концепций и групп,
+Index to Proceedings,فهرس وقائع الجلسات,Index to Proceedings,Indice de las Actas,Index des actes,Указатель заседаний,议事录索引 (ITP)
+Information,,Information,,,,
+Interface language,لغة الواجهة,Interface language,Idioma,Langue de navigation,Язык интерфейса,界面语言
+Journals,المجلات,Journals,Publicaciones periódicas,Revues,Журналы,期刊
+Leave this field blank,اترك هذا الحقل فارغا,,Deje este campo en blanco,Laissez ce champ vide,Оставьте это поле пустым,保留此字段为空
+Library News,,Library News,,Actualités de la Bibliothèque,,
+Limit search,تحديد البحث,Limit search,Delimte la búsqueda,Limitez la recherche,Ограничить поиск,限定检索
+Linked Data Services,خدمات البيانات المترابطة,Linked Data Services,Servicios de datos vinculados,Services de données liées,Услуги связанных данных,关联数据服务
+List vocabulary concepts alphabetically,,List vocabulary concepts alphabetically,,,Показать словарные концепции по алфавиту,
+List vocabulary concepts and groupings hierarchically,,List vocabulary concepts and groupings hierarchically,,,Показать словарные концепции и группы по иерархии,
+List vocabulary concepts by newest additions,,List vocabulary concepts by newest additions,,,Показать словарные концепции по новейшим дополнениям,
+List vocabulary concepts hierarchically,,List vocabulary concepts hierarchically,,,Показать словарные концепции по иерархии,
+Listing vocabulary concepts alphabetically,,Listing vocabulary concepts alphabetically,,,Словарные концепции по алфавиту,
+Listing vocabulary concepts by newest additions,,Listing vocabulary concepts by newest additions,,,Показать словарные концепции по новейшим дополнениям,
+Loading,جار التحميل,Loading,Cargando,Chargement,Загружается,加载中
+Loading more items,جار تحميل المزيد من العناصر,Loading more items,Cargando más ítemes,Chargement de plus de données,Загружается,加载更多条目
+Member States on the Record,الدول الأعضاء في الأمم المتحدة على السجل,,Estados Miembros de la ONU a lo largo de las sesiones,Les États Membres au fil des sessions,Государства-члены ООН: Официально,联合国会员国公开报道
+Message,,Message,,,,
+Message:,رسالة:,,Mensaje:,Message :,Сообщение:,消息
+Monday to Friday,,Monday to Friday,,,,
+More information about this term,,More information about this term,,,,
+Name,,Name,,,,
+Name:,الاسم:,,Nombre:,Nom :,Имя:,姓名
+No results,لا توجد نتائج,No results,Sin resultados,Pas de résultats,Нет результатов,没有结果
+No vocabularies on the server!,لا تتوفر مفردات على الخادم!,No vocabularies on the server!,¡No hay vocabularios en el servidor!,Pas de vocabulaires sur le serveur !,Нет словарей на сервере!,该服务器上没有词汇表！
+Not to a specific vocabulary,لا تتعلق بمفردات محددة,Not to a specific vocabulary,Sin vocabulario específico,Pas de vocabulaire spécifique,Не для определённого словаря,不符合特定的词汇表
+OPENING HOURS:,ساعات الدوام,OPENING HOURS:,HORARIO DE ATENCIÓN:,HORAIRES D'OUVERTURE,ЧАСЫ РАБОТЫ:,开放时间
+Online: 9am–5pm ET,عبر الإنترنت: من الإثنين إلى الجمعة ، من 10 صباحًا حتى 1 مساءً (حسب التوقيت الشرقي القياسي),Online: 9am–5pm ET,"En línea: de lunes a viernes, de 10 a.m. a 1 p.m. (EST)","En ligne : du lundi au vendredi, de 10 h à 13 h (EST)",Онлайн: понедельник-пятница с 10:00 до 13:00 (EST – Североамериканское Восточное Стандартное Время),线上: 周一至周五: 上午10:00—下午1:00 (ET)
+Open,,Open,,,,
+Our Activities,أنشطتنا,Our Activities,Actividades,Nos activités,Наша деятельность,我们的活动
+Our Collections,مجموعاتنا,Our Collections,Colecciones,Nos collections,Наши фонды,我们的馆藏
+Our Mandate & History,مهمتنا وتاريخنا,Our Mandate & History,Mandato e historia,Mission et historique,Наш мандат и история,我们的任务和历史
+Prefer using,,,,,Предпочитаю использовать,
+Preferred terms,المصطلحات المفضلة,Preferred terms,Términos preferidos,Termes préférentiels,Предпочитаемые термины,优选词，正式主题词
+Privacy Notice,بيان الخصوصيات,Privacy Notice,PRIVACIDAD,CONFIDENTIALITÉ DE L'INFORMATION,КОНФИДЕНЦИАЛЬНОСТЬ,隐私通告
+"Request Articles, Books & Documents",طلب المقالات والكتب والوثائق,"Request Articles, Books & Documents","Solicitud de artículos, libros y documentos","Demander des articles, livres et documents","Запрос статей, книг и других материалов",申请文章、书籍和文件
+Research Guides,أدلة البحث,Research Guides,Guías de investigación,Guides de recherche,Исследовательские руководства,研究指南
+Research the UN,ابحث في الأمم المتحدة,,Investigación sobre la ONU,Recherche sur l'ONU,Поисковые ресурсы ООН,研究联合国
+Researchers & Librarians,للباحثين وأمناء المكتبات,Researchers & Librarians,Investigadores y bibliotecarios,des chercheurs et des bibliothécaires,Исследователей и библиотекарей,研究人员和图书管理员
+Resource counts by type,العدد الكلي للمصادر وفقا للنوع,Resource counts by type,Listado de recursos por tipo,Nombre d'entrées par type,Количество ресурсов по типу,按类型资源计数
+Retry,,Retry,,,,
+Search,البحث,Search,Buscar,Chercher,Поиск,检索
+Search across vocabularies,,Search across vocabularies,,,,
+Search from selected vocabularies,,Search from selected vocabularies,,,Поиск по выбранным словарям,
+Search from vocabulary,البحث في المفردات,Search from vocabulary,,Choisissez le vocabulaire dans lequel chercher,Поиск по словарю,
+Search options,خيارات البحث,Search options,Opciones de búsqueda,Options de recherche,Опции поиска,搜索选项
+Search options tab,,Search options tab,,,Поиск по опциям,
+Search results,,Search results,,,Поиск по результатам,
+Search...,,Search...,,,,
+Select a vocabulary,,You can select a vocabulary,,,,
+Select search language,,Select search language,,,,
+Send feedback,أرسل التعليقات,Send feedback,Enviar comentario,Envoyer un commentaire,Отправить отзыв,发送反馈
+Services for...,الخدمات...,,Servicios destinados a…,Services à l’intention…,Услуги для...,服务对象
+Sidebar listing: list and traverse vocabulary contents by a criterion,,Sidebar listing: list and traverse vocabulary contents by a criterion,,,Список на боковой панели: составить список и просмотреть содержимое словаря по критерию,
+Skip to main,,Skip to main content,,,Перейти к основному содержанию,
+Skosmos version %version%,إصدارة Skosmos %version%,Skosmos version %version%,Skosmos versión %version%,Skosmos version %version%,Skosmos версия %version%,Skosmos版本
+Speeches,الخطب,Speeches,Discursos,Discours,Выступления,发言
+Subject,,Subject,,,,
 Subject:,,,,,,
-Write a subject,,,,,Write a subject,
-Select a vocabulary,,,,,You can select a vocabulary,
-We're sorry but Skosmos doesn't work properly without JavaScript enabled. Please enable it to continue.,,,,,We're sorry but Skosmos doesn't work properly without JavaScript enabled. Please enable it to continue.,
-Deprecated concept,,,,,Deprecated concept,
-Error: Search failed!,,,,,Error: Search failed!,
-Error: Failed to retrieve vocabulary information!,,,,,Error: Failed to retrieve vocabulary information!,
-Error: Loading more items failed!,,,,,Error: Loading more items failed!,
-Retry,,,,,Retry,
-skos:notation,,,,,Notation,
-skos:notation_help,,,,,Code that uniquely identifies a concept within a concept scheme.,
-Information,,,,,Information,
-Vocabulary,,,,,Vocabulary,
-E-mail,,,,,E-mail,
-Message,,,,,Message,
-Name,,,,,Name,
-Search...,,,,,Search...,
-Search across vocabularies,,,,,Search across vocabularies,
-Open,,,,,Open,
-Subject,,,,,Subject,
-Breadcrumbs,,,,,Breadcrumbs,
-Copy to clipboard,,,,,Copy to clipboard,
-Error,,,,,Error,
-Go to the concept page,,,,,Go to the concept page,
-Concept %term% in vocabulary %vocab%,,,,,Concept %term% in vocabulary %vocab%,
-More information about this term,,,,,More information about this term,
-Text input with dropdown button,,,,,Text input with dropdown button,
-"To customize what is shown here, add one or more .twig template files under the %slotPath% directory.",,,,,"To customize what is shown here, add one or more .twig template files under the %slotPath% directory.",
-Adding an empty twig file will remove this message.,,,,,Adding an empty twig file will remove this message.,
-Select search language,,,,,Select search language,
-1. Choose vocabulary,,,,,1. Choose vocabulary,
-2. Choose language,,,,,2. Choose language,
-3. Enter search term,,,,,3. Enter search term,
-Contact Us,,,,,Contact Us,
-Our Activities,,,,,Our Activities,
-Our Mandate & History,,,,,Our Mandate & History,
-Our Collections,,,,,Our Collections,
-UN Depository Libraries,,,,,UN Depository Libraries,
-Library News,,,,,Library News,
-"Articles, Books & More",,,,,"Articles, Books & More",
-Databases,,,,,Databases,
-Journals,,,,,Journals,
-UN Resources & Documents,,,,,UN Resources & Documents,
-UN Libraries,,,,,UN Libraries,
-Delegates,,,,,Delegates,
-UN Staff,,,,,UN Staff,
-Researchers & Librarians,,,,,Researchers & Librarians,
-General Public,,,,,General Public,
-UN Digital Library,,,,,UN Digital Library,
-Index to Proceedings,,,,,Index to Proceedings,
-Linked Data Services,,,,,Linked Data Services,
-Research Guides,,,,,Research Guides,
-Speeches,,,,,Speeches,
-UN Member States on the Record,,,,,UN Member States on the Record,
-Training,,,,,Training,
-Ask DAG,,,,,Ask DAG,
-Access Electronic Resources,,,,,Access Electronic Resources,
-Borrow Books & More,,,,,Borrow Books & More,
-"Request Articles, Books & Documents",,,,,"Request Articles, Books & Documents",
-Visit the Library,,,,,Visit the Library,
-OPENING HOURS:,,,,,OPENING HOURS:,
-Monday to Friday,,,,,Monday to Friday,
-Online: 9am–5pm ET,,,,,Online: 9am–5pm ET,
-1st Floor Reading rooms: 11am-3pm ET,,,,,1st Floor Reading rooms: 11am-3pm ET,
-2nd Floor Reading rooms: 10am-5pm ET,,,,,2nd Floor Reading rooms: 10am-5pm ET,
-United Nations,,,,,United Nations,
-Donate,,,,,Donate,
-A-Z Site Index,,,,,A-Z Site Index,
-Contact,,,,,Contact,
-Copyright,,,,,Copyright,
-FAQ,,,,,FAQ,
-Fraud Alert,,,,,Fraud Alert,
-Privacy Notice,,,,,Privacy Notice,
-Terms of Use,,,,,Terms of Use,
-Dag Hammarskjöld Library,,,,,Dag Hammarskjöld Library,
+Submit search,إرسال البحث,Submit search,,Lancer la recherche,Найти,
+Term counts by language,العدد الكلي للمصطلحات وفقا للغة,Term counts by language,Recuento de términos por lengua,Nombre de termes par langue,Количество ресурсов по языку,按语言术语计数
+Terms of Use,شروط الإستخدام,Terms of Use,CONDICIONES DE UTILIZACIÓN,CONDITIONS D'UTILISATION,УСЛОВИЯ ПОЛЬЗОВАНИЯ,使用条款
+Text input with dropdown button,,Text input with dropdown button,,,,
+Thank you for your feedback,شكرا لك على تعليقاتك. نحن نسعى جاهدين للرد على جميع التعليقات في أقرب وقت ممكن.,Thank you for your feedback. We strive to answer all feedback as soon as possible.,Gracias por sus comentarios. Nos esforzaremos en contestarlos todos lo más pronto posible.,Merci pour votre commentaire. Nous faisons de notre mieux pour prendre en compte les commentaires dès que possible.,Спасибо за ваш отзыв. Мы стараемся ответить на все отзывы как можно скорее.,谢谢您的反馈。我们努力尽快回复所有反馈。
+The search provided no results.,البحث لم يقدم أية نتائج.,The search provided no results.,La búsqueda no brinda resultados,La recherche n'a ramené aucun résultat.,Поиск не дал результатов.,该检索没有结果。
+There is no term for this concept in this language,لا يوجد مصطلح لهذا المفهوم في هذه اللغة.,There is no term for this concept in this language.,,Pas de terme dans cette langue pour ce concept,На этом языке нет термина для этой концепции.,
+"To customize what is shown here, add one or more .twig template files under the %slotPath% directory.",,"To customize what is shown here, add one or more .twig template files under the %slotPath% directory.",,,,
+Training,التدريب,Training,Formación,Formation,Учебные программы,培训和活动
+Type,النوع,Type,Tipo,Type,Тип,类型
+UN Depository Libraries,,UN Depository Libraries,,Bibliothèques de dépôt de l'ONU,,
+UN Digital Library,المكتبة الرقمية للأمم المتحدة,UN Digital Library,Biblioteca digital de la ONU,Bibliothèque numérique de l'ONU,Цифровая библиотека ООН,联合国数字图书馆
+UN Libraries,مكتبات الأمم المتحدة,UN Libraries,Bibliotecas de la ONU,Bibliothèques de l'ONU,Библиотеки ООН,联合国图书馆
+UN Member States on the Record,الدول الأعضاء في الأمم المتحدة على السجل,UN Member States on the Record,Estados Miembros de la ONU a lo largo de las sesiones,Les États Membres au fil des sessions,Государства-члены ООН: Официально,联合国会员国公开报道
+UN Resources & Documents,موارد الأمم المتحدة ووثائقها,UN Resources & Documents,Recursos y documentos de la ONU,Ressources et documents de l'ONU,Ресурсы и документы ООН,联合国资源和文件
+UN Staff,لموظفي الأمم المتحدة,UN Staff,Personal de las Naciones Unidas,du personnel de l'ONU,Персонала ООН,联合国工作人员
+United Nations,United Nations,United Nations,United Nations,United Nations,United Nations,United Nations
+Using the Library,استخدام المكتبة,,Utilización de la Biblioteca,Utiliser la bibliothèque,Пользование библиотекой »,使用图书馆
+Value is required and can not be empty,القيمة مطلوبة ولا يمكن أن تترك فارغة,Value is required and can not be empty,"Se requiere algún valor, el campo no puede quedar en blanco",Champ obligatoire,Значение является обязательным и не может быть пустым,需要赋值，不能为空。
+Visit the Library,زيارة المكتبة,Visit the Library,Visita a la Biblioteca,Visiter la Bibliothèque,Посещение Библиотеки,访问图书馆
+Vocabularies,المفردات,Vocabularies,,Vocabulaires,Словари,
+Vocabularies-nav,المفردات,Vocabularies,Vocabularios,Vocabulaires,Словари,词汇表
+Vocabulary,,Vocabulary,,,,
+Vocabulary information,معلومات المفردات,Vocabulary information,Información del vocabulario,Description du vocabulaire,Информация о словаре,词汇表信息
+Voting Information,معلومات عن التصويت,,Información sobre votaciones,Informations de vote,Информация о голосовании,表决信息
+We're sorry but Skosmos doesn't work properly without JavaScript enabled. Please enable it to continue.,,We're sorry but Skosmos doesn't work properly without JavaScript enabled. Please enable it to continue.,,,,
+Welcome to the United Nations,مرحباً بكم في الأمم المتحدة,,Bienvenidos a las Naciones Unidas,Bienvenue aux Nations Unies,Добро пожаловать в ООН!,欢迎来到联合国，您的世界！
+Write a subject,,Write a subject,,,,
+cc:attributionName,اسم الإسناد,Attribution Name,,Nom d'attribution,Имя аттрибута,
+cc:attributionUrl,Url الإسناد,Attribution Url,,URL d'attribution,URL аттрибута,
+cc:license,الترخيص,License,,Licence,Лицензия,
+cc:morePermissions,المزيد من الأذونات,More Permissions,,Autres autorisations,Ещё о правах доступа,
+cc:useGuidelines,استخدم الأدلة الإرشادية,use guidelines,,règles d'utilisation,Руководство по использованию,
+concept_types,أنواع المفاهيم,Concept types,,,Типы концепций,
+dc:conformsTo,يتوافق مع,Conforms To,,Conforme à,Соответствует,
+dc:contributor,المساهم,Contributor,Colaborador,Contributeur,Контрибьютор,其他责任者
+dc:coverage,التغطية,Coverage,,Couverture,Покрытие,
+dc:created,تاريخ الإنشاء,Created,Creado,Date de création,Создано,创建的
+dc:creator,المنشئ,Creator,Creador,Créateur,Автор,创建者
+dc:date,التاريخ,Date,Fecha,Date,Дата,日期
+dc:description,الوصف,Description,Descripción,Description,Описание,描述，说明
+dc:format,الصيغة,Format,,Format,Формат,
+dc:identifier,المُعَرِّف,Identifier,,Identifiant,Идентификатор,
+dc:isReplacedBy,حل محله,Is replaced by,,Est remplacé par,Заменено,
+dc:isRequiredBy,مطلوب من,Is Required By,,Est nécessaire pour,Требуется,
+dc:issued,تاريخ الإصدار,Date issued,Fecha de publicación,Date de publication,Дата выпуска,发行日期
+dc:language,اللغة,Language,Lengua,Langue,Язык,语言
+dc:license,الترخيص,License,Licencia,Licence,Лицензия,许可
+dc:modified,آخر تعديل,Last modified,Última modificación,Date de dernière modification,Последнее изменение,最后修改
+dc:publisher,الناشر,Publisher,Editor,Editeur,Издатель,出版者
+dc:relation,العلاقة,Relation,Relación,Relation,Отношение,关系
+dc:replaces,يحل محل,Replaces,,Remplace,Заменяет,
+dc:rights,الحقوق,Rights,Derechos,Droits,Права,权限
+dc:rightsHolder,صاحب الحقوق,Rights Holder,,Détenteur des droits,Правообладатель,
+dc:source,المصدر,Source,Fuente,Source,Источник,来源
+dc:source_help,مصدر لوصف المفهوم.,Source for the description of the concept.,,La source des informations.,Источник описания концепции.,
+dc:spatial,التغطية المكانية,Spatial coverage,,Couverture spatiale,Пространственное покрытие,
+dc:subject,الموضوع,Subject,Materia,Sujet,Тема,主题
+dc:temporal,تغطية زمنية,Temporal coverage,,Couverture temporelle,Временное покрытие,
+dc:title,العنوان,Title,Título,Titre,Название,题名
+dc:type,النوع,Type,,Type,Тип,
+deprecated,هذا المفهوم غير متاح للإستخدام. لا تستخدم هذا المفهوم للشرح!,This concept has been deprecated.,Este concepto está obsoleto.,Ce concept a été déprécié.,Данная концепция устарела. Не используйте эту концепцию для аннотации!,此概念已弃用，请不要使用用于注释。
+feedback_enter_name_email,برجاء إدخال إسمك وعنوان بريدك الإلكترونى إذا كنت ترغب فى تلقي رد مباشر.  لديك أيضًا خيار إرسال تعليقاتك كمجهول. ملحوظة: يتم إحالة الملاحظات المتعلقة بمفردات محددة مباشرة إلى المسؤول عن إدارتها.,Please enter your name and email address if you wish to receive a direct response. You also have the option to submit your feedback anonymously. NB: Feedback regarding a specific vocabulary is referred directly to its administrator.,,,"Пожалуйста, введите ваше имя и адрес электронной почты, если вы хотите получить прямой ответ. У вас также есть возможность отправить свой отзыв анонимно. NB: Отзывы о конкретном словаре направляются непосредственно его администратору.",
+foaf:homepage,الصفحة الرئيسية,Homepage,Página de inicio,Accueil,Домашняя страница,主页
+foaf:page,الصفحة,Page,,Page,Страница,
+foreign prefLabel help,مصطلحات هذا المفهوم باللغات الأخرى.,Terms for the concept in other languages.,Términos para el concepto en otras lenguas.,Termes du concept dans d'autres langues.,Термины для концепции на других языках.,其它语言中概念术语
+foreign prefLabels,بلغات أخرى,In other languages,En otras lenguas,Traductions,На других языках,其它语言
+from all,من الكل,from all,Todos,Partout,из всех,全部源自，所有来源
+helper_help,مرر مؤشر الفأرة فوق النص الموضوع أسفله خط منقط لعرض التعليمات حول الموقع.,Hover your cursor over the text with a dotted underline to see instructions about the property.,Desplace su cursor sobre el texto con el subrayado punteado para ver las instrucciones de la propiedad.,Passer le curseur sur un texte souligné en pointillé pour voir plus d'informations sur la propriété.,"Наведите указатель мышки на текст с пунктирным подчеркиванием, чтобы увидеть информацию о свойстве.",用点下划线在文本上悬停鼠标，以查看属性说明
+hierarchy-disabled-help,لا يمكن عرض التسلسل الهرمي للمستوى الأعلى في هذه المفردات.,The top level hierarchy can't be shown in this vocabulary.,Los conceptos superiores en la jerarquía no pueden ser visualizados en este vocabulario,Impossible d'afficher les concepts racines de la hiérarchie pour ce vocabulaire.,Иерархия верхнего уровня не может быть показана в этом словаре.,该词汇表不显示顶级类层级。
+in_this_language,بالإنجليزية,English, Español ,Français,на русском,英语
+isothes:ConceptGroup,مجموعة مفاهيم,Concept group,Agrupación de conceptos,Groupe de concepts,Группа концепций,概念组
+isothes:ThesaurusArray,مصفوفة من مفاهيم قريبة,Array of sibling concepts,Conjunto de conceptos hermanos,Tableau de concepts frères,Массив родственных концепций,同位叙词概念类组
+isothes:broaderGeneric,مفاهيم أوسع,Broader concepts,,Concepts génériques,Концепции более широкого понятия,
+isothes:broaderInstantial,مفهوم أوسع (آني),Broader concept (instantial),,Concept générique (classe-instance),Концепция более широкого понятия (примерно),
+isothes:broaderPartitive,مفهوم أوسع (جزئي),Broader concept (partitive),,Concept générique (tout-partie),Концепции более широкого понятия (частично),
+isothes:narrowerGeneric,مفاهيم أضيق,Narrower concepts,,Concepts spécifiques,Концепции более узкого понятия,
+isothes:narrowerInstantial,مفاهيم أضيق (آنية),Narrower concepts (instantial),,Concepts spécifiques (classe-instance),Концепции более узкого понятия (примерно),
+isothes:narrowerPartitive,مفاهيم أضيق (جزئية),Narrower concepts (partitive),,Concepts spécifiques (tout-partie),Концепции более узкого понятия (частично),
+isothes:superGroup,المجموعة الرئيسة,Super group,Supergrupo,Groupe parent,Супер группа,超级组
+layout designed by Hahmo,التصميم بواسطة Hahmo Design,layout designed by Hahmo Design,diagramación diseñada por Hahmo Design,Mise en page : Hahmo Design,дизайн разработан Hahmo Design,依据Hahmo Design公司设计的版面/布局
+limited to group,المجموعة,group,grupo,groupe,группа,组
+limited to parent,الأصل,parent,padre,parent,родитель,隶属关系
+limited to scheme,يقتصر على المخطط,limited to scheme,,au sein du vocabulaire,по схеме,
+limited to type,النوع,type,tipo,type,тип,类型
+owl:sameAs,المفاهيم المتكافئة,Equivalent concepts,Conceptos equivalentes,Concepts équivalents,Эквивалентные концепции,同等概念
+owl:versionInfo,الإصدارة,Version,Versión,Version,Версия,版本
+rdf:type,النوع,Type,Tipo,Type,Тип,类型
+rdf:type_help,نوع الكيان,Type of entity,Tipo,Type d'entrée,Тип объекта,实体类型
+rdfs:comment,الوصف,Description,Descripción,Description,Описание,描述，说明
+rdfs:label,التسمية,Label,Etiqueta,Label,Термин,标签
+rdfs:seeAlso,انظر أيضا,See also,Véase además,Voir aussi,Смотрите также,参见
+search_example_text,للبحث الاقتطاعي، الرجاء استخدام الرمز * كما هو الحال في *حيوان أو *براءة*. بالنسبة لنهاية كلمات البحث، سيتم اقتطاع البحث تلقائيًا، حتى إذا لم يتم إدخال رمز الاقتطاع يدويا: وهكذا، سيؤدي البحث عن قط إلى الحصول على نفس نتائج البحث عن قط*.,"For truncation search, please use the symbol * as in *animal or *patent*. For ends of search words, the search will be truncated automatically, even if the truncation symbol is not entered manually: thus, cat will yield the same results as cat*.","Para la búsqueda por truncamiento, por favor utilice el símbolo * como en *animal o *patente*. Para los sufijos de las palabras de búsqueda, la búsqueda se truncará automáticamente, incluso si el símbolo de truncamiento no se ingresa manualmente: asi, gat producirá los mismos resultados que gat*","Pour les recherches avec troncature, utilisez le symbole * , par exemple *animal ou *brevet*. La recherche utilise automatiquement une troncature en fin de mot, même sans le symbole de troncature : la recherche chat donnera donc les mêmes résultats que chat*.","Для сокращения поиска, пожалуйста, используйте символ * как в *животное или *патент*. В конце поисковых слов, поиск будет сокращён автоматически, даже если символ сокращения не введён вручную: таким образом, кот выдаст те же результаты, что и кот*.",对于截词检索，请使用符号*作为*动物或*专利。对于检索词的结尾，检索将会自动截词，即使截词符号没有自动输入，因此输入cat将会产生和输入cat*同样的结果。
+selected,محدَّد,,seleccionado,sélectionné,выбранно,所选的，选择的
+show all # paths,عرض جميع الـ # مسارات,show all # paths,muestre todas las # rutas,voir tous les # chemins,показать все # пути,显示所有路径
+show all # values,,show all # values,,,показать все # значения,
+skos:Collection,المجموعة,Collection,Colección,Collection,Коллекция,收藏，集
+skos:Concept,مفهوم,Concept,Concepto,Concept,Концепция,概念
+skos:altLabel,مصطلحات المداخل,Used for,Etiquetas alternativas,Variante,Термины,
+skos:altLabel_help,مصطلحات بديلة للمفهوم.,Alternative terms for the concept.,Términos alternativos para el concepto.,Synonymes pour le concept.,Альтернативные термины для концепции.,此概念交替术语
+skos:broadMatch,مفاهيم أوسع مطابقة,Broader matching concepts,Concepto genérico concordante,Equivalence générique,Концепции соответствия более широкого понятия,简单知识组织系统：广泛匹配
+skos:broadMatch_help,مفاهيم أوسع مطابقة في مفردات أخرى.,Broader matching concepts in another vocabulary.,Concepto genérico concordante en otro vocabulario.,Concept générique dans un autre vocabulaire,Концепции соответствия более широкого понятия в другом словаре.,在另一词汇表中匹配的上位概念
+skos:broader,مفهوم أوسع,Broader concept,Concepto genérico,Concept générique,Концепция более широкого понятия,上位概念
+skos:broader_help,مفهوم أوسع,Broader concept,Concepto genérico,Concept générique (TG),Концепция более широкого понятия,上位概念
+skos:changeNote,تبصرة تغيير,Change note,Nota de cambio,Note de changement,Заметка об изменениях,变更注释，变更说明
+skos:closeMatch,مفاهيم متطابقة بشكل وثيق,Closely matching concepts,Concepto equivalente concordante,Concept proche,Концепции близкого соответствия ,紧密匹配的概念
+skos:closeMatch_help,مفاهيم متطابقة بشكل وثيق في مفردات أخرى.,Closely matching concepts in another vocabulary.,Concepto equivalente concordante en otro vocabulario.,Concept proche dans un autre vocabulaire,Концепции близкого соответствия в другом словаре.,在另一词汇表中紧密匹配的概念
+skos:definition,تعريف,Definition,Definición,Définition,Определение,定义
+skos:definition_help,شرح كامل للمعنى المقصود لمفهوم,A complete explanation of the intended meaning of a concept,Una explicación completa del significado deseado para un concepto,Une explication du sens précis de ce concept,Полное объяснение предполагаемого значения концепции,某概念特定涵义的完全解释
+skos:editorialNote,تبصرة تحريرية,Editorial note,Nota editorial,Note éditoriale,Редакционная заметка,编者按
+skos:exactMatch,مفاهيم مطابقة تماما,Exactly matching concepts,Concordancia exacta,Equivalence exacte,Концепции точного соответствия,精确匹配
+skos:exactMatch_help,مفاهيم مطابقة تماما في مفردات أخرى.,Exactly matching concepts in another vocabulary.,Conceptos exactamente concordantes en otro vocabulario.,Concepts équivalents dans un autre vocabulaire.,Концепции точного соответствия в другом словаре.,在另一词汇表中精确匹配的概念
+skos:example,مثال,Example,Ejemplo,Exemple,Пример,实例
+skos:hasTopConcept,لديه مفهوم أعلى,Has top concept,Conceptos cabecera,A pour top concept,Имеет топ концепцию,有顶层概念
+skos:historyNote,تبصرة تاريخية,History note,Nota histórica,Note historique,Историческая справка,历史注解
+skos:inScheme,مخطط المفهوم,Concept scheme,Esquema de conceptos,Schéma de concept,Концептуальная схема,概念结构
+skos:member,أعضاء المجموعة,Group members,Miembros del grupo,Membres du groupe,Члены группы,小组成员
+skos:member_help,أعضاء المجموعة,Members of the group,Integrantes del grupo,Membres du groupe,Члены группы,小组成员
+skos:narrowMatch,مفاهيم أضيق مطابقة,Narrower matching concepts,Conceptos específicos concordantes,Equivalences spécifiques,Концепции соответствия более узкого понятия,狭义匹配概念
+skos:narrowMatch_help,مفاهيم أضيق مطابقة في مفردات أخرى.,Narrower matching concepts in another vocabulary.,Concepto específico concordante en otro vocabulario.,Concepts spécifiques dans un autre vocabulaire.,Концепции соответствия более узкого понятия в другом словаре.,在另一词汇表中匹配的狭义概念
+skos:narrower,مفاهيم أضيق,Narrower concepts,Conceptos específicos,Concepts spécifiques,Концепции более узкого понятия,狭义概念
+skos:narrower_help,مفاهيم أضيق.,Narrower concepts.,Conceptos específicos,Concepts spécifiques (TS).,Концепции более узкого понятия.,狭义概念
+skos:notation,,Notation,,,,
+skos:notation_help,,Code that uniquely identifies a concept within a concept scheme.,,,,
+skos:note,تبصرة,Note,Nota,Note,Заметка,注释，说明
+skos:note_help,تبصرات,Notes,Notas,Notes,Заметки,注释，说明（复数）
+skos:prefLabel,المصطلح المفضل,Preferred term,Término preferido,Terme préférentiel,Предпочитаемый термин,优选词，正式主题词
+skos:related,المفاهيم ذات الصلة,Related concepts,Conceptos relacionados,Concepts associés,Родственные концепции,相关概念
+skos:relatedMatch,المفاهيم المطابقة ذات الصلة,Related matching concepts,Conceptos relacionados en otros vocabularios,Concepts associés dans d'autres vocabulaires,Концепции родственного соответствия,其他词汇表中相关概念
+skos:related_help,المفاهيم المتعلقة بهذا المفهوم.,Concepts related to this concept.,Conceptos relacionados con este concepto.,"Concepts associés (TA, related)","Концепции, связанные с этой концепцией.",与本概念相关的概念
+skos:scopeNote,تبصرة توضيحية,Scope note,Nota de alcance,Note d'application,Примечание,范围注释，叙词含义说明
+skos:scopeNote_help,تبصرات حول استخدام ومجال المفهوم.,Notes about the usage and scope of the concept.,Notas acerca de la utilización y el alcance del concepto.,Notes sur l'utilisation et la couverture de ce concept.,Заметки об использовании и сфере применения концепции.,概念使用与范围的说明
+skos:topConceptOf,ينتمي إلى المفردات,Belongs to vocabulary,Pertenece al vocabulario,Appartient au vocabulaire,Принадлежит словарю,属于词汇表
+skosext:DeprecatedConcept,مفهوم غير مستخدم,Deprecated concept,Concepto obsoleto,Concept déprécié,Устаревшая концепция,已弃用概念
+skosext:partOf,جزء من,Is part of,Es parte de,Est partie de,Часть,是...部分
+skosext:partOf_help,الكل الذي يعد المفهوم جزء منه.,Whole which the concept is a part of.,El todo del cual el concepto hace parte.,L'ensemble duquel ce concept est une partie.,"Целое, частью которого является концепция.",该概念为的整体一部分
+skosmos:created,تاريخ الإنشاء,Created,Creado,Date de création,Создано,创建的
+skosmos:marcSourceCode,,MARC source code,,,,
+skosmos:memberOf,ينتمي إلى المجموعة,Belongs to group,Pertenece al grupo,Appartient au groupe,Принадлежит к группе,属于组
+skosmos:memberOfArray,ينتمي إلى المصفوفة,Belongs to array,,Appartient au tableau,Принадлежит к массиву,
+skosmos:memberOfArray_help,المصفوفة التي ينتمي إليها المفهوم.,Array which the concept belongs to.,,Le tableau de concepts auquel ce concept appartient.,"Массив, которому принадлежит концепция.",
+skosmos:memberOf_help,المجموعة التي ينتمي إليها المفهوم.,Group which the concept belongs to.,Grupo al cual pertenece el concepto.,Le groupe auquel appartient le concept.,"Группа, которой принадлежит концепция.",概念归属的组
+skosmos:modified,آخر تعديل,last modified,última modificación,dernière modification le,последнее изменение,最后修改
+wgs84:lat,,Latitude,,,,
+wgs84:lat_help,,Latitude in decimal degrees according to WGS 84 system.,,,,
+wgs84:long,,Longitude,,,,
+wgs84:long_help,,Longitude in decimal degrees according to WGS 84 system.,,,,
+zxx-x-taxon,الاسم العلمي,Scientific name,,Nom scientifique,Научное название,
