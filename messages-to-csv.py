@@ -1,11 +1,9 @@
-import csv
 import json
 import os
 import re
 import pandas
 
 locale_folder = './skosmos/resource/translations/'
-csv_path = 'translations.csv'
 
 message_keys = set()
 data = {}
@@ -16,8 +14,15 @@ for file_name in os.listdir(locale_folder):
     if file_name.endswith('.json'):
         lang = match_obj.group(1)
         with open(os.path.join(locale_folder, file_name)) as file:
-            data[lang] = json.load(file)
+            messages = json.load(file)
+            data[lang] = messages
+            message_keys.update(messages.keys())
     
-df = pandas.read_json(data)
+# Create DataFrame with 'key' as first column
+df_data = {'key': sorted(message_keys)}
+for lang in sorted(data.keys()):
+    df_data[lang] = [data[lang].get(key, '') for key in sorted(message_keys)]
 
-df.to_csv('combined_translations.csv', encoding='utf-8')
+df = pandas.DataFrame(df_data)
+
+df.to_csv('combined_translations.csv', encoding='utf-8', index=False)
