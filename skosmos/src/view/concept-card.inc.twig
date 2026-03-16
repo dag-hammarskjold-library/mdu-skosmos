@@ -108,6 +108,9 @@
 											<span {% if descriptionId %} aria-describedby="{{ descriptionId }}" {% endif %}>
 												{% if propval.containsHtml %}
 													{{ propval.label|raw }}
+												{% elseif propval.label matches '/^\\d{1,2}\\/\\d{1,2}\\/\\d{2}$/' %}
+                                                    {% set dateParts = propval.label|split('/') %}
+                                                    {{ '%04d-%02d-%02d'|format('19'~dateParts[2], dateParts[0], dateParts[1]) }}
 												{% else %}
 													{{ propval.label }}
 												{% endif %}
