@@ -98,7 +98,12 @@
 # Skosmos vocabularies
 
 :unbist a skosmos:Vocabulary, void:Dataset ;
-    dc:title "UN Thesaurus"@en, ""@ar, "联合国叙词表"@zh, ""@fr, ""@ru, ""@es ;
+    dc:title "UN Thesaurus"@en, 
+        "مكنز نظام الأمم المتحدة للمعلومات الببليوغرافية"@ar, 
+        "联合国叙词表"@zh, 
+        "Thésaurus UNBIS"@fr, 
+        "Тезаурус ЮНБИС"@ru, 
+        "Tesauro de la ONU"@es ;
     skosmos:shortName "UNBIST" ;
     dc:subject :cat_general ;
     void:uriSpace "http://metadata.un.org/thesaurus/" ;
@@ -118,7 +123,12 @@
     skosmos:sparqlDialect "Generic" .
 
 :unbist2 a skosmos:Vocabulary, void:Dataset ;
-    dc:title "UN Thesaurus Test"@en, ""@ar, "联合国叙词表 (Test)"@zh, ""@fr, ""@ru, "Tesauro de la ONU"@es ;
+    dc:title "UN Thesaurus Test"@en, 
+        "مكنز نظام الأمم المتحدة للمعلومات الببليوغرافية (Test)"@ar, 
+        "联合国叙词表 (Test)"@zh, 
+        "Thésaurus UNBIS (Test)"@fr, 
+        "Тезаурус ЮНБИС (Test)"@ru, 
+        "Tesauro de la ONU (Test)"@es ;
     skosmos:shortName "UNBIST" ;
     dc:subject :cat_general ;
     void:uriSpace "http://metadata.un.org/thesaurus/" ;
@@ -136,7 +146,7 @@
     skosmos:sparqlDialect "Generic" .
 
 :sdg a skosmos:Vocabulary, void:Dataset ;
-    dc:title "Sustainable Development Goals"@en, ""@ar, ""@zh, ""@fr, ""@ru, ""@es ;
+    dc:title "Sustainable Development Goals"@en, "أهداف التنمية المستدامة"@ar, "可持续发展目标"@zh, "Objectifs de développement durable"@fr, "Цели в области устойчивого развития"@ru, "Objetivos de Desarrollo Sostenible"@es ;
     skosmos:shortName "SDGO" ;
     dc:subject :cat_general ;
     void:uriSpace "http://metadata.un.org/sdg" ;
@@ -154,7 +164,7 @@
     void:sparqlEndpoint <https://metadata.un.org/graphdb/repositories/SDG-test_core> .
 
 :unms a skosmos:Vocabulary, void:Dataset ;
-    dc:title "UN Member States"@en, ""@ar, ""@zh, ""@fr, ""@ru, "Estados Miembros de la ONU"@es ;
+    dc:title "UN Member States"@en, "UN Member States"@ar, "UN Member States"@zh, "UN Member States"@fr, "UN Member States"@ru, "Estados Miembros de la ONU"@es ;
     skosmos:shortName "UNMS" ;
     dc:subject :cat_general ;
     void:uriSpace "http://metadata.un.org/UNMS/" ;
@@ -186,7 +196,7 @@
     skos:topConceptOf :categories ;
     skos:inScheme :categories ;
     skos:prefLabel "Services Available"@en,
-        ""@ar, ""@fr, ""@zh, ""@ru, "Servicios Disponibles"@es
+        "الخدمات المتاحة"@ar, "Services disponibles"@fr, "可用服务"@zh, "Доступные услуги"@ru, "Servicios disponibles"@es
 .
 
 mdrtype:THESAURUS a skos:Concept ;

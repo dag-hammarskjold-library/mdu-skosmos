@@ -1,6 +1,9 @@
 name: Manually deploy to Production from latest release
 
 on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
   workflow_dispatch:
 
 jobs:
