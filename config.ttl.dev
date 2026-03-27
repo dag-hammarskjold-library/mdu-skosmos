@@ -163,7 +163,7 @@
     void:sparqlEndpoint <https://metadata.un.org/graphdb/repositories/SDG-test_core> .
 
 :unms a skosmos:Vocabulary, void:Dataset ;
-    dc:title "UN Member States"@en, "UN Member States"@ar, "UN Member States"@zh, "UN Member States"@fr, "UN Member States"@ru, "Estados Miembros de la ONU"@es ;
+    dc:title "UN Member States"@en, "الدول الأعضاء في منظمة الأمم المتحدة"@ar, "联合国会员国"@zh, "États membres de l'ONU"@fr, "Государства — члены ООН"@ru, "Estados Miembros de la ONU"@es ;
     skosmos:shortName "UNMS" ;
     dc:subject :cat_general ;
     void:uriSpace "http://metadata.un.org/UNMS/" ;
