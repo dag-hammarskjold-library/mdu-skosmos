@@ -185,7 +185,7 @@
 
 :categories a skos:ConceptScheme;
     skos:prefLabel "UN Linked Data Services"@en,
-        "ﺥﺪﻣﺎﺗ ﺍﻸﻤﻣ ﺎﻠﻤﺘﺣﺩﺓ ﻞﻠﺒﻳﺎﻧﺎﺗ ﺎﻠﻤﺗﺭﺎﺒﻃﺓ"@ar,
+        "خدمات الأمم المتحدة للبيانات المترابطة"@ar,
         "联合国关联数据服务"@zh,
         "Services de données liées des Nations Unies"@fr,
         "Услуги связанных данных ООН"@ru,
