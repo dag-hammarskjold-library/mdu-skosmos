@@ -169,10 +169,12 @@
 .
 
 :cat_general a skos:Concept ;
-    skos:topConceptOf :categories ;
-    skos:inScheme :categories ;
-    skos:prefLabel "Services Available"@en,
-        "الخدمات المتاحة"@ar, "Services disponibles"@fr, "可用服务"@zh, "Доступные услуги"@ru, "Servicios disponibles"@es
+    skos:prefLabel "UN Linked Data Services"@en,
+        "خدمات الأمم المتحدة للبيانات المترابطة"@ar,
+        "联合国关联数据服务"@zh,
+        "Services de données liées des Nations Unies"@fr,
+        "Услуги связанных данных ООН"@ru,
+        "Servicios de datos vinculados de la ONU"@es
 .
 
 mdrtype:THESAURUS a skos:Concept ;
