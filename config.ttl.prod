@@ -98,10 +98,10 @@
 
 :unbist a skosmos:Vocabulary, void:Dataset ;
     dc:title "UN Thesaurus"@en, 
-        "مكنز نظام الأمم المتحدة للمعلومات الببليوغرافية"@ar, 
+        "مكنز الأمم المتحدة"@ar, 
         "联合国叙词表"@zh, 
         "Thésaurus UNBIS"@fr, 
-        "Тезаурус ЮНБИС"@ru, 
+        "Тезаурус ООН"@ru, 
         "Tesauro de la ONU"@es ;
     skosmos:shortName "UNBIST" ;
     dc:subject :cat_general ;
