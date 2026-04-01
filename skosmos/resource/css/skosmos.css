@@ -531,9 +531,15 @@ header .container-fluid .row {
   color: var(--vocab-category-text);
 }
 
+#vocabulary-list .list-group {
+  padding-right: 0;
+  margin-right: 0;
+}
+
 #vocabulary-list .list-group-item {
   background-color: var(--vocab-category-bg);
   border: none;
+  padding-right: 0;
 }
 
 #vocabulary-list .list-group-item a {
