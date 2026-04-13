@@ -9,6 +9,9 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      ECS_CPU: 1024
+      ECS_MEMORY: 4096
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -38,7 +41,7 @@ jobs:
 
       - name: Prepare ECS task definition
         run: |
-          sed "s|<account_id>|${{ secrets.AWS_ACCOUNT_ID }}|g" ecs/ecs-task-definition.json.template > ecs/ecs-task-definition.json
+          sed "s|<account_id>|${{ secrets.AWS_ACCOUNT_ID }}|g; s|<cpu>|${{ env.ECS_CPU }}|g; s|<memory>|${{ env.ECS_MEMORY }}|g" ecs/ecs-task-definition.json.template > ecs/ecs-task-definition.json
 
       - name: Fill in image id in ECS task definition
         id: task-def

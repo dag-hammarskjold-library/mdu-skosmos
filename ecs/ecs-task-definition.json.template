@@ -2,8 +2,8 @@
   "family": "mdu-skosmos-dev-task",
   "networkMode": "awsvpc",
   "requiresCompatibilities": ["FARGATE"],
-  "cpu": "1024",
-  "memory": "4096",
+  "cpu": "<cpu>",
+  "memory": "<memory>",
   "executionRoleArn": "arn:aws:iam::<account_id>:role/ecsTaskExecutionRole",
   "taskRoleArn": "arn:aws:iam::<account_id>:role/ecsTaskExecutionRole",
   "containerDefinitions": [
