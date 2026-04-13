@@ -96,7 +96,7 @@
 
 # Skosmos vocabularies
 
-:unbist a skosmos:Vocabulary, void:Dataset ;
+:thesaurus a skosmos:Vocabulary, void:Dataset ;
     dc:title "UN Thesaurus"@en, 
         "مكنز الأمم المتحدة"@ar, 
         "联合国叙词表"@zh, 
