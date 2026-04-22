@@ -175,6 +175,9 @@
     skosmos:showTopConcepts true ;
     skosmos:conceptSchemesInHierarchy true ;
     skosmos:propertyLabelOverride [ skosmos:property skos:prefLabel ; rdfs:label "Formal Name"@en ] ;
+    skosmos:propertyLabelOverride 
+        [ skosmos:property skos:exactMatch ; rdfs:label "Exact Match"@en ]
+    ;
     skosmos:groupClass skos:ConceptScheme ;
     #skosmos:indexShowClass <http://metadata.un.org/UNMS/ontology#State> ;
     skosmos:fullAlphabeticalIndex true ;

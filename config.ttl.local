@@ -14,6 +14,7 @@
 @prefix eu: <http://eurovoc.europa.eu/schema#> .
 @prefix unmso: <http://metadata.un.org/UNMS/ontology#> .
 @prefix sdgo: <http://metadata.un.org/sdg/ontology#> .
+@prefix unterm: <https://metadata.un.org/unterm/> .
 @prefix : <#> .
 
 # Skosmos main configuration
@@ -143,7 +144,10 @@
     skosmos:conceptSchemesInHierarchy true ;
     skosmos:mainConceptScheme <http://metadata.un.org/thesaurus/00> ;
     void:sparqlEndpoint <https://metadata.un.org/graphdb/repositories/UNBIST-test_core> ;
-    skosmos:sparqlDialect "Generic" .
+    skosmos:sparqlDialect "Generic" ; 
+    skosmos:propertyLabelOverride 
+        [ skosmos:property skos:exactMatch ; rdfs:label "Exact Match"@en ]
+    .
 
 :sdg a skosmos:Vocabulary, void:Dataset ;
     dc:title "Sustainable Development Goals"@en, "أهداف التنمية المستدامة"@ar, "可持续发展目标"@zh, "Objectifs de développement durable"@fr, "Цели в области устойчивого развития"@ru, "Objetivos de Desarrollo Sostenible"@es ;
@@ -176,6 +180,9 @@
     skosmos:showTopConcepts true ;
     skosmos:conceptSchemesInHierarchy true ;
     skosmos:propertyLabelOverride [ skosmos:property skos:prefLabel ; rdfs:label "Formal Name"@en ] ;
+    skosmos:propertyLabelOverride 
+        [ skosmos:property skos:exactMatch ; rdfs:label "Exact Match"@en ]
+    ;
     skosmos:groupClass skos:ConceptScheme ;
     #skosmos:indexShowClass <http://metadata.un.org/UNMS/ontology#State> ;
     skosmos:fullAlphabeticalIndex true ;
