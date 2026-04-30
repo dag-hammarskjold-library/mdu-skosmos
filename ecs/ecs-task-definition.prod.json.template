@@ -1,0 +1,65 @@
+{
+  "family": "mdu-skosmos-prod-task",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "<cpu>",
+  "memory": "<memory>",
+  "executionRoleArn": "arn:aws:iam::<account_id>:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::<account_id>:role/ecsTaskExecutionRole",
+  "containerDefinitions": [
+    {
+      "name": "mdu-skosmos-prod",
+      "image": "<account_id>.dkr.ecr.us-east-1.amazonaws.com/mdu-skosmos:prod",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "hostPort": 80,
+          "protocol": "tcp"
+        }
+      ],
+      "healthCheck": {
+        "command": [
+          "CMD-SHELL",
+          "curl -f http://localhost/skosmos/en/ --max-time 8 || exit 1"
+        ],
+        "interval": 30,
+        "timeout": 10,
+        "retries": 3,
+        "startPeriod": 120
+      },
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-create-group": "true",
+          "awslogs-group": "/ecs/mdu-skosmos-prod",
+          "awslogs-region": "us-east-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      },
+      "environment": [
+        {
+          "name": "HEALTHCHECK_TIMEOUT",
+          "value": "8"
+        }
+      ],
+      "stopTimeout": 30,
+      "startTimeout": 300
+    }
+  ],
+  "placementConstraints": [],
+  "tags": [
+    {
+      "key": "Environment",
+      "value": "prod"
+    },
+    {
+      "key": "Application",
+      "value": "mdu-skosmos"
+    },
+    {
+      "key": "ManagedBy",
+      "value": "ECS"
+    }
+  ]
+}

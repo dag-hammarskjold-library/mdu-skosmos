@@ -50,7 +50,7 @@ jobs:
 
       - name: Prepare ECS task definition
         run: |
-          sed "s|<account_id>|${{ secrets.AWS_ACCOUNT_ID }}|g; s|<cpu>|${{ env.ECS_CPU }}|g; s|<memory>|${{ env.ECS_MEMORY }}|g" ecs/ecs-task-definition.json.template > ecs/ecs-task-definition.json.tmp
+          sed "s|<account_id>|${{ secrets.AWS_ACCOUNT_ID }}|g; s|<cpu>|${{ env.ECS_CPU }}|g; s|<memory>|${{ env.ECS_MEMORY }}|g" ecs/ecs-task-definition.prod.json.template > ecs/ecs-task-definition.json.tmp
           sed "s|mdu-skosmos-dev|mdu-skosmos-prod|g" ecs/ecs-task-definition.json.tmp > ecs/ecs-task-definition.json
 
       - name: Fill in image id in ECS task definition
