@@ -14,6 +14,7 @@ When you want to deploy changes, create a branch, save your changes, and issue a
 ## Workflows and deployment
 
 Merging to main will trigger a build of the Docker image, which will then be deployed to ECS as a dev/uat server.
+The dev workflow renders `config.ttl.dev` using the `GRAPHDB_INTERNAL_BASE_DEV` GitHub Actions secret.
 
 Creating a release will build the image for that release tag and deploy it to ECS as a production server.
 

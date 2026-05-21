@@ -30,6 +30,17 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
 
+      - name: Render config.ttl.dev
+        run: |
+          BASE="${{ secrets.GRAPHDB_INTERNAL_BASE_DEV }}"
+          if [ -z "$BASE" ]; then
+            echo "GRAPHDB_INTERNAL_BASE_DEV is not set" >&2
+            exit 1
+          fi
+          BASE="${BASE%/}"
+          sed "s|__GRAPHDB_INTERNAL_BASE__|$BASE|g" config.ttl.dev > config.ttl.dev.tmp
+          mv config.ttl.dev.tmp config.ttl.dev
+
       - name: Build Docker image
         run: |
           docker build -t ${{ steps.login-ecr.outputs.registry }}/mdu-skosmos:dev \
