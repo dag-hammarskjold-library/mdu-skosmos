@@ -60,6 +60,8 @@ WORKDIR /var/www/html/skosmos-dev
 # composer and packages layer
 RUN curl -sS https://getcomposer.org/installer | php
 
+COPY composer.json /var/www/html/skosmos-dev/composer.json 
+
 RUN php composer.phar install --no-dev 
 
 COPY config.ttl.dev /var/www/html/skosmos-dev/config.ttl
