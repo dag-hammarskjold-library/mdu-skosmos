@@ -1,0 +1,57 @@
+{
+    "name": "nat-lib-fi/skosmos",
+    "description": "Thesaurus and controlled vocabulary browser using SKOS and SPARQL",
+    "type": "project",
+    "license": "MIT",
+    "version": "3.0",
+    "require": {
+        "sweetrdf/easyrdf": "~1.18.2",
+        "twig/twig": "3.22.*",
+        "willdurand/negotiation": "3.1.*",
+        "punic/punic": "3.8.*",
+        "ml/json-ld": "1.*",
+        "ext-intl": "*",
+        "ext-mbstring": "*",
+        "ext-xsl": "*",
+        "monolog/monolog": "3.9.*",
+        "symfony/translation": "6.4.*",
+        "symfony/translation-contracts": "3.6.*",
+        "symfony/twig-bundle": "6.4.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "10.5.*",
+        "symfony/dom-crawler": "6.4.*",
+        "symfony/config": "6.4.*",
+        "symfony/runtime": "6.4.*",
+        "symfony/framework-bundle": "6.4.*",
+        "symfony/yaml": "^6.4",
+        "symfony/dotenv": "6.4.*",
+        "symfony/lokalise-translation-provider": "6.4.*",
+        "symfony/console": "6.4.*",
+        "mockery/mockery": "1.6.*",
+        "friendsofphp/php-cs-fixer": "3.90.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/",
+            "src/controller/",
+            "src/model/",
+            "src/util",
+            "src/model/sparql/"
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/runtime": true
+        },
+        "policy": {
+            "advisories": {
+                "block": false,
+                "audit": "ignore"
+            }
+        },
+        "audit": {
+            "block-insecure": false
+        }
+    }
+}
