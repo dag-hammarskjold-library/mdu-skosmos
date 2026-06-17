@@ -23,7 +23,7 @@ RUN apt-get update && apt-get install -y \
 RUN rm /var/www/html/index.html
 
 RUN git clone https://github.com/NatLibFi/Skosmos.git /var/www/html/skosmos-dev
-RUN git checkout v3.0
+RUN git checkout v3.1
 
 RUN npm install --omit=dev --ignore-scripts
 
@@ -67,7 +67,8 @@ RUN php composer.phar install --no-dev
 COPY config.ttl.local /var/www/html/skosmos-dev/config.ttl
 
 # Copy customizations
-COPY ./skosmos/ /var/www/html/skosmos-dev/
+COPY ./skosmos/ /var/www/html/skosmos-dev/ 
+RUN chown -R www-data:www-data /var/www/html/skosmos-dev
 
 HEALTHCHECK --interval=5s --timeout=3s --retries=3 CMD curl -f http://localhost || exit 1
 

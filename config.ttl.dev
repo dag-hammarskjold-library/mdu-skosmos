@@ -21,8 +21,7 @@
 :config a skosmos:Configuration ;
     # SPARQL endpoint
     # a local Fuseki server is usually on localhost:3030
-    # __GRAPHDB_INTERNAL_BASE__ is rendered in the deploy-dev workflow.
-    skosmos:sparqlEndpoint <__GRAPHDB_INTERNAL_BASE__/graphdb/repositories/UNBIST-test_core> ;
+    skosmos:sparqlEndpoint <http://metadata.un.org/graphdb/repositories/UNBIST-test_core> ;
 
     # sparql-query extension, or "Generic" for plain SPARQL 1.1
     # set to "JenaText" instead if you use Fuseki with jena-text index
@@ -119,7 +118,7 @@
     skosmos:showNotation true ;
     skosmos:conceptSchemesInHierarchy true ;
     skosmos:mainConceptScheme <http://metadata.un.org/thesaurus/00> ;
-    void:sparqlEndpoint <__GRAPHDB_INTERNAL_BASE__/graphdb/repositories/UNBIST_core> ;
+    void:sparqlEndpoint <http://metadata.un.org/graphdb/graphdb/repositories/UNBIST_core> ;
     skosmos:sparqlDialect "Generic" .
 
 :unbist2 a skosmos:Vocabulary, void:Dataset ;
@@ -142,7 +141,7 @@
     skosmos:showNotation true ;
     skosmos:conceptSchemesInHierarchy true ;
     skosmos:mainConceptScheme <http://metadata.un.org/thesaurus/00> ;
-    void:sparqlEndpoint <__GRAPHDB_INTERNAL_BASE__/graphdb/repositories/UNBIST-test_core> ;
+    void:sparqlEndpoint <http://metadata.un.org/graphdb/repositories/UNBIST-test_core> ;
     skosmos:sparqlDialect "Generic" .
 
 :sdg a skosmos:Vocabulary, void:Dataset ;
@@ -161,7 +160,7 @@
     skosmos:sortByNotation "natural" ;
     skosmos:groupClass sdgo:SDGCodeCompact ;
     skosmos:showNotation true ;
-    void:sparqlEndpoint <__GRAPHDB_INTERNAL_BASE__/graphdb/repositories/SDG-test_core> .
+    void:sparqlEndpoint <http://metadata.un.org/graphdb/repositories/SDG-test_core> .
 
 :unms a skosmos:Vocabulary, void:Dataset ;
     dc:title "UN Member States"@en, "الدول الأعضاء في منظمة الأمم المتحدة"@ar, "联合国会员国"@zh, "États membres de l'ONU"@fr, "Государства — члены ООН"@ru, "Estados Miembros de la ONU"@es ;
@@ -184,7 +183,7 @@
     skosmos:fullAlphabeticalIndex true ;
     skosmos:conceptSchemesInHierarchy true ;
     skosmos:mainConceptScheme <http://metadata.un.org/UNMS/> ;
-    void:sparqlEndpoint <__GRAPHDB_INTERNAL_BASE__/graphdb/repositories/UNMS_core> .
+    void:sparqlEndpoint <http://metadata.un.org/graphdb/repositories/UNMS_core> .
 
 :categories a skos:ConceptScheme;
     skos:prefLabel "UN Linked Data Services"@en,

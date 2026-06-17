@@ -13,6 +13,8 @@ window.SKOSMOS = {
   "vocab_id": [ {% for vocab in request.vocabid %} "{{ vocab }}"{% if not loop.last %},
   {% endif %}{% endfor %}],
   "waypoint_results": {{ parameters ? parameters.searchLimit : "null" }},
+  "search_count": {{ search_count ? search_count : "null" }},
+  "search_results_size": {{ GlobalConfig.searchResultsSize }},
   {%- if request.page == "page" and concept %}
   "prefLabels": [{"lang": "{{ concept.label.lang }}","label": "{{ concept.label }}"}{% for lang in concept.foreignLabels %}{% for literal in lang %}{% if literal.type == "skos:prefLabel" %},{"lang": "{{literal.lang}}", "label": "{{literal.label}}"}{% endif %}{% endfor %}{% endfor %}],
   "uri": "{{ concept.uri }}",
@@ -76,7 +78,7 @@ window.SKOSMOS = {
 <script src="resource/js/translation-service.js"></script>
 
 <!-- Vue.js components -->
-<!-- <script src="resource/js/resource-counts.js"></script> -->
+<script src="resource/js/resource-counts.js"></script>
 <script src="resource/js/term-counts.js"></script>
 <script src="resource/js/concept-mappings.js"></script>
 <script src="resource/js/tab-alpha.js"></script>
@@ -89,6 +91,7 @@ window.SKOSMOS = {
 <!-- Other (non-Vue) JS functionality -->
 <script src="resource/js/copy-to-clipboard.js"></script>
 <script src="resource/js/navbar.js"></script>
+<script src="resource/js/load-search-results.js"></script>
 <script src="resource/js/truncate-property-values.js"></script>
 <script src="resource/js/truncate-search-results.js"></script>
 <script src="resource/js/make-plugin-callbacks.js"></script>
