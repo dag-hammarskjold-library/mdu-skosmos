@@ -118,7 +118,7 @@
     skosmos:showNotation true ;
     skosmos:conceptSchemesInHierarchy true ;
     skosmos:mainConceptScheme <http://metadata.un.org/thesaurus/00> ;
-    void:sparqlEndpoint <http://metadata.un.org/graphdb/graphdb/repositories/UNBIST_core> ;
+    void:sparqlEndpoint <http://metadata.un.org/graphdb/repositories/UNBIST_core> ;
     skosmos:sparqlDialect "Generic" .
 
 :unbist2 a skosmos:Vocabulary, void:Dataset ;
