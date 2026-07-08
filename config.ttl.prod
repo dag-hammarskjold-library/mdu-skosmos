@@ -21,7 +21,7 @@
 :config a skosmos:Configuration ;
     # SPARQL endpoint
     # a local Fuseki server is usually on localhost:3030
-    skosmos:sparqlEndpoint <https://metadata.un.org/graphdb/repositories/UNBIST-test_core> ;
+    skosmos:sparqlEndpoint <http://graphdb-load-balancer-58c37e7c73cd5631.elb.us-east-1.amazonaws.com:7200/repositories/UNBIST-test_core> ;
 
     # sparql-query extension, or "Generic" for plain SPARQL 1.1
     # set to "JenaText" instead if you use Fuseki with jena-text index
@@ -118,7 +118,7 @@
     skosmos:showNotation true ;
     skosmos:conceptSchemesInHierarchy true ;
     skosmos:mainConceptScheme <http://metadata.un.org/thesaurus/00> ;
-    void:sparqlEndpoint <https://metadata.un.org/graphdb/repositories/UNBIST_core> ;
+    void:sparqlEndpoint <http://graphdb-load-balancer-58c37e7c73cd5631.elb.us-east-1.amazonaws.com:7200/repositories/UNBIST_core> ;
     skosmos:sparqlDialect "Generic" .
 
 :sdg a skosmos:Vocabulary, void:Dataset ;
@@ -137,7 +137,7 @@
     skosmos:sortByNotation "natural" ;
     skosmos:groupClass sdgo:SDGCodeCompact ;
     skosmos:showNotation true ;
-    void:sparqlEndpoint <https://metadata.un.org/graphdb/repositories/SDG-test_core> .
+    void:sparqlEndpoint <http://graphdb-load-balancer-58c37e7c73cd5631.elb.us-east-1.amazonaws.com:7200/repositories/SDG-test_core> .
 
 :unms a skosmos:Vocabulary, void:Dataset ;
     dc:title "UN Member States"@en, "الدول الأعضاء في منظمة الأمم المتحدة"@ar, "联合国会员国"@zh, "États membres de l'ONU"@fr, "Государства — члены ООН"@ru, "Estados Miembros de la ONU"@es ;
@@ -157,7 +157,7 @@
     skosmos:fullAlphabeticalIndex true ;
     skosmos:conceptSchemesInHierarchy true ;
     skosmos:mainConceptScheme <http://metadata.un.org/UNMS/> ;
-    void:sparqlEndpoint <https://metadata.un.org/graphdb/repositories/UNMS_core> .
+    void:sparqlEndpoint <http://graphdb-load-balancer-58c37e7c73cd5631.elb.us-east-1.amazonaws.com:7200/repositories/UNMS_core> .
 
 :categories a skos:ConceptScheme;
     skos:prefLabel "UN Linked Data Services"@en,
