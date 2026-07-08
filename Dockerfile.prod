@@ -23,7 +23,7 @@ RUN apt-get update && apt-get install -y \
 RUN rm /var/www/html/index.html
 
 RUN git clone https://github.com/NatLibFi/Skosmos.git /var/www/html/skosmos
-RUN git checkout v3.0
+RUN git checkout v3.1
 
 RUN npm install --omit=dev --ignore-scripts
 
