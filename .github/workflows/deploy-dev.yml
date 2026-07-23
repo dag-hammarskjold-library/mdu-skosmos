@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       ECS_CPU: 1024
-      ECS_MEMORY: 4096
+      ECS_MEMORY: 2048
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
