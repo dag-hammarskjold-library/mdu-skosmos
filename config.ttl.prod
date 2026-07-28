@@ -21,8 +21,8 @@
 :config a skosmos:Configuration ;
     # SPARQL endpoint
     # a local Fuseki server is usually on localhost:3030
-    #skosmos:sparqlEndpoint <http://graphdb-load-balancer-58c37e7c73cd5631.elb.us-east-1.amazonaws.com:7200/repositories/UNBIST-test_core> ;
-    skosmos:sparqlEndpoint <http://metadata.un.org:7200/repositories/UNBIST_core> ;
+    skosmos:sparqlEndpoint <http://graphdb-load-balancer-58c37e7c73cd5631.elb.us-east-1.amazonaws.com:7200/repositories/UNBIST-test_core> ;
+    # skosmos:sparqlEndpoint <http://metadata.un.org:7200/repositories/UNBIST_core> ;
 
     # sparql-query extension, or "Generic" for plain SPARQL 1.1
     # set to "JenaText" instead if you use Fuseki with jena-text index
@@ -119,8 +119,8 @@
     skosmos:showNotation true ;
     skosmos:conceptSchemesInHierarchy true ;
     skosmos:mainConceptScheme <http://metadata.un.org/thesaurus/00> ;
-    #void:sparqlEndpoint <http://graphdb-load-balancer-58c37e7c73cd5631.elb.us-east-1.amazonaws.com:7200/repositories/UNBIST_core> ;
-    void:sparqlEndpoint <http://metadata.un.org:7200/repositories/UNBIST_core> ;
+    void:sparqlEndpoint <http://graphdb-load-balancer-58c37e7c73cd5631.elb.us-east-1.amazonaws.com:7200/repositories/UNBIST_core> ;
+    #void:sparqlEndpoint <http://metadata.un.org:7200/repositories/UNBIST_core> ;
     skosmos:sparqlDialect "Generic" .
 
 :sdg a skosmos:Vocabulary, void:Dataset ;
@@ -160,8 +160,8 @@
     skosmos:fullAlphabeticalIndex true ;
     skosmos:conceptSchemesInHierarchy true ;
     skosmos:mainConceptScheme <http://metadata.un.org/UNMS/> ;
-    #void:sparqlEndpoint <http://graphdb-load-balancer-58c37e7c73cd5631.elb.us-east-1.amazonaws.com:7200/repositories/UNMS_core> .
-    void:sparqlEndpoint <http://metadata.un.org:7200/repositories/UNMS_core> .
+    void:sparqlEndpoint <http://graphdb-load-balancer-58c37e7c73cd5631.elb.us-east-1.amazonaws.com:7200/repositories/UNMS_core> .
+    #void:sparqlEndpoint <http://metadata.un.org:7200/repositories/UNMS_core> .
 
 :categories a skos:ConceptScheme;
     skos:prefLabel "UN Linked Data Services"@en,
