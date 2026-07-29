@@ -139,8 +139,8 @@
     skosmos:sortByNotation "natural" ;
     skosmos:groupClass sdgo:SDGCodeCompact ;
     skosmos:showNotation true ;
-    #void:sparqlEndpoint <http://graphdb-load-balancer-58c37e7c73cd5631.elb.us-east-1.amazonaws.com:7200/repositories/SDG-test_core> .
-    void:sparqlEndpoint <http://metadata.un.org:7200/repositories/SDG-test_core> .
+    void:sparqlEndpoint <http://graphdb-load-balancer-58c37e7c73cd5631.elb.us-east-1.amazonaws.com:7200/repositories/SDG-test_core> .
+    #void:sparqlEndpoint <http://metadata.un.org:7200/repositories/SDG-test_core> .
 
 :unms a skosmos:Vocabulary, void:Dataset ;
     dc:title "UN Member States"@en, "الدول الأعضاء في منظمة الأمم المتحدة"@ar, "联合国会员国"@zh, "États membres de l'ONU"@fr, "Государства — члены ООН"@ru, "Estados Miembros de la ONU"@es ;
