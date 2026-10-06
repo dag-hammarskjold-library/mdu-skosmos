@@ -101,7 +101,7 @@
     dc:title "UN Thesaurus"@en, 
         "مكنز الأمم المتحدة"@ar, 
         "联合国叙词表"@zh, 
-        "Thésaurus UNBIS"@fr, 
+        "Thésaurus de l'ONU"@fr, 
         "Тезаурус ООН"@ru, 
         "Tesauro de la ONU"@es ;
     skosmos:shortName "UNBIST" ;
