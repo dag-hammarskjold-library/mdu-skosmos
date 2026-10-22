@@ -15,9 +15,10 @@ window.SKOSMOS = {
   "waypoint_results": {{ parameters ? parameters.searchLimit : "null" }},
   "search_count": {{ search_count ? search_count : "null" }},
   "search_results_size": {{ GlobalConfig.searchResultsSize }},
-  {%- if request.page == "page" and concept %}
-  "prefLabels": [{"lang": "{{ concept.label.lang }}","label": "{{ concept.label }}"}{% for lang in concept.foreignLabels %}{% for literal in lang %}{% if literal.type == "skos:prefLabel" %},{"lang": "{{literal.lang}}", "label": "{{literal.label}}"}{% endif %}{% endfor %}{% endfor %}],
+  {% if request.page == "page" and concept -%}
+  "prefLabels": [{"lang": "{{ concept.label.lang }}", "label": "{{ concept.label }}"}{% for data in concept.foreignLabels %}{% for literal in data.prefLabel %}, {"lang": "{{ literal.lang }}", "label": "{{ literal.label }}"}{% endfor %}{% endfor %}],
   "uri": "{{ concept.uri }}",
+  "isGroup": {{ concept.isGroup ? "true" : "false" }},
   {% endif %}
   {%- if request.vocab ~%}
   "showNotation": {{ request.vocab.config.showNotation ? "true" : "false" }},
@@ -60,11 +61,54 @@ window.SKOSMOS = {
 <!-- Bootstrap -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
+<!-- FormatJS Intl.Collator polyfill for expanded locale support -->
+<script type="importmap">
+  {
+    "imports": {
+      "@formatjs/intl-localematcher": "./node_modules/@formatjs/intl-localematcher/index.js",
+      "@formatjs/fast-memoize": "./node_modules/@formatjs/fast-memoize/index.js"
+    }
+  }
+</script>
+<script type="module">
+  function needsCollatorPolyfill(locale) {
+    try {
+      const supported = Intl.Collator.supportedLocalesOf([locale])
+      return supported.length === 0
+    } catch {
+      return true; // fallback for old browsers
+    }
+  }
+
+  async function ensureCollator(locale) {
+    if (needsCollatorPolyfill(locale)) {
+      await import('./node_modules/@formatjs/intl-collator/polyfill-force.js')
+    }
+  }
+
+  // global Promise for loading the polyfill on-demand
+  let collatorPromise = null
+
+  window.getIntlCollatorReady = function () {
+    if (!collatorPromise) {
+      const locale = window.SKOSMOS.content_lang || window.SKOSMOS.lang
+      collatorPromise = ensureCollator(locale)
+    }
+    return collatorPromise
+  }
+
+  // custom event to signal that the collator promise has been initialized
+  const event = new Event('intlCollatorPromiseReady')
+  document.dispatchEvent(event)
+</script>
+
 <!-- Vue.js -->
 {% if GlobalConfig.uiDevMode %}
 <script src="node_modules/vue/dist/vue.global.js"></script>
+<script src="node_modules/vue-i18n/dist/vue-i18n.global.js"></script>
 {% else %}
 <script src="node_modules/vue/dist/vue.global.prod.js"></script>
+<script src="node_modules/vue-i18n/dist/vue-i18n.global.prod.js"></script>
 {% endif %}
 
 <!-- Plugin JS sources -->
@@ -95,3 +139,4 @@ window.SKOSMOS = {
 <script src="resource/js/truncate-property-values.js"></script>
 <script src="resource/js/truncate-search-results.js"></script>
 <script src="resource/js/make-plugin-callbacks.js"></script>
+<script src="resource/js/mobile.js"></script>
